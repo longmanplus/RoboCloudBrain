@@ -13,7 +13,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.zhejianglab.com/robot-center/organization">
+    <owl:Ontology rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl">
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
     </owl:Ontology>
     
@@ -287,50 +287,50 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#AssetManagement -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#AssetManagement -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#AssetManagement">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ResourceManagement"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#AssetManagement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ResourceManagement"/>
         <rdfs:label xml:lang="en">Asset management</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Association -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Association -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Association">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Non-businessEntity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Association">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Non-businessEntity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Carveout -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Carveout -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Carveout">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Carveout">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Closedown -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Closedown -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Closedown">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Closedown">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Closure -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Closure -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Closure">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Closure">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Company -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Company -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Company">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Company">
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
         <rdfs:label xml:lang="en">Company</rdfs:label>
         <rdfs:label xml:lang="cn">公司</rdfs:label>
@@ -338,9 +338,9 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Factory -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Factory -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Factory">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Factory">
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
         <rdfs:label xml:lang="en">Factory</rdfs:label>
         <rdfs:label xml:lang="cn">工厂</rdfs:label>
@@ -348,87 +348,87 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Founding -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Founding -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Founding">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Founding">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#GovernmentAgency -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#GovernmentAgency -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#GovernmentAgency">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#NonprofitEntity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#GovernmentAgency">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#NonprofitEntity"/>
         <rdfs:label xml:lang="en">Government agency</rdfs:label>
         <rdfs:label xml:lang="cn">政府机构</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#HumanResourceManagement -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#HumanResourceManagement -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#HumanResourceManagement">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ResourceManagement"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#HumanResourceManagement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ResourceManagement"/>
         <rdfs:label xml:lang="en">HR management</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Investment -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Investment -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Investment">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Operation"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Investment">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Operation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Kickoff -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Kickoff -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Kickoff">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Kickoff">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#League -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#League -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#League">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Non-businessEntity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#League">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Non-businessEntity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Management -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Management -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Management">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#PersistentActivity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Management">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#PersistentActivity"/>
         <rdfs:label xml:lang="en">Management</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Mergence -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Mergence -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Mergence">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Mergence">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:label xml:lang="en">Mergence</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Non-businessEntity -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Non-businessEntity -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Non-businessEntity">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Non-businessEntity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
         <rdfs:label xml:lang="en">Non-business entity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#NonprofitEntity -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#NonprofitEntity -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#NonprofitEntity">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#NonprofitEntity">
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
         <rdfs:label xml:lang="en">Nonprofit entity</rdfs:label>
         <rdfs:label xml:lang="cn">非盈利性实体</rdfs:label>
@@ -436,160 +436,160 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Operation -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Operation -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Operation">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#PersistentActivity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#PersistentActivity"/>
         <rdfs:label xml:lang="en">Operation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#PerformanceAppraisal -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#PerformanceAppraisal -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#PerformanceAppraisal">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#HumanResourceManagement"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#PerformanceAppraisal">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#HumanResourceManagement"/>
         <rdfs:label xml:lang="en">Performance appraisal</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#PersistentActivity -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#PersistentActivity -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#PersistentActivity">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#PersistentActivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Persistent activity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Planning -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Planning -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Planning">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Operation"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Planning">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Operation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Procurement -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Procurement -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Procurement">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Operation"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Procurement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Operation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Production -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Production -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Production">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Operation"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Production">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Operation"/>
         <rdfs:label xml:lang="en">Production</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Projectmanagement -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Projectmanagement -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Projectmanagement">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Management"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Projectmanagement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Management"/>
         <rdfs:label xml:lang="en">Project management</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Proposal -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Proposal -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Proposal">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Proposal">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Recruitment -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Recruitment -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Recruitment">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#HumanResourceManagement"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Recruitment">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#HumanResourceManagement"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Relocation -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Relocation -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Relocation">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Relocation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:label xml:lang="en">Relocation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Reorganization -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Reorganization -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Reorganization">
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Reorganization">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:label xml:lang="en">Reorganization</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#ResearchAndDevelopment -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchAndDevelopment -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#ResearchAndDevelopment">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Operation"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchAndDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Operation"/>
         <rdfs:label xml:lang="en">R&amp;D</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#ResearchInsitute -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchInsitute -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#ResearchInsitute">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#NonprofitEntity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchInsitute">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#NonprofitEntity"/>
         <rdfs:label xml:lang="en">Research institute</rdfs:label>
         <rdfs:label xml:lang="cn">研究机构</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#ResourceManagement -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#ResourceManagement -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#ResourceManagement">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Management"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#ResourceManagement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Management"/>
         <rdfs:label xml:lang="en">Resource management</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#RewardManagement -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#RewardManagement -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#RewardManagement">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#HumanResourceManagement"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#RewardManagement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#HumanResourceManagement"/>
         <rdfs:label xml:lang="en">Reward management</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#School -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#School -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#School">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#NonprofitEntity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#School">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#NonprofitEntity"/>
         <rdfs:label xml:lang="en">School</rdfs:label>
         <rdfs:label xml:lang="cn">学校</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Training -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Training -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Training">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#HumanResourceManagement"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Training">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#HumanResourceManagement"/>
     </owl:Class>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#Union -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#Union -->
 
-    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/organization#Union">
-        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#Non-businessEntity"/>
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#Union">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Non-businessEntity"/>
     </owl:Class>
     
 
@@ -621,55 +621,55 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#AdvancedResearchStuff -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#AdvancedResearchStuff -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#AdvancedResearchStuff">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#AdvancedResearchStuff">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Post"/>
-        <org:postIn rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <org:postIn rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">advanced research stuff</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#HeadquarterRelocation -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#HeadquarterRelocation -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#HeadquarterRelocation">
-        <rdf:type rdf:resource="http://www.zhejianglab.com/robot-center/organization#Relocation"/>
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#HeadquarterRelocation">
+        <rdf:type rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Relocation"/>
         <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-01T01:00:00Z</prov:atTime>
         <rdfs:label xml:lang="en">headquarter relocation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
-        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/organization#QinqinLong"/>
-        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeiSong"/>
-        <org:unitOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLong"/>
+        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSong"/>
+        <org:unitOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">Interdisciplinary innovation institute</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#QinqinLong -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLong -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#QinqinLong">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLong">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <locn:address rdf:resource="http://www.zhejianglab.com/robot-center/organization#QinqinLongOfficeAddress"/>
-        <org:basedAt rdf:resource="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus"/>
-        <org:holds rdf:resource="http://www.zhejianglab.com/robot-center/organization#AdvancedResearchStuff"/>
-        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute"/>
-        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <locn:address rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLongOfficeAddress"/>
+        <org:basedAt rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus"/>
+        <org:holds rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#AdvancedResearchStuff"/>
+        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute"/>
+        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">qinqin Long</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#QinqinLongOfficeAddress -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLongOfficeAddress -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#QinqinLongOfficeAddress">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLongOfficeAddress">
         <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <locn:locatorDesignator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">7#B406</locn:locatorDesignator>
         <rdfs:label xml:lang="en">qinqinlong office address</rdfs:label>
@@ -677,64 +677,64 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#QinqinLongRobotBrainProjectMembership -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLongRobotBrainProjectMembership -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#QinqinLongRobotBrainProjectMembership">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLongRobotBrainProjectMembership">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Membership"/>
-        <org:member rdf:resource="http://www.zhejianglab.com/robot-center/organization#QinqinLong"/>
-        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute"/>
-        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/organization#RobotBrainProject"/>
-        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
-        <org:role rdf:resource="http://www.zhejianglab.com/robot-center/organization#member"/>
+        <org:member rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLong"/>
+        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute"/>
+        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#RobotBrainProject"/>
+        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
+        <org:role rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#member"/>
         <rdfs:label xml:lang="en">qinqinLong robot brain project membership</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#ResearchExpert -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchExpert -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#ResearchExpert">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchExpert">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Post"/>
-        <org:postIn rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <org:postIn rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">research expert</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#RobotBrainProject -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#RobotBrainProject -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#RobotBrainProject">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#RobotBrainProject">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
-        <org:changedBy rdf:resource="http://www.zhejianglab.com/robot-center/organization#RobotBrainProjectKickoff"/>
+        <org:changedBy rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#RobotBrainProjectKickoff"/>
         <rdfs:label xml:lang="en">robot brain project</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#RobotBrainProjectKickoff -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#RobotBrainProjectKickoff -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#RobotBrainProjectKickoff">
-        <rdf:type rdf:resource="http://www.zhejianglab.com/robot-center/organization#Kickoff"/>
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#RobotBrainProjectKickoff">
+        <rdf:type rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#Kickoff"/>
         <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-01T01:00:00Z</prov:atTime>
         <rdfs:label xml:lang="en">robot brain project kickoff</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Site"/>
-        <org:siteAddress rdf:resource="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampusAddress"/>
-        <org:siteOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <org:siteAddress rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampusAddress"/>
+        <org:siteOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">southern lake campus</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampusAddress -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampusAddress -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampusAddress">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampusAddress">
         <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <locn:addressArea rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">southern lake campus</locn:addressArea>
         <locn:fullAddress rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">China Artificial Intelligence Town, No. 1818 Wenyi West Road, Yuhang District, Hangzhou City, Zhejiang Province, 311121, P.R. China</locn:fullAddress>
@@ -743,51 +743,51 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WeiSong -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSong -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WeiSong">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSong">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <locn:address rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeisongOfficeAddress"/>
-        <org:basedAt rdf:resource="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus"/>
-        <org:hasMembership rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeiSongRobotBrainProjectMembership"/>
-        <org:hasMembership rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeiSongZhejiangLabMembership"/>
-        <org:holds rdf:resource="http://www.zhejianglab.com/robot-center/organization#ResearchExpert"/>
-        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute"/>
-        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <locn:address rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongOfficeAddress"/>
+        <org:basedAt rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus"/>
+        <org:hasMembership rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSongRobotBrainProjectMembership"/>
+        <org:hasMembership rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSongZhejiangLabMembership"/>
+        <org:holds rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchExpert"/>
+        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute"/>
+        <org:memberOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">wei song</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WeiSongRobotBrainProjectMembership -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSongRobotBrainProjectMembership -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WeiSongRobotBrainProjectMembership">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSongRobotBrainProjectMembership">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Membership"/>
-        <org:member rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeiSong"/>
-        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute"/>
-        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <org:member rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSong"/>
+        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute"/>
+        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <org:role rdf:resource="http://www.w3.org/ns/org#Head"/>
         <rdfs:label xml:lang="en">weisong robot brain project membership</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WeiSongZhejiangLabMembership -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSongZhejiangLabMembership -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WeiSongZhejiangLabMembership">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSongZhejiangLabMembership">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Membership"/>
-        <org:member rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeiSong"/>
-        <org:memberDuring rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeisongZhejianglabMembershipDateTimeInterval"/>
-        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
-        <org:role rdf:resource="http://www.zhejianglab.com/robot-center/organization#member"/>
+        <org:member rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSong"/>
+        <org:memberDuring rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongZhejianglabMembershipDateTimeInterval"/>
+        <org:organization rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
+        <org:role rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#member"/>
         <rdfs:label xml:lang="en">weisong zhejianglab membership</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WeisongOfficeAddress -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongOfficeAddress -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WeisongOfficeAddress">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongOfficeAddress">
         <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <locn:locatorDesignator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">7#B400</locn:locatorDesignator>
         <rdfs:label xml:lang="en">weisong office address</rdfs:label>
@@ -795,9 +795,9 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WeisongZhejiangLabMembershipBeginningTime -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongZhejiangLabMembershipBeginningTime -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WeisongZhejiangLabMembershipBeginningTime">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongZhejiangLabMembershipBeginningTime">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <time:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</time:inXSDDate>
         <rdfs:label xml:lang="en">weisong zhejianglab membership beginning time</rdfs:label>
@@ -805,30 +805,30 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WeisongZhejianglabMembershipDateTimeInterval -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongZhejianglabMembershipDateTimeInterval -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WeisongZhejianglabMembershipDateTimeInterval">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongZhejianglabMembershipDateTimeInterval">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
-        <time:hasEnd rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeisongZhejiangLabMembershipBeginningTime"/>
+        <time:hasEnd rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeisongZhejiangLabMembershipBeginningTime"/>
         <rdfs:label xml:lang="en">weisong zhejianglab membership dateTimeInterval</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WenyixiluCampus -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WenyixiluCampus -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WenyixiluCampus">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WenyixiluCampus">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Site"/>
-        <org:siteAddress rdf:resource="http://www.zhejianglab.com/robot-center/organization#WenyixiluCampusAddress"/>
-        <org:siteOf rdf:resource="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab"/>
+        <org:siteAddress rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WenyixiluCampusAddress"/>
+        <org:siteOf rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab"/>
         <rdfs:label xml:lang="en">wenyixilu campus</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#WenyixiluCampusAddress -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#WenyixiluCampusAddress -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#WenyixiluCampusAddress">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#WenyixiluCampusAddress">
         <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <locn:addressArea rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">wenyixilu campus</locn:addressArea>
         <locn:fullAddress rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kechuang Avenue, Zhongtai Sub-District, Yuhang District, Hangzhou City, Zhejiang Province, 311121, P.R. China</locn:fullAddress>
@@ -837,29 +837,29 @@
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#ZheijiangLab -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#ZheijiangLab">
-        <rdf:type rdf:resource="http://www.zhejianglab.com/robot-center/organization#ResearchInsitute"/>
-        <org:changedBy rdf:resource="http://www.zhejianglab.com/robot-center/organization#HeadquarterRelocation"/>
-        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/organization#QinqinLong"/>
-        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/organization#WeiSong"/>
-        <org:hasPost rdf:resource="http://www.zhejianglab.com/robot-center/organization#AdvancedResearchStuff"/>
-        <org:hasPost rdf:resource="http://www.zhejianglab.com/robot-center/organization#ResearchExpert"/>
-        <org:hasPrimarySite rdf:resource="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus"/>
-        <org:hasRegisteredSite rdf:resource="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus"/>
-        <org:hasSite rdf:resource="http://www.zhejianglab.com/robot-center/organization#SouthernLakeCampus"/>
-        <org:hasSite rdf:resource="http://www.zhejianglab.com/robot-center/organization#WenyixiluCampus"/>
-        <org:hasUnit rdf:resource="http://www.zhejianglab.com/robot-center/organization#InterdisciplinaryInnovationInstitute"/>
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#ZheijiangLab">
+        <rdf:type rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchInsitute"/>
+        <org:changedBy rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#HeadquarterRelocation"/>
+        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#QinqinLong"/>
+        <org:hasMember rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WeiSong"/>
+        <org:hasPost rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#AdvancedResearchStuff"/>
+        <org:hasPost rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#ResearchExpert"/>
+        <org:hasPrimarySite rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus"/>
+        <org:hasRegisteredSite rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus"/>
+        <org:hasSite rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#SouthernLakeCampus"/>
+        <org:hasSite rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#WenyixiluCampus"/>
+        <org:hasUnit rdf:resource="http://www.zhejianglab.com/robot-center/org-lab.owl#InterdisciplinaryInnovationInstitute"/>
         <org:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Zhejiang Lab</org:identifier>
         <rdfs:label xml:lang="en">zhejiang lab</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.zhejianglab.com/robot-center/organization#member -->
+    <!-- http://www.zhejianglab.com/robot-center/org-lab.owl#member -->
 
-    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/organization#member">
+    <owl:NamedIndividual rdf:about="http://www.zhejianglab.com/robot-center/org-lab.owl#member">
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Role"/>
         <org:roleProperty rdf:resource="http://www.w3.org/ns/org#memberOf"/>
     </owl:NamedIndividual>
