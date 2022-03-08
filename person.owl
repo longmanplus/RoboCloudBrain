@@ -113,6 +113,8 @@
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/address">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Site"/>
         <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:ObjectProperty>
     
@@ -133,7 +135,7 @@
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/currentProject">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:comment>A current project this person works on.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label>current project</rdfs:label>
@@ -172,7 +174,8 @@
     <!-- http://xmlns.com/foaf/0.1/focus -->
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/focus">
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Discpline"/>
         <rdfs:comment>The underlying or &apos;focal&apos; entity associated with some SKOS-described concept.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label>focus</rdfs:label>
@@ -346,6 +349,8 @@
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/value">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Scoiety"/>
     </owl:ObjectProperty>
     
 
@@ -369,6 +374,8 @@
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/workplace">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment>工作地点</rdfs:comment>
         <rdfs:label xml:lang="cn">工作地点</rdfs:label>
     </owl:ObjectProperty>
@@ -383,6 +390,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
     
 
 
@@ -466,6 +481,8 @@
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/jobid">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -487,13 +504,18 @@
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/mailbox">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -501,6 +523,8 @@
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/phone">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -529,6 +553,8 @@
     <!-- http://xmlns.com/foaf/0.1/title -->
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/title">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>Title (Mr, Mrs, Ms, Dr. etc)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label>title</rdfs:label>
@@ -563,6 +589,12 @@
         <rdfs:label>Agent</rdfs:label>
         <vs:term_status>stable</vs:term_status>
     </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Discpline -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Discpline"/>
     
 
 
@@ -607,7 +639,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>An online account.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Online Account</rdfs:label>
+        <rdfs:label>Online account</rdfs:label>
         <vs:term_status>testing</vs:term_status>
     </owl:Class>
     
@@ -619,7 +651,7 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
         <rdfs:comment>An online chat account.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Online Chat Account</rdfs:label>
+        <rdfs:label xml:lang="en">Online chat account</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:Class>
     
@@ -631,7 +663,7 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
         <rdfs:comment>An online e-commerce account.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Online E-commerce Account</rdfs:label>
+        <rdfs:label>Online e-commerce account</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:Class>
     
@@ -667,7 +699,7 @@
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <rdfs:comment>A personal profile RDF document.</rdfs:comment>
-        <rdfs:label>PersonalProfileDocument</rdfs:label>
+        <rdfs:label xml:lang="en">Personal profile document</rdfs:label>
         <vs:term_status>testing</vs:term_status>
     </owl:Class>
     
@@ -682,6 +714,12 @@
     <!-- http://xmlns.com/foaf/0.1/Scoiety -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Scoiety"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Site -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Site"/>
     
 
 
@@ -718,6 +756,17 @@
             <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
             <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
             <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Scoiety"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Scoiety"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Site"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
