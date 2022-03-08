@@ -342,6 +342,14 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/value -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/weblog -->
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/weblog">
@@ -665,6 +673,18 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Scoiety -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Scoiety"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -678,6 +698,36 @@
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:comment>A name for some thing.</rdfs:comment>
         <vs:term_status>testing</vs:term_status>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Scoiety"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Scoiety"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
