@@ -1,0 +1,1879 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.zhejianglab.com/robot-center/discipline.owl#"
+     xml:base="http://www.zhejianglab.com/robot-center/discipline.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/AppliedScience -->
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/FormalSciences -->
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Agriculture -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Agriculture">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Algebra -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algebra">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Algebraic_computation -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algebraic_computation">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Analysis -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Anthropology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Anthropology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#AppliedPhysics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#AppliedPhysics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Mathematics"/>
+        <owl:disjointWith rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ApproximationTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ApproximationTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Archaeology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Archaeology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ArchitectureAndDesign -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ArchitectureAndDesign">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_neural_networks -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_neural_networks">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#AssignmentProblem -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#AssignmentProblem">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Automata_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Automata_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Automated_reasoning -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Automated_reasoning">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Biology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Biology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Business -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Business">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ChaosTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ChaosTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ChemicalEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ChemicalEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Chemistry -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Chemistry">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Cloud_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cloud_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Coastal_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Coastal_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Cognitive_science -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cognitive_science">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Combinatorics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Combinatorics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Community_informatics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Community_informatics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Compilers -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Compilers">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_languages"/>
+        <owl:disjointWith rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_paradigms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ComplexSystems -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComplexSystems">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computability_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computability_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ComputationTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComputationTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_biology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_biology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_chemistry -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_chemistry">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_complexity_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_complexity_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_economics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_economics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_finance -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_finance">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_geometry -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_geometry">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_mathematics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_mathematics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_neuroscience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_neuroscience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_number_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_number_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_physics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_physics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computational_sociology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_sociology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer-aided_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer-aided_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ComputerEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComputerEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ComputerScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComputerScience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_architecture -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_architecture">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
+        <owl:disjointWith rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_security -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_security">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Computer_vision -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_vision">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ConceptualSystems -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ConceptualSystems">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Concurrency_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Concurrency_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ContinuumMechanics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ContinuumMechanics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ControlSystemsEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ControlSystemsEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ControlTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ControlTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Cryptography -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cryptography">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_security"/>
+        <owl:disjointWith rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Fault-tolerant_computing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Cybernetics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cybernetics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Data_management -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_management">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Data_mining -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_mining">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Data_structures -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_structures">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Databases -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Databases">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#DecisionAnalysis -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#DecisionAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Digital_humanities -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Digital_humanities">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_algorithms -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Divinity -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Divinity">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#DynamicProgramming -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#DynamicProgramming">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#DynamicalSystems -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#DynamicalSystems">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#EarthScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EarthScience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Earthquake_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Earthquake_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Ecological_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Ecological_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Economics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Economics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Education -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Education">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#EducationalTechnology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EducationalTechnology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ElectronicEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ElectronicEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringPhysics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringPhysics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#EnvironmentalStudiesAndForestry -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EnvironmentalStudiesAndForestry">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Environmental_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Environmental_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Expert_systems -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Expert_systems">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Family_and_consumer_science -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Family_and_consumer_science">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Fault-tolerant_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Fault-tolerant_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#FluidMechanics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#FluidMechanics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Formal_methods -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Formal_methods">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#GameTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#GameTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Geography -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Geography">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Geometry_and_Topology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Geometry_and_Topology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Geotechnical_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Geotechnical_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#GraphTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#GraphTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Grid_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Grid_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_computing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#HeatTransfer -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#HeatTransfer">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#High-performance_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#High-performance_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_computing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#History -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#History">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#History_of_computer_hardware -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#History_of_computer_hardware">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#History_of_computer_science -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#History_of_computer_science">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Human-computer_interaction -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Human-computer_interaction">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#HumanPerformanceTechnology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#HumanPerformanceTechnology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EducationalTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Human_physical_performance_and_recreation -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Human_physical_performance_and_recreation">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Humanistic_informatics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Humanistic_informatics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Humanities -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Image_processing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Image_processing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics"/>
+        <owl:disjointWith rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Scientific_visualization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#IndustrialEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#IndustrialEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#InformationTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InformationTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Information_architecture -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_architecture">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Information_management -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_management">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Information_retrieval -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_retrieval">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Information_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#InstructionalDesign -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InstructionalDesign">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EducationalTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#InventoryTheory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InventoryTheory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Journalism -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Journalism">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#KnowledgeManagement -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#KnowledgeManagement">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EducationalTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Knowledge_management -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Knowledge_management">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#LanguagesAndLiterature -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#LanguagesAndLiterature">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Law -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Law">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#LibraryAndMuseumStudies -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#LibraryAndMuseumStudies">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#LinearProgramming -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#LinearProgramming">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Logic_programming -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_programming">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Machine_learning -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Machine_learning">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#ManufacturingEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ManufacturingEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MarineEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MarineEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MassTransfer -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MassTransfer">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MaterialsScienceAndEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MaterialsScienceAndEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MathematicalOptimization -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MathematicalOptimization">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MathematicalPhysics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MathematicalPhysics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Mathematical_logic_and_Foundations_of_mathematics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mathematical_logic_and_Foundations_of_mathematics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Mathematics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mathematics">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Mechatronics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mechatronics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MedicineAndHealth -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MedicineAndHealth">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#MilitarySciences -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MilitarySciences">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Multi-valued_logic -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Multi-valued_logic">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Multimedia -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Multimedia">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Nanoengineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Nanoengineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Natural_language_processing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Natural_language_processing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#NetworkScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#NetworkScience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Number_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Number_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#NumericalAnalysis -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#NumericalAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Numerical_analysis -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Numerical_analysis">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#OceanEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OceanEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Operating_systems -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Operating_systems">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#OpticalEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OpticalEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#OptimalMaintenance -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OptimalMaintenance">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_algorithms -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#PerformingArts -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PerformingArts">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Philosophy -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Philosophy">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Physics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Physics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#PoliticalScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PoliticalScience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#PowerEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PowerEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Probability_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Probability_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Programming_language_semantics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_language_semantics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Programming_languages -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_languages">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Programming_paradigms -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_paradigms">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_languages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Psychology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Psychology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Pure_mathematics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#QuantumComputing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#QuantumComputing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Quantum_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Quantum_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Randomized_algorithms -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Randomized_algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#RealOptionsAnalysis -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#RealOptionsAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Robotics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Robotics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Scheduling -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Scheduling">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Scientific_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Scientific_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Scientific_visualization -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Scientific_visualization">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Semiconductors -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Semiconductors">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#SocialWork -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SocialWork">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Sociology -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Sociology">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Software_engineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Software_engineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#SpaceScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SpaceScience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Statistics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Statistics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Applied_mathematics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#StochasticProcesses -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#StochasticProcesses">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#SystemsAnalysis -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#TelecommunicationsEngineering -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#TelecommunicationsEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Thermodynamics -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Thermodynamics">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Transportation -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Transportation">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Type_theory -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Type_theory">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Ubiquitous_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Ubiquitous_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#VisualArts -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#VisualArts">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#Wireless_computing -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Wireless_computing">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.zhejianglab.com/robot-center/discipline.owl#World_Wide_Web -->
+
+    <owl:Class rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#World_Wide_Web">
+        <rdfs:subClassOf rdf:resource="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+            <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Humanities"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#NaturalScience"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SocialScience"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Agriculture"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ArchitectureAndDesign"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Business"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Divinity"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Education"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EngineeringAndTechnology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EnvironmentalStudiesAndForestry"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Family_and_consumer_science"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Human_physical_performance_and_recreation"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Journalism"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#LibraryAndMuseumStudies"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MedicineAndHealth"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MilitarySciences"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SocialWork"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Transportation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algebra"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Analysis"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Geometry_and_Topology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mathematical_logic_and_Foundations_of_mathematics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Number_theory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Probability_theory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algebraic_computation"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Community_informatics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_biology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_chemistry"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_economics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_finance"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_mathematics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_neuroscience"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_number_theory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_physics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_sociology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer-aided_engineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_management"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_mining"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Databases"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Digital_humanities"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#History_of_computer_hardware"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#History_of_computer_science"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Humanistic_informatics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_architecture"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_management"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_retrieval"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Knowledge_management"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Multimedia"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Numerical_analysis"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Scientific_computing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_architecture"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_security"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_structures"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_computing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Human-computer_interaction"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Operating_systems"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_computing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_languages"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Quantum_computing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Software_engineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Theory_of_computation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_intelligence"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_application"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_architecture"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_communications"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_security"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Data_structures"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Algorithms"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_graphics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_in_computer_science"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Anthropology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Archaeology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Economics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Geography"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PoliticalScience"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Psychology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Sociology"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#AppliedPhysics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComputerEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComputerScience"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ControlSystemsEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InformationTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mechatronics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PowerEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#QuantumComputing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Robotics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Semiconductors"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#TelecommunicationsEngineering"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ApproximationTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Combinatorics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComputationTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cryptography"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#DynamicalSystems"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#GameTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#GraphTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InformationTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MathematicalPhysics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#NumericalAnalysis"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Statistics"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Artificial_neural_networks"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Automated_reasoning"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cognitive_science"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computer_vision"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Expert_systems"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Machine_learning"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Natural_language_processing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Robotics"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#AssignmentProblem"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#DecisionAnalysis"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#DynamicProgramming"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InventoryTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#LinearProgramming"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MathematicalOptimization"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OptimalMaintenance"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#RealOptionsAnalysis"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Scheduling"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#StochasticProcesses"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsAnalysis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Automata_theory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computability_theory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_complexity_theory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Concurrency_theory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Biology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Chemistry"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EarthScience"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Physics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SpaceScience"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ChaosTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ComplexSystems"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ConceptualSystems"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ControlTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cybernetics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#NetworkScience"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OperationsResearch"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ChemicalEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#CivilEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#EducationalTechnology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ElectricalEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MaterialsScienceAndEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MechanicalEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#SystemsScience"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Cloud_computing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Information_theory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Ubiquitous_computing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Wireless_computing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#World_Wide_Web"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Coastal_engineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Earthquake_engineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Ecological_engineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Environmental_engineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Geotechnical_engineering"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Computational_geometry"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Distributed_algorithms"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Parallel_algorithms"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Randomized_algorithms"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ContinuumMechanics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#FluidMechanics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#HeatTransfer"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#IndustrialEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#ManufacturingEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MarineEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#MassTransfer"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mechatronics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Nanoengineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OceanEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#OpticalEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Robotics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Thermodynamics"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Formal_methods"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Logic_programming"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Multi-valued_logic"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Programming_language_semantics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Type_theory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#History"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#LanguagesAndLiterature"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Law"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PerformingArts"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Philosophy"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#VisualArts"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#HumanPerformanceTechnology"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InstructionalDesign"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#KnowledgeManagement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#InformationTheory"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Mechatronics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#PowerEngineering"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#QuantumComputing"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Robotics"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#Semiconductors"/>
+            <rdf:Description rdf:about="http://www.zhejianglab.com/robot-center/discipline.owl#TelecommunicationsEngineering"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

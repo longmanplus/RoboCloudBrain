@@ -79,7 +79,7 @@
         <Class IRI="#Flipping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Floating_robot"/>
+        <Class IRI="#FloatingRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Flying_robots"/>
@@ -556,14 +556,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flat_spin_propulsive_planktonic_robot"/>
-        <Class IRI="#Floating_robot"/>
+        <Class IRI="#FloatingRobot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flipping"/>
         <Class IRI="#Manipulating"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Floating_robot"/>
+        <Class IRI="#FloatingRobot"/>
         <Class IRI="#Robot"/>
     </SubClassOf>
     <SubClassOf>
@@ -728,7 +728,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Other_Floating_robots"/>
-        <Class IRI="#Floating_robot"/>
+        <Class IRI="#FloatingRobot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Other_Flying_Tobots"/>
@@ -784,7 +784,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Propeller-Floating_robots"/>
-        <Class IRI="#Floating_robot"/>
+        <Class IRI="#FloatingRobot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Propeller_actuator"/>
@@ -1005,7 +1005,7 @@
         <Class IRI="#Propeller-Floating_robots"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Floating_robot"/>
+        <Class IRI="#FloatingRobot"/>
         <Class IRI="#Flying_robots"/>
         <Class IRI="#Legged_robot"/>
         <Class IRI="#Other-Motion_robot"/>
@@ -1409,7 +1409,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Floating_robot</IRI>
+        <IRI>#FloatingRobot</IRI>
+        <Literal xml:lang="en">Floating robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FloatingRobot</IRI>
         <Literal xml:lang="cn">浮游式机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
