@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.zhejianglab.com/robot-center/organization"
-     xml:base="http://www.zhejianglab.com/robot-center/organization"
+<rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#"
+     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,7 +12,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:org-lab="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#">
     <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab">
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
     </owl:Ontology>

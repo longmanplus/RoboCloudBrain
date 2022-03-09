@@ -9,6 +9,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:poap="http://purl.org/zhejianglab/irobot-center/ontologies/poap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ontologies="http://purl.org/zhejianglab/irobot-center/ontologies/">
     <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap">
