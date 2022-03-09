@@ -1,2 +1,2 @@
 # RoboCloudBrain
-A knowledge engine for robotics
+An ontological model for robotics
