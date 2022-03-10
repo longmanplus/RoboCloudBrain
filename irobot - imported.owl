@@ -1,0 +1,2020 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="irbt" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ApplicationSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArticleCollision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutonomousSubmersibleRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BipedRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodySkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CameraSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChasisActuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Closing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlComputer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delivering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisplayScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DriveActuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplainThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlatSpinPropulsivePlanktonicRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flipping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloatingRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlyingRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlidingFlyingRobots"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grasping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grounding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandThrownFlyingRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeadSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HelicopterRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Holding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human-machineInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntellectualSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interacting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractionInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JointSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserRadar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeftRight-PeristalticRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeggedRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegsActuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lifting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manipulating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemorySkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotionControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotionSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MovementSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MovingTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiNodeMultiTrackRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Navigating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Navigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OmnidirectionalRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneStageOneTrackRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patrolling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perceiving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PickingUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Placing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pouring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PropellerActuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pulling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pushing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuadrupedRobots"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiseUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotHardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeeOffThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlowDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeedUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speedometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Squeezing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SquirmyRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StealthRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Talking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThreeLeggedRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThreeWheelRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Throwing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TorqueTransducer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TowedSubmersibleRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackedRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrunAround"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Twist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwoLeggedTwoTrackRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwoWheelRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UWB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltrasonicSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpDownPeristalticRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WheeledRobot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#depend"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRobotChasis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRobotHand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRobotLeg"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAboveOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBehindOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBelowOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInCenterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInFrontOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInsideOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLeftOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNextTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOntopOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlanFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRightOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#near"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#require"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requireSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#X"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Y"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Z"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDataValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocalizationVector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientationVector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasParameters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPostState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPreState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xiaozhi"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ApplicationSoftware"/>
+        <Class IRI="#RobotSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArticleCollision"/>
+        <Class IRI="#ExternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomousSubmersibleRobot"/>
+        <Class IRI="#StealthRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barometer"/>
+        <Class IRI="#InternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BipedRobot"/>
+        <Class IRI="#LeggedRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodySkill"/>
+        <Class IRI="#MotionSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CameraSensor"/>
+        <Class IRI="#ExternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catching"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChasisActuator"/>
+        <Class IRI="#DriveActuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Closing"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonSoftware"/>
+        <Class IRI="#RobotSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationTask"/>
+        <Class IRI="#RobotTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlComputer"/>
+        <Class IRI="#RobotHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionMaking"/>
+        <Class IRI="#IntellectualSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delivering"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisplayScreen"/>
+        <Class IRI="#InteractionInterface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DriveActuator"/>
+        <Class IRI="#RobotHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplainThing"/>
+        <Class IRI="#Interacting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalSensor"/>
+        <Class IRI="#RobotHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlatSpinPropulsivePlanktonicRobot"/>
+        <Class IRI="#FloatingRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flipping"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloatingRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlyingRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlidingFlyingRobots"/>
+        <Class IRI="#FlyingRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grasping"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grounding"/>
+        <Class IRI="#IntellectualSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandSkill"/>
+        <Class IRI="#MotionSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandThrownFlyingRobot"/>
+        <Class IRI="#FlyingRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeadSkill"/>
+        <Class IRI="#MotionSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HelicopterRobot"/>
+        <Class IRI="#FlyingRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Holding"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human-machineInteraction"/>
+        <Class IRI="#CommonSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageProcessing"/>
+        <Class IRI="#ApplicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imu"/>
+        <Class IRI="#InternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntellectualSkill"/>
+        <Class IRI="#RobotSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interacting"/>
+        <Class IRI="#PhysicalTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractionInterface"/>
+        <Class IRI="#RobotHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalSensor"/>
+        <Class IRI="#RobotHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JointSkill"/>
+        <Class IRI="#HandSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserRadar"/>
+        <Class IRI="#ExternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leading"/>
+        <Class IRI="#Interacting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeftRight-PeristalticRobot"/>
+        <Class IRI="#SquirmyRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeggedRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegsActuator"/>
+        <Class IRI="#DriveActuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lifting"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#ApplicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manipulating"/>
+        <Class IRI="#PhysicalTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemorySkill"/>
+        <Class IRI="#IntellectualSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotionControl"/>
+        <Class IRI="#CommonSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotionSkill"/>
+        <Class IRI="#RobotSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovementSkill"/>
+        <Class IRI="#MotionSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovingTo"/>
+        <Class IRI="#Navigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiNodeMultiTrackRobot"/>
+        <Class IRI="#TrackedRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Navigating"/>
+        <Class IRI="#PhysicalTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Navigation"/>
+        <Class IRI="#ApplicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OmnidirectionalRobot"/>
+        <Class IRI="#WheeledRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneStageOneTrackRobot"/>
+        <Class IRI="#TrackedRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opening"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperatingSystem"/>
+        <Class IRI="#CommonSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patrolling"/>
+        <Class IRI="#Interacting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perceiving"/>
+        <Class IRI="#PhysicalTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception"/>
+        <Class IRI="#IntellectualSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTask"/>
+        <Class IRI="#RobotTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickingUp"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Placing"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pouring"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PropellerActuator"/>
+        <Class IRI="#DriveActuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pulling"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pushing"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuadrupedRobots"/>
+        <Class IRI="#LeggedRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiseUp"/>
+        <Class IRI="#HeadSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotHardware"/>
+        <Class IRI="#RobotComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotSoftware"/>
+        <Class IRI="#RobotComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeeOffThing"/>
+        <Class IRI="#Interacting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlowDown"/>
+        <Class IRI="#MovementSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeedUp"/>
+        <Class IRI="#MovementSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speedometer"/>
+        <Class IRI="#InternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squeezing"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SquirmyRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StealthRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stop"/>
+        <Class IRI="#MovementSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Talking"/>
+        <Class IRI="#Interacting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThreeLeggedRobot"/>
+        <Class IRI="#LeggedRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThreeWheelRobot"/>
+        <Class IRI="#WheeledRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Throwing"/>
+        <Class IRI="#Manipulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TorqueTransducer"/>
+        <Class IRI="#InternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TowedSubmersibleRobot"/>
+        <Class IRI="#StealthRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrackedRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrunAround"/>
+        <Class IRI="#HeadSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Twist"/>
+        <Class IRI="#BodySkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoLeggedTwoTrackRobot"/>
+        <Class IRI="#TrackedRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoWheelRobot"/>
+        <Class IRI="#WheeledRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UWB"/>
+        <Class IRI="#ExternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UltrasonicSensor"/>
+        <Class IRI="#ExternalSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpDownPeristalticRobot"/>
+        <Class IRI="#SquirmyRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voice"/>
+        <Class IRI="#ApplicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WheeledRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ApplicationSoftware"/>
+        <Class IRI="#CommonSoftware"/>
+        <Class IRI="#OperatingSystem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ArticleCollision"/>
+        <Class IRI="#CameraSensor"/>
+        <Class IRI="#LaserRadar"/>
+        <Class IRI="#UWB"/>
+        <Class IRI="#UltrasonicSensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Barometer"/>
+        <Class IRI="#Imu"/>
+        <Class IRI="#Speedometer"/>
+        <Class IRI="#TorqueTransducer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BodySkill"/>
+        <Class IRI="#HandSkill"/>
+        <Class IRI="#HeadSkill"/>
+        <Class IRI="#MovementSkill"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Catching"/>
+        <Class IRI="#Closing"/>
+        <Class IRI="#Delivering"/>
+        <Class IRI="#Flipping"/>
+        <Class IRI="#Grasping"/>
+        <Class IRI="#Holding"/>
+        <Class IRI="#Lifting"/>
+        <Class IRI="#Opening"/>
+        <Class IRI="#PickingUp"/>
+        <Class IRI="#Placing"/>
+        <Class IRI="#Pouring"/>
+        <Class IRI="#Pulling"/>
+        <Class IRI="#Pushing"/>
+        <Class IRI="#Squeezing"/>
+        <Class IRI="#Throwing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Catching"/>
+        <Class IRI="#Closing"/>
+        <Class IRI="#Delivering"/>
+        <Class IRI="#Flipping"/>
+        <Class IRI="#Lifting"/>
+        <Class IRI="#Opening"/>
+        <Class IRI="#Pouring"/>
+        <Class IRI="#Pulling"/>
+        <Class IRI="#Pushing"/>
+        <Class IRI="#Squeezing"/>
+        <Class IRI="#Throwing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChasisActuator"/>
+        <Class IRI="#LegsActuator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChasisActuator"/>
+        <Class IRI="#LegsActuator"/>
+        <Class IRI="#PropellerActuator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Human-machineInteraction"/>
+        <Class IRI="#MotionControl"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ImageProcessing"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Navigation"/>
+        <Class IRI="#Voice"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RiseUp"/>
+        <Class IRI="#TrunAround"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SlowDown"/>
+        <Class IRI="#SpeedUp"/>
+        <Class IRI="#Stop"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpeedUp"/>
+        <Class IRI="#Stop"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Robot"/>
+        <NamedIndividual IRI="#xiaozhi"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectedTo"/>
+        <ObjectProperty IRI="#location"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#depend"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRobotChasis"/>
+        <ObjectProperty IRI="#hasComponent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRobotHand"/>
+        <ObjectProperty IRI="#hasComponent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRobotLeg"/>
+        <ObjectProperty IRI="#hasComponent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSkill"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAboveOf"/>
+        <ObjectProperty IRI="#location"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBehindOf"/>
+        <ObjectProperty IRI="#isNextTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBelowOf"/>
+        <ObjectProperty IRI="#isNextTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInCenterOf"/>
+        <ObjectProperty IRI="#location"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInFrontOf"/>
+        <ObjectProperty IRI="#isNextTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInsideOf"/>
+        <ObjectProperty IRI="#location"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLeftOf"/>
+        <ObjectProperty IRI="#isNextTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isNextTo"/>
+        <ObjectProperty IRI="#location"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOntopOf"/>
+        <ObjectProperty IRI="#isNextTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartof"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPlanFor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRightOf"/>
+        <ObjectProperty IRI="#isNextTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#location"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#near"/>
+        <ObjectProperty IRI="#location"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#require"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requireSkill"/>
+        <ObjectProperty IRI="#require"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBehindOf"/>
+        <ObjectProperty IRI="#isInFrontOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBelowOf"/>
+        <ObjectProperty IRI="#isOntopOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLeftOf"/>
+        <ObjectProperty IRI="#isRightOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectedTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#depend"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <Class IRI="#RobotTask"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRobotChasis"/>
+        <Class IRI="#WheeledRobot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRobotHand"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRobotLeg"/>
+        <Class IRI="#LeggedRobot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSkill"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAboveOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInCenterOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInsideOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNextTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartof"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlanFor"/>
+        <Class IRI="#RobotSkill"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#near"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#require"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requireSkill"/>
+        <Class IRI="#RobotTask"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectedTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#depend"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRobotChasis"/>
+        <Class IRI="#ChasisActuator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRobotHand"/>
+        <Class IRI="#DriveActuator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRobotLeg"/>
+        <Class IRI="#LegsActuator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSkill"/>
+        <Class IRI="#RobotSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAboveOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInCenterOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInsideOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNextTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartof"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlanFor"/>
+        <Class IRI="#RobotTask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#near"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#require"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requireSkill"/>
+        <Class IRI="#RobotSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#X"/>
+        <DataProperty IRI="#hasLocalizationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Y"/>
+        <DataProperty IRI="#hasLocalizationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Z"/>
+        <DataProperty IRI="#hasLocalizationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDataValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDescription"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasFeature"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLocalizationVector"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOrientationVector"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasParameters"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPostState"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPreState"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFeature"/>
+        <Class IRI="#Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLocalizationVector"/>
+        <Class IRI="#RobotComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasParameters"/>
+        <Class IRI="#RobotSkill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasParameters"/>
+        <Class IRI="#RobotTask"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPostState"/>
+        <Class IRI="#RobotTask"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPreState"/>
+        <Class IRI="#RobotTask"/>
+    </DataPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ApplicationSoftware</IRI>
+        <Literal xml:lang="en">Application software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ApplicationSoftware</IRI>
+        <Literal xml:lang="cn">应用软件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ArticleCollision</IRI>
+        <Literal xml:lang="en">Article collision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ArticleCollision</IRI>
+        <Literal xml:lang="cn">碰撞条</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AutonomousSubmersibleRobot</IRI>
+        <Literal xml:lang="en">Autonomous submersible robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AutonomousSubmersibleRobot</IRI>
+        <Literal xml:lang="cn">自主潜游机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Barometer</IRI>
+        <Literal xml:lang="cn">气压计</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BipedRobot</IRI>
+        <Literal xml:lang="en">Biped robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BipedRobot</IRI>
+        <Literal xml:lang="cn">双足机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BodySkill</IRI>
+        <Literal xml:lang="en">Body skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BodySkill</IRI>
+        <Literal xml:lang="cn">躯干技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CameraSensor</IRI>
+        <Literal xml:lang="en">Camera sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CameraSensor</IRI>
+        <Literal xml:lang="cn">摄像头传感器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChasisActuator</IRI>
+        <Literal xml:lang="en">Chasis actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChasisActuator</IRI>
+        <Literal xml:lang="cn">底盘驱动器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommonSoftware</IRI>
+        <Literal xml:lang="en">Common software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommonSoftware</IRI>
+        <Literal xml:lang="cn">通用软件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommunicationTask</IRI>
+        <Literal xml:lang="en">A Task in which two or more Agents exchange information. A CommunicationTask classifies only Events that have only Agents and Social objects as participants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommunicationTask</IRI>
+        <Literal xml:lang="en">Communication task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommunicationTask</IRI>
+        <Literal xml:lang="cn">通信任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlComputer</IRI>
+        <Literal xml:lang="en">Control computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlComputer</IRI>
+        <Literal xml:lang="cn">中央控制器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecisionMaking</IRI>
+        <Literal xml:lang="en">Decision making</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecisionMaking</IRI>
+        <Literal xml:lang="en">DecisionMaking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecisionMaking</IRI>
+        <Literal xml:lang="cn">决策</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DisplayScreen</IRI>
+        <Literal xml:lang="en">Display screen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DisplayScreen</IRI>
+        <Literal xml:lang="cn">显示屏幕</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DriveActuator</IRI>
+        <Literal xml:lang="en">Drive actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DriveActuator</IRI>
+        <Literal xml:lang="cn">驱动器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExplainThing</IRI>
+        <Literal xml:lang="en">Explain thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExplainThing</IRI>
+        <Literal xml:lang="cn">介绍讲解</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExternalSensor</IRI>
+        <Literal xml:lang="en">External sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExternalSensor</IRI>
+        <Literal xml:lang="cn">外部传感器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlatSpinPropulsivePlanktonicRobot</IRI>
+        <Literal xml:lang="en">Flat spin propulsive planktonic robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlatSpinPropulsivePlanktonicRobot</IRI>
+        <Literal xml:lang="cn">平旋推进浮游机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FloatingRobot</IRI>
+        <Literal xml:lang="en">Floating robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FloatingRobot</IRI>
+        <Literal xml:lang="cn">浮游式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlyingRobot</IRI>
+        <Literal xml:lang="en">Flying robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlyingRobot</IRI>
+        <Literal xml:lang="cn">飞行式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlidingFlyingRobots</IRI>
+        <Literal xml:lang="en">Gliding flying robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlidingFlyingRobots</IRI>
+        <Literal xml:lang="cn">滑行飞行机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grounding</IRI>
+        <Literal xml:lang="en">Grounding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HandSkill</IRI>
+        <Literal xml:lang="en">Hand skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HandSkill</IRI>
+        <Literal xml:lang="cn">手臂技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HandThrownFlyingRobot</IRI>
+        <Literal xml:lang="en">Hand-Thrown flying robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HandThrownFlyingRobot</IRI>
+        <Literal xml:lang="cn">手抛飞行机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HeadSkill</IRI>
+        <Literal>Head skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HeadSkill</IRI>
+        <Literal xml:lang="cn">头部技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HelicopterRobot</IRI>
+        <Literal xml:lang="en">Helicopter robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HelicopterRobot</IRI>
+        <Literal xml:lang="cn">直升飞行机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Human-machineInteraction</IRI>
+        <Literal xml:lang="en">Human-machine interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Human-machineInteraction</IRI>
+        <Literal xml:lang="cn">人机交互系统</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageProcessing</IRI>
+        <Literal xml:lang="en">Image processing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageProcessing</IRI>
+        <Literal xml:lang="cn">图像处理软件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Imu</IRI>
+        <Literal xml:lang="cn">惯性传感器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntellectualSkill</IRI>
+        <Literal xml:lang="en">Intellectual skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntellectualSkill</IRI>
+        <Literal xml:lang="cn">智力技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Interacting</IRI>
+        <Literal xml:lang="cn">交互类任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InteractionInterface</IRI>
+        <Literal xml:lang="en">Interaction interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InteractionInterface</IRI>
+        <Literal xml:lang="cn">交互界面</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InternalSensor</IRI>
+        <Literal xml:lang="en">Internal sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InternalSensor</IRI>
+        <Literal xml:lang="cn">内部传感器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JointSkill</IRI>
+        <Literal xml:lang="en">Joint skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JointSkill</IRI>
+        <Literal xml:lang="cn">关节技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LaserRadar</IRI>
+        <Literal xml:lang="en">Laser radar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LaserRadar</IRI>
+        <Literal xml:lang="cn">激光雷达</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LeftRight-PeristalticRobot</IRI>
+        <Literal xml:lang="en">LeftRight peristaltic robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LeftRight-PeristalticRobot</IRI>
+        <Literal xml:lang="cn">左右蠕动机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LeggedRobot</IRI>
+        <Literal xml:lang="en">Legged robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LeggedRobot</IRI>
+        <Literal xml:lang="cn">足腿式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LegsActuator</IRI>
+        <Literal xml:lang="en">Legs actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LegsActuator</IRI>
+        <Literal xml:lang="cn">足式驱动器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="cn">定位系统</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manipulating</IRI>
+        <Literal xml:lang="cn">操作类任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MemorySkill</IRI>
+        <Literal xml:lang="en">Memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MemorySkill</IRI>
+        <Literal xml:lang="cn">记忆</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MotionControl</IRI>
+        <Literal xml:lang="en">Motion control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MotionControl</IRI>
+        <Literal xml:lang="cn">运动控制系统</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MotionSkill</IRI>
+        <Literal xml:lang="en">Motion skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MotionSkill</IRI>
+        <Literal xml:lang="cn">运动技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MovementSkill</IRI>
+        <Literal xml:lang="en">Movement skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MovementSkill</IRI>
+        <Literal xml:lang="cn">移动技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MovingTo</IRI>
+        <Literal xml:lang="en">Moving to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MovingTo</IRI>
+        <Literal xml:lang="cn">移动</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MultiNodeMultiTrackRobot</IRI>
+        <Literal xml:lang="en">Multi node multi track robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MultiNodeMultiTrackRobot</IRI>
+        <Literal xml:lang="cn">多节多履机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Navigating</IRI>
+        <Literal xml:lang="cn">导航类任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Navigation</IRI>
+        <Literal xml:lang="cn">导航系统</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OmnidirectionalRobot</IRI>
+        <Literal xml:lang="en">Omnidirectional robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OmnidirectionalRobot</IRI>
+        <Literal xml:lang="cn">全方位驱动机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OneStageOneTrackRobot</IRI>
+        <Literal xml:lang="en">One stage one track tobot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OneStageOneTrackRobot</IRI>
+        <Literal xml:lang="cn">单节双履机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal xml:lang="en">Operating system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal xml:lang="cn">操作系统</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Perceiving</IRI>
+        <Literal xml:lang="cn">感知类任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Perception</IRI>
+        <Literal xml:lang="en">Perception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Perception</IRI>
+        <Literal xml:lang="cn">感知</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalTask</IRI>
+        <Literal xml:lang="en">A task in which a PhysicalAgent affects some physical object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalTask</IRI>
+        <Literal xml:lang="en">Physical task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalTask</IRI>
+        <Literal xml:lang="cn">物理任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PickingUp</IRI>
+        <Literal xml:lang="en">Picking up</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PickingUp</IRI>
+        <Literal xml:lang="cn">抓起</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PropellerActuator</IRI>
+        <Literal xml:lang="en">Propeller actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PropellerActuator</IRI>
+        <Literal xml:lang="cn">螺旋驱动器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QuadrupedRobots</IRI>
+        <Literal xml:lang="en">Quadruped robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QuadrupedRobots</IRI>
+        <Literal xml:lang="cn">四足机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiseUp</IRI>
+        <Literal>Rise up</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Robot</IRI>
+        <Literal xml:lang="en">Robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Robot</IRI>
+        <Literal xml:lang="cn">机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotComponent</IRI>
+        <Literal xml:lang="en">Robot component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotComponent</IRI>
+        <Literal xml:lang="cn">机器人组件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotHardware</IRI>
+        <Literal xml:lang="en">Robot hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotHardware</IRI>
+        <Literal xml:lang="cn">机器人硬件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotSkill</IRI>
+        <Literal xml:lang="en">Robot skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotSkill</IRI>
+        <Literal xml:lang="cn">机器人技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotSoftware</IRI>
+        <Literal xml:lang="en">Robot software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotSoftware</IRI>
+        <Literal xml:lang="cn">机器人软件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RobotTask</IRI>
+        <Literal xml:lang="cn">描述机器人任务，定义机器人可以执行的任务分类、任务属性等</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotTask</IRI>
+        <Literal xml:lang="en">Robot task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RobotTask</IRI>
+        <Literal xml:lang="cn">机器人任务</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeeOffThing</IRI>
+        <Literal xml:lang="en">See off thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeeOffThing</IRI>
+        <Literal xml:lang="cn">送别</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SlowDown</IRI>
+        <Literal>Slow down</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpeedUp</IRI>
+        <Literal>Speed up</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Speedometer</IRI>
+        <Literal xml:lang="cn">里程计</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SquirmyRobot</IRI>
+        <Literal xml:lang="en">Squirmy robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SquirmyRobot</IRI>
+        <Literal xml:lang="cn">蠕动式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StealthRobot</IRI>
+        <Literal xml:lang="en">Stealth Robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StealthRobot</IRI>
+        <Literal xml:lang="cn">潜游式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThreeLeggedRobot</IRI>
+        <Literal xml:lang="en">Three legged robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThreeLeggedRobot</IRI>
+        <Literal xml:lang="cn">三足机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThreeWheelRobot</IRI>
+        <Literal xml:lang="en">Three wheel robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThreeWheelRobot</IRI>
+        <Literal xml:lang="cn">三轮驱动机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TorqueTransducer</IRI>
+        <Literal xml:lang="en">Torque transducer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TorqueTransducer</IRI>
+        <Literal xml:lang="cn">力矩传感器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TowedSubmersibleRobot</IRI>
+        <Literal xml:lang="en">Towed submersible robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TowedSubmersibleRobot</IRI>
+        <Literal xml:lang="cn">拖曳潜游机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrackedRobot</IRI>
+        <Literal xml:lang="en">Tracked robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrackedRobot</IRI>
+        <Literal xml:lang="cn">履带式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrunAround</IRI>
+        <Literal>Trun around</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TwoLeggedTwoTrackRobot</IRI>
+        <Literal xml:lang="en">Two legged two track robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TwoLeggedTwoTrackRobot</IRI>
+        <Literal xml:lang="cn">双节双履机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TwoWheelRobot</IRI>
+        <Literal xml:lang="en">Two wheel robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TwoWheelRobot</IRI>
+        <Literal xml:lang="cn">双轮驱动机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UWB</IRI>
+        <Literal xml:lang="cn">uwb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UltrasonicSensor</IRI>
+        <Literal xml:lang="en">Ultrasonic sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UltrasonicSensor</IRI>
+        <Literal xml:lang="cn">超声波传感器</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UpDownPeristalticRobot</IRI>
+        <Literal xml:lang="en">UpDown peristaltic robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UpDownPeristalticRobot</IRI>
+        <Literal xml:lang="cn">上下蠕动机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Voice</IRI>
+        <Literal xml:lang="cn">语音系统</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WheeledRobot</IRI>
+        <Literal xml:lang="en">Wheeled robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WheeledRobot</IRI>
+        <Literal xml:lang="cn">轮式机器人</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
