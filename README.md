@@ -1,9 +1,9 @@
 # RoboCloudBrain
-An ontological model for robotics
-
-# High-Performance Biped Robot project
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+An ontological model for robotics
+
+## High-Performance Biped Robot project
 The High-Performance Biped Robot project in Intelligent Robotic Research Center of [Zhejiang Lab](https://en.zhejianglab.com/about/overview/) is created to do research in robot autonomous operation, intelligent decision making, and intuitive human-machine interaction in unstructured environments. The project is composed of engineers and researchers in auditory and visual signal procesing, natural language processing, robot task understanding and planning, ontology engineering, knowledge representation and reasoning to coordinate for efficient research in different groups.
 
 
