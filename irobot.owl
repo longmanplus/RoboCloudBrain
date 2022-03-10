@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -19,13 +20,13 @@
         <Class IRI="#ArticleCollision"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AutonomousSubmersibleRobots"/>
+        <Class IRI="#AutonomousSubmersibleRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Barometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BipedRobots"/>
+        <Class IRI="#BipedRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BodySkill"/>
@@ -79,7 +80,7 @@
         <Class IRI="#FloatingRobot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FlyingRobots"/>
+        <Class IRI="#FlyingRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GlidingFlyingRobots"/>
@@ -94,13 +95,13 @@
         <Class IRI="#HandSkill"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HandThrownFlyingRobots"/>
+        <Class IRI="#HandThrownFlyingRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HeadSkill"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HelicopterRobots"/>
+        <Class IRI="#HelicopterRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Holding"/>
@@ -136,7 +137,7 @@
         <Class IRI="#Leading"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LeftRight-PeristalticRobots"/>
+        <Class IRI="#LeftRight-PeristalticRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LeggedRobot"/>
@@ -169,7 +170,7 @@
         <Class IRI="#MovingTo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MultiNodeMultiTrackRobots"/>
+        <Class IRI="#MultiNodeMultiTrackRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Navigating"/>
@@ -178,10 +179,10 @@
         <Class IRI="#Navigation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OmnidirectionalRobots"/>
+        <Class IRI="#OmnidirectionalRobot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OneStageOneTrackRobots"/>
+        <Class IRI="#OneStageOneTrackRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Opening"/>
@@ -271,10 +272,10 @@
         <Class IRI="#Talking"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ThreeLeggedRobots"/>
+        <Class IRI="#ThreeLeggedRobot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ThreeWheelRobots"/>
+        <Class IRI="#ThreeWheelRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Throwing"/>
@@ -283,7 +284,7 @@
         <Class IRI="#TorqueTransducer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TowedSubmersibleRobots"/>
+        <Class IRI="#TowedSubmersibleRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TrackedRobot"/>
@@ -295,10 +296,10 @@
         <Class IRI="#Twist"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TwoLeggedTwoTrackRobots"/>
+        <Class IRI="#TwoLeggedTwoTrackRobot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TwoWheelRobots"/>
+        <Class IRI="#TwoWheelRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UWB"/>
@@ -307,7 +308,7 @@
         <Class IRI="#UltrasonicSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UpDownPeristalticRobots"/>
+        <Class IRI="#UpDownPeristalticRobot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Voice"/>
@@ -438,7 +439,7 @@
         <Class IRI="#ExternalSensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AutonomousSubmersibleRobots"/>
+        <Class IRI="#AutonomousSubmersibleRobot"/>
         <Class IRI="#StealthRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -446,7 +447,7 @@
         <Class IRI="#InternalSensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BipedRobots"/>
+        <Class IRI="#BipedRobot"/>
         <Class IRI="#LeggedRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -518,12 +519,12 @@
         <Class IRI="#Robot"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FlyingRobots"/>
+        <Class IRI="#FlyingRobot"/>
         <Class IRI="#Robot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GlidingFlyingRobots"/>
-        <Class IRI="#FlyingRobots"/>
+        <Class IRI="#FlyingRobot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Grasping"/>
@@ -538,16 +539,16 @@
         <Class IRI="#MotionSkill"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HandThrownFlyingRobots"/>
-        <Class IRI="#FlyingRobots"/>
+        <Class IRI="#HandThrownFlyingRobot"/>
+        <Class IRI="#FlyingRobot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HeadSkill"/>
         <Class IRI="#MotionSkill"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HelicopterRobots"/>
-        <Class IRI="#FlyingRobots"/>
+        <Class IRI="#HelicopterRobot"/>
+        <Class IRI="#FlyingRobot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Holding"/>
@@ -594,7 +595,7 @@
         <Class IRI="#Interacting"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LeftRight-PeristalticRobots"/>
+        <Class IRI="#LeftRight-PeristalticRobot"/>
         <Class IRI="#SquirmyRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -638,7 +639,7 @@
         <Class IRI="#Navigating"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MultiNodeMultiTrackRobots"/>
+        <Class IRI="#MultiNodeMultiTrackRobot"/>
         <Class IRI="#TrackedRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -650,11 +651,11 @@
         <Class IRI="#ApplicationSoftware"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OmnidirectionalRobots"/>
+        <Class IRI="#OmnidirectionalRobot"/>
         <Class IRI="#WheeledRobot"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OneStageOneTrackRobots"/>
+        <Class IRI="#OneStageOneTrackRobot"/>
         <Class IRI="#TrackedRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -758,11 +759,11 @@
         <Class IRI="#Interacting"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ThreeLeggedRobots"/>
+        <Class IRI="#ThreeLeggedRobot"/>
         <Class IRI="#LeggedRobot"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ThreeWheelRobots"/>
+        <Class IRI="#ThreeWheelRobot"/>
         <Class IRI="#WheeledRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -774,7 +775,7 @@
         <Class IRI="#InternalSensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TowedSubmersibleRobots"/>
+        <Class IRI="#TowedSubmersibleRobot"/>
         <Class IRI="#StealthRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -790,11 +791,11 @@
         <Class IRI="#BodySkill"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TwoLeggedTwoTrackRobots"/>
+        <Class IRI="#TwoLeggedTwoTrackRobot"/>
         <Class IRI="#TrackedRobot"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TwoWheelRobots"/>
+        <Class IRI="#TwoWheelRobot"/>
         <Class IRI="#WheeledRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -806,7 +807,7 @@
         <Class IRI="#ExternalSensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UpDownPeristalticRobots"/>
+        <Class IRI="#UpDownPeristalticRobot"/>
         <Class IRI="#SquirmyRobot"/>
     </SubClassOf>
     <SubClassOf>
@@ -1273,12 +1274,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AutonomousSubmersibleRobots</IRI>
-        <Literal xml:lang="en">Autonomous submersible robots</Literal>
+        <IRI>#AutonomousSubmersibleRobot</IRI>
+        <Literal xml:lang="en">Autonomous submersible robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AutonomousSubmersibleRobots</IRI>
+        <IRI>#AutonomousSubmersibleRobot</IRI>
         <Literal xml:lang="cn">自主潜游机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1288,12 +1289,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BipedRobots</IRI>
-        <Literal xml:lang="en">Biped robots</Literal>
+        <IRI>#BipedRobot</IRI>
+        <Literal xml:lang="en">Biped robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BipedRobots</IRI>
+        <IRI>#BipedRobot</IRI>
         <Literal xml:lang="cn">双足机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1438,18 +1439,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#FlyingRobots</IRI>
-        <Literal xml:lang="en">Flying robots</Literal>
+        <IRI>#FlyingRobot</IRI>
+        <Literal xml:lang="en">Flying robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#FlyingRobots</IRI>
+        <IRI>#FlyingRobot</IRI>
         <Literal xml:lang="cn">飞行式机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GlidingFlyingRobots</IRI>
-        <Literal xml:lang="en">Gliding flying robots</Literal>
+        <Literal xml:lang="en">Gliding flying robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1473,12 +1474,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HandThrownFlyingRobots</IRI>
-        <Literal xml:lang="en">Hand-Thrown flying robots</Literal>
+        <IRI>#HandThrownFlyingRobot</IRI>
+        <Literal xml:lang="en">Hand-Thrown flying robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HandThrownFlyingRobots</IRI>
+        <IRI>#HandThrownFlyingRobot</IRI>
         <Literal xml:lang="cn">手抛飞行机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1493,12 +1494,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HelicopterRobots</IRI>
-        <Literal xml:lang="en">Helicopter robots</Literal>
+        <IRI>#HelicopterRobot</IRI>
+        <Literal xml:lang="en">Helicopter robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HelicopterRobots</IRI>
+        <IRI>#HelicopterRobot</IRI>
         <Literal xml:lang="cn">直升飞行机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1583,12 +1584,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LeftRight-PeristalticRobots</IRI>
-        <Literal xml:lang="en">LeftRight peristaltic robots</Literal>
+        <IRI>#LeftRight-PeristalticRobot</IRI>
+        <Literal xml:lang="en">LeftRight peristaltic robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LeftRight-PeristalticRobots</IRI>
+        <IRI>#LeftRight-PeristalticRobot</IRI>
         <Literal xml:lang="cn">左右蠕动机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1673,12 +1674,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MultiNodeMultiTrackRobots</IRI>
-        <Literal xml:lang="en">Multi node multi track robots</Literal>
+        <IRI>#MultiNodeMultiTrackRobot</IRI>
+        <Literal xml:lang="en">Multi node multi track robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MultiNodeMultiTrackRobots</IRI>
+        <IRI>#MultiNodeMultiTrackRobot</IRI>
         <Literal xml:lang="cn">多节多履机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1693,22 +1694,22 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OmnidirectionalRobots</IRI>
-        <Literal xml:lang="en">Omnidirectional robots</Literal>
+        <IRI>#OmnidirectionalRobot</IRI>
+        <Literal xml:lang="en">Omnidirectional robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OmnidirectionalRobots</IRI>
+        <IRI>#OmnidirectionalRobot</IRI>
         <Literal xml:lang="cn">全方位驱动机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OneStageOneTrackRobots</IRI>
-        <Literal xml:lang="en">One stage one track tobots</Literal>
+        <IRI>#OneStageOneTrackRobot</IRI>
+        <Literal xml:lang="en">One stage one track tobot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OneStageOneTrackRobots</IRI>
+        <IRI>#OneStageOneTrackRobot</IRI>
         <Literal xml:lang="cn">单节双履机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1774,7 +1775,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#QuadrupedRobots</IRI>
-        <Literal xml:lang="en">Quadruped robots</Literal>
+        <Literal xml:lang="en">Quadruped robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1898,22 +1899,22 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ThreeLeggedRobots</IRI>
-        <Literal xml:lang="en">Three legged robots</Literal>
+        <IRI>#ThreeLeggedRobot</IRI>
+        <Literal xml:lang="en">Three legged robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ThreeLeggedRobots</IRI>
+        <IRI>#ThreeLeggedRobot</IRI>
         <Literal xml:lang="cn">三足机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ThreeWheelRobots</IRI>
-        <Literal xml:lang="en">Three wheel robots</Literal>
+        <IRI>#ThreeWheelRobot</IRI>
+        <Literal xml:lang="en">Three wheel robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ThreeWheelRobots</IRI>
+        <IRI>#ThreeWheelRobot</IRI>
         <Literal xml:lang="cn">三轮驱动机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1928,12 +1929,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TowedSubmersibleRobots</IRI>
-        <Literal xml:lang="en">Towed submersible robots</Literal>
+        <IRI>#TowedSubmersibleRobot</IRI>
+        <Literal xml:lang="en">Towed submersible robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TowedSubmersibleRobots</IRI>
+        <IRI>#TowedSubmersibleRobot</IRI>
         <Literal xml:lang="cn">拖曳潜游机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1953,22 +1954,22 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TwoLeggedTwoTrackRobots</IRI>
-        <Literal xml:lang="en">Two legged two track robots</Literal>
+        <IRI>#TwoLeggedTwoTrackRobot</IRI>
+        <Literal xml:lang="en">Two legged two track robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TwoLeggedTwoTrackRobots</IRI>
+        <IRI>#TwoLeggedTwoTrackRobot</IRI>
         <Literal xml:lang="cn">双节双履机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TwoWheelRobots</IRI>
-        <Literal xml:lang="en">Two wheel robots</Literal>
+        <IRI>#TwoWheelRobot</IRI>
+        <Literal xml:lang="en">Two wheel robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TwoWheelRobots</IRI>
+        <IRI>#TwoWheelRobot</IRI>
         <Literal xml:lang="cn">双轮驱动机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1988,12 +1989,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UpDownPeristalticRobots</IRI>
-        <Literal xml:lang="en">UpDown peristaltic robots</Literal>
+        <IRI>#UpDownPeristalticRobot</IRI>
+        <Literal xml:lang="en">UpDown peristaltic robot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UpDownPeristalticRobots</IRI>
+        <IRI>#UpDownPeristalticRobot</IRI>
         <Literal xml:lang="cn">上下蠕动机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
