@@ -11,5 +11,5 @@ The High-Performance Biped Robot project in Intelligent Robotic Research Center 
 We are working on the semantic modeling of the robotic data to enable knowledge based robots. Our approach is based on the use of ontological models to link data and to describe datasets. Our method uses Semantic Web technologies such as Internationalized Resource Identifiers (IRIs), Web Ontology Language (OWL) ontologies, Resource Description Framework (RDF) data structure or the SPARQL query language.
 
 
-# Licenses
+## Licenses
 Project **Scripts** under this folder and recursive subfolders are licensed under the terms of the [MIT License](LICENSE).
