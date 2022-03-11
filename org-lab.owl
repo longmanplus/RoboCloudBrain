@@ -597,6 +597,14 @@
     
 
 
+    <!-- http://www.w3.org/ns/org#OrganizationalCollaboration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalCollaboration">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/prov#Activity -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
