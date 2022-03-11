@@ -89,10 +89,7 @@
 
     <!-- http://www.w3.org/ns/org#basedAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#basedAt">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Site"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#basedAt"/>
     
 
 
