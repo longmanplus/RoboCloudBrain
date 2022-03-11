@@ -264,6 +264,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Factory -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Factory">
