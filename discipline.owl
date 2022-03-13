@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#"
-     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/discipline"
+<rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/discpline#"
+     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/discpline"
      xmlns:dis="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,26 +22,10 @@
     
 
 
-    <!-- http://cor.esipfed.org/ont/earthcube/AppliedScience -->
-
-    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience">
-        <rdfs:label xml:lang="en">Applied science</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://cor.esipfed.org/ont/earthcube/FormalSciences -->
-
-    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences">
-        <rdfs:label xml:lang="en">Formal sciences</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Agriculture -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Agriculture">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -106,6 +90,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience">
+        <rdfs:label xml:lang="en">Applied science</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ApproximationTheory -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ApproximationTheory">
@@ -125,7 +117,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArchitectureAndDesign -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArchitectureAndDesign">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Architecture and design</rdfs:label>
     </owl:Class>
     
@@ -187,7 +179,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Business -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Business">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -471,8 +463,8 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalSciences"/>
         <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics"/>
         <rdfs:label xml:lang="en">Computer science</rdfs:label>
     </owl:Class>
@@ -634,7 +626,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Divinity -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Divinity">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -693,7 +685,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Education -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Education">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -728,7 +720,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Engineering and technology</rdfs:label>
     </owl:Class>
     
@@ -755,7 +747,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EnvironmentalStudiesAndForestry -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EnvironmentalStudiesAndForestry">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Environmental studies and forestry</rdfs:label>
     </owl:Class>
     
@@ -773,7 +765,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FamilyAndConsumerScience -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FamilyAndConsumerScience">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Family and consumer science</rdfs:label>
     </owl:Class>
     
@@ -802,6 +794,14 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalMethods">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience"/>
         <rdfs:label xml:lang="en">Formal methods</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalSciences -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalSciences">
+        <rdfs:label xml:lang="en">Formal sciences</rdfs:label>
     </owl:Class>
     
 
@@ -922,7 +922,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPhysicalPerformanceAndRecreation -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPhysicalPerformanceAndRecreation">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Human physical performance and recreation</rdfs:label>
     </owl:Class>
     
@@ -1021,7 +1021,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Journalism -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Journalism">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -1055,7 +1055,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LibraryAndMuseumStudies -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LibraryAndMuseumStudies">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Library and museum studies</rdfs:label>
     </owl:Class>
     
@@ -1153,7 +1153,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalSciences"/>
     </owl:Class>
     
 
@@ -1179,7 +1179,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MedicineAndHealth -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MedicineAndHealth">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Medicine and health</rdfs:label>
     </owl:Class>
     
@@ -1188,7 +1188,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MilitarySciences -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MilitarySciences">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Military sciences</rdfs:label>
     </owl:Class>
     
@@ -1501,7 +1501,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialWork -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialWork">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Social work</rdfs:label>
     </owl:Class>
     
@@ -1596,7 +1596,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Transportation -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Transportation">
-        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -1653,16 +1653,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience"/>
-            <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -1795,6 +1785,16 @@
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Robotics"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Semiconductors"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TelecommunicationsEngineering"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalSciences"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

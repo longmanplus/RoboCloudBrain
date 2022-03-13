@@ -2,89 +2,17 @@
 <rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/poap#"
      xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/poap"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:poap="http://purl.org/zhejianglab/irobot-center/ontologies/poap#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ontologies="http://purl.org/zhejianglab/irobot-center/ontologies/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap">
-        <dc:description xml:lang="en">The Project of a Person (POAP) RDF vocabulary, customized based on W3C Friend of a Friend (FOAF) vocabulary</dc:description>
-        <dc:title xml:lang="en">Project of a Person vocabulary</dc:title>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapmembershipClass -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapmembershipClass">
-        <rdfs:comment>Indicates the class of individuals that are a member of a Group</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>membershipClass</rdfs:label>
-        <vs:term_status>unstable</vs:term_status>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapname -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapname">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    
-
-
-    <!-- http://xmlns.com/wot/0.1/assurance -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/wot/0.1/assurance"/>
-    
-
-
-    <!-- http://xmlns.com/wot/0.1/src_assurance -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/wot/0.1/src_assurance"/>
     
 
 
@@ -99,289 +27,40 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapaccount -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#address -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapaccount">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount"/>
-        <rdfs:comment>Indicates an account held by this agent.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>account</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#address">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Site"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapaddress -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#value -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapaddress">
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#value">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapSite"/>
-        <rdfs:label xml:lang="cn">地址</rdfs:label>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Scoiety"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapchataccount -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#workplace -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapchataccount">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapaccount"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineChatAccount"/>
-        <rdfs:label xml:lang="cn">聊天账号</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#workplace">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Site"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapcurrentProject -->
+    <!-- http://xmlns.com/foaf/0.1/focus -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapcurrentProject">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapProject"/>
-        <rdfs:comment>A current project this person works on.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>current project</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapdepiction -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapdepiction">
-        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapdepicts"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapImage"/>
-        <rdfs:comment>A depiction of some thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>depiction</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapdepicts -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapdepicts">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapImage"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>A thing depicted in this representation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>depicts</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapfocus -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapfocus">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDiscpline"/>
-        <rdfs:comment>The underlying or &apos;focal&apos; entity associated with some SKOS-described concept.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>focus</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapfundedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapfundedBy">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>An organization funding a project or person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>funded by</rdfs:label>
-        <vs:term_status>archaic</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poaphomepage -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poaphomepage">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poappage"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>A homepage for some thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>homepage</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapimg -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapimg">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapdepiction"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapImage"/>
-        <rdfs:comment>An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one&apos;s photo on a homepage).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>image</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapinterest -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapinterest">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>A page about a topic of interest to this person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>interest</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapknows -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapknows">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:comment>A person known by this person (indicating some level of reciprocated interaction between the parties).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>knows</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapmade -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapmade">
-        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapmaker"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>Something that was made by this agent.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>made</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapmaker -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapmaker">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:comment>An agent that  made this thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>maker</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapmember -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapmember">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapGroup"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:comment>Indicates a member of a Group</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>member</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poappage -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poappage">
-        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poaptopic"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>A page or document about this thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>page</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poappastProject -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poappastProject">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>A project this person has previously worked on.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>past project</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poappublications -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poappublications">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>A link to the publications of this person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>publications</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poaptopic -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poaptopic">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>A topic of some page or document.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>topic</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapvalue -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapvalue">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapScoiety"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapweblog -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapweblog">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poappage"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>A weblog of some thing (whether person, group, company etc.).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>weblog</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapworkplace -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapworkplace">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapOrganization"/>
-        <rdfs:comment>工作地点</rdfs:comment>
-        <rdfs:label xml:lang="cn">工作地点</rdfs:label>
-    </owl:ObjectProperty>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/focus">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
     
 
 
@@ -396,170 +75,35 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapage -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#cnName -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapage">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#cnName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The age in years of some agent.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>age</rdfs:label>
-        <vs:term_status>unstable</vs:term_status>
+        <rdfs:comment xml:lang="cn">中文名字</rdfs:comment>
+        <rdfs:label xml:lang="en">cnName</rdfs:label>
+        <rdfs:label xml:lang="cn">名字</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapbirthday -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#mailbox -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapbirthday">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>birthday</rdfs:label>
-        <vs:term_status>unstable</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapcellphone -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapcellphone">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapphone"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapfamilyName -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapfamilyName">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The family name of some person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>familyName</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapfirstName -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapfirstName">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The first name of a person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>firstName</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapgender -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapgender">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The gender of this Agent (typically but not necessarily &apos;male&apos; or &apos;female&apos;).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>gender</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapjobid -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapjobid">
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#mailbox">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poaplastName -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#phone -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poaplastName">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The last name of a person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>lastName</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapmailbox -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapmailbox">
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#phone">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapname -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapname"/>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapphone -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapphone">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapstatus -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapstatus">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>A string expressing what the user is happy for the general public (normally) to know about their current activity.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>status</rdfs:label>
-        <vs:term_status>unstable</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poaptelephone -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poaptelephone">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapphone"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poaptitle -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poaptitle">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>Title (Mr, Mrs, Ms, Dr. etc)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>title</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-    </rdf:Description>
     
 
 
@@ -574,152 +118,21 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent">
-        <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
-        <rdfs:label>Agent</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapDiscpline -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Scoiety -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapDiscpline"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Scoiety"/>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Site -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument">
-        <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapOrganization"/>
-        <rdfs:comment>A document.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Document</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapGroup -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapGroup">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:comment>A class of Agents.</rdfs:comment>
-        <rdfs:label>Group</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapImage -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapImage">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>An image.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Image</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>An online account.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Online account</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineChatAccount -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineChatAccount">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount"/>
-        <rdfs:comment>An online chat account.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label xml:lang="en">Online chat account</rdfs:label>
-        <vs:term_status>unstable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineEcommerceAccount -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineEcommerceAccount">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount"/>
-        <rdfs:comment>An online e-commerce account.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Online e-commerce account</rdfs:label>
-        <vs:term_status>unstable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapOrganization -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOrganization">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson"/>
-        <rdfs:comment>An organization.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Organization</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapPerson">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-        <rdfs:comment>A person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Person</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapPersonalProfileDocument -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapPersonalProfileDocument">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-        <rdfs:comment>A personal profile RDF document.</rdfs:comment>
-        <rdfs:label xml:lang="en">Personal profile document</rdfs:label>
-        <vs:term_status>testing</vs:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapProject -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapProject"/>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapScoiety -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapScoiety"/>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poapSite -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapSite"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:label>Thing</rdfs:label>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Site"/>
     
 
 
@@ -731,11 +144,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapname">
-        <rdfs:label>name</rdfs:label>
-        <rdfs:comment>A name for some thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <vs:term_status>testing</vs:term_status>
+    <rdf:Description rdf:about="http://schema.org/CreativeWork">
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/ImageObject">
+        <rdfs:comment xml:lang="en">Image object</rdfs:comment>
     </rdf:Description>
     
 
@@ -751,31 +164,27 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapProject"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapScoiety"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Scoiety"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Site"/>
+            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+            <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/LabelProperty"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapProject"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapScoiety"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapSite"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapAgent"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapDocument"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapOnlineAccount"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poapScoiety"/>
+            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+            <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/LabelProperty"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
