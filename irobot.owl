@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
-    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -110,7 +110,7 @@
         <Class IRI="#Human-machineInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ImageProcessing"/>
+        <Class IRI="#ImageProcessingAlgorithm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Imu"/>
@@ -149,7 +149,7 @@
         <Class IRI="#Lifting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Location"/>
+        <Class IRI="#LocationAlgorithm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Manipulating"/>
@@ -158,7 +158,7 @@
         <Class IRI="#MemorySkill"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MotionControl"/>
+        <Class IRI="#MotionControlSystem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MotionSkill"/>
@@ -176,7 +176,7 @@
         <Class IRI="#Navigating"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Navigation"/>
+        <Class IRI="#NavigationAlgorithm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OmnidirectionalRobot"/>
@@ -311,7 +311,7 @@
         <Class IRI="#UpDownPeristalticRobot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Voice"/>
+        <Class IRI="#VoiceAlgorithm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WheeledRobot"/>
@@ -559,7 +559,7 @@
         <Class IRI="#CommonSoftware"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ImageProcessing"/>
+        <Class IRI="#ImageProcessingAlgorithm"/>
         <Class IRI="#ApplicationSoftware"/>
     </SubClassOf>
     <SubClassOf>
@@ -611,7 +611,7 @@
         <Class IRI="#Manipulating"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Location"/>
+        <Class IRI="#LocationAlgorithm"/>
         <Class IRI="#ApplicationSoftware"/>
     </SubClassOf>
     <SubClassOf>
@@ -623,7 +623,7 @@
         <Class IRI="#IntellectualSkill"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MotionControl"/>
+        <Class IRI="#MotionControlSystem"/>
         <Class IRI="#CommonSoftware"/>
     </SubClassOf>
     <SubClassOf>
@@ -647,7 +647,7 @@
         <Class IRI="#PhysicalTask"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Navigation"/>
+        <Class IRI="#NavigationAlgorithm"/>
         <Class IRI="#ApplicationSoftware"/>
     </SubClassOf>
     <SubClassOf>
@@ -811,7 +811,7 @@
         <Class IRI="#SquirmyRobot"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Voice"/>
+        <Class IRI="#VoiceAlgorithm"/>
         <Class IRI="#ApplicationSoftware"/>
     </SubClassOf>
     <SubClassOf>
@@ -883,13 +883,13 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Human-machineInteraction"/>
-        <Class IRI="#MotionControl"/>
+        <Class IRI="#MotionControlSystem"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#ImageProcessing"/>
-        <Class IRI="#Location"/>
-        <Class IRI="#Navigation"/>
-        <Class IRI="#Voice"/>
+        <Class IRI="#ImageProcessingAlgorithm"/>
+        <Class IRI="#LocationAlgorithm"/>
+        <Class IRI="#NavigationAlgorithm"/>
+        <Class IRI="#VoiceAlgorithm"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#RiseUp"/>
@@ -1514,12 +1514,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ImageProcessing</IRI>
-        <Literal xml:lang="en">Image processing</Literal>
+        <IRI>#ImageProcessingAlgorithm</IRI>
+        <Literal xml:lang="en">Image processing algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ImageProcessing</IRI>
+        <IRI>#ImageProcessingAlgorithm</IRI>
         <Literal xml:lang="cn">图像处理软件</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1614,7 +1614,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Location</IRI>
+        <IRI>#LocationAlgorithm</IRI>
+        <Literal xml:lang="en">Location algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LocationAlgorithm</IRI>
         <Literal xml:lang="cn">定位系统</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1634,12 +1639,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MotionControl</IRI>
-        <Literal xml:lang="en">Motion control</Literal>
+        <IRI>#MotionControlSystem</IRI>
+        <Literal xml:lang="en">Motion control system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MotionControl</IRI>
+        <IRI>#MotionControlSystem</IRI>
         <Literal xml:lang="cn">运动控制系统</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1689,7 +1694,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Navigation</IRI>
+        <IRI>#NavigationAlgorithm</IRI>
+        <Literal xml:lang="en">Navigation algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NavigationAlgorithm</IRI>
         <Literal xml:lang="cn">导航系统</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1999,7 +2009,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Voice</IRI>
+        <IRI>#VoiceAlgorithm</IRI>
+        <Literal xml:lang="en">Voice algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VoiceAlgorithm</IRI>
         <Literal xml:lang="cn">语音系统</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
