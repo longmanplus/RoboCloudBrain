@@ -427,9 +427,6 @@
     <Declaration>
         <DataProperty IRI="#hasPreState"/>
     </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#xiaozhi"/>
-    </Declaration>
     <SubClassOf>
         <Class IRI="#ApplicationSoftware"/>
         <Class IRI="#RobotSoftware"/>
@@ -904,10 +901,6 @@
         <Class IRI="#SpeedUp"/>
         <Class IRI="#Stop"/>
     </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Robot"/>
-        <NamedIndividual IRI="#xiaozhi"/>
-    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#belongTo"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>

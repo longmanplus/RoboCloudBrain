@@ -139,26 +139,26 @@
     
 
 
-    <!-- http://cor.esipfed.org/ont/earthcube/AppliedScience -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience -->
 
-    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </owl:Class>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
     
 
 
-    <!-- http://cor.esipfed.org/ont/earthcube/FormalSciences -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience -->
 
-    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </owl:Class>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
     
 
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
     </owl:Class>
     
 
@@ -166,7 +166,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
     </owl:Class>
     
 
@@ -174,7 +174,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
     </owl:Class>
     
 
@@ -184,12 +184,6 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
     
 
 
