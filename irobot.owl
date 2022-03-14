@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
-    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -107,7 +107,7 @@
         <Class IRI="#Holding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Human-machineInteraction"/>
+        <Class IRI="#HumanMachineInteractionSystem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ImageProcessingAlgorithm"/>
@@ -555,7 +555,7 @@
         <Class IRI="#Manipulating"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Human-machineInteraction"/>
+        <Class IRI="#HumanMachineInteractionSystem"/>
         <Class IRI="#CommonSoftware"/>
     </SubClassOf>
     <SubClassOf>
@@ -882,7 +882,7 @@
         <Class IRI="#PropellerActuator"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Human-machineInteraction"/>
+        <Class IRI="#HumanMachineInteractionSystem"/>
         <Class IRI="#MotionControlSystem"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -1504,12 +1504,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Human-machineInteraction</IRI>
-        <Literal xml:lang="en">Human-machine interaction</Literal>
+        <IRI>#HumanMachineInteractionSystem</IRI>
+        <Literal xml:lang="en">Human-machine interaction system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Human-machineInteraction</IRI>
+        <IRI>#HumanMachineInteractionSystem</IRI>
         <Literal xml:lang="cn">人机交互系统</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
