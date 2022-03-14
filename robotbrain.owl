@@ -10,11 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain">
-        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline"/>
-        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
-        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
     
 
 
@@ -68,9 +64,9 @@
 
     <!-- http://www.w3.org/ns/org#basedAt -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/org#basedAt">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#basedAt">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -118,9 +114,9 @@
 
     <!-- http://www.w3.org/ns/org#location -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/org#location">
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/org#location">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     
 
 
@@ -137,49 +133,49 @@
 
     <!-- http://cor.esipfed.org/ont/earthcube/AppliedScience -->
 
-    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience">
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/AppliedScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://cor.esipfed.org/ont/earthcube/FormalSciences -->
 
-    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences">
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/FormalSciences">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Discipline"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -223,7 +219,7 @@
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 
