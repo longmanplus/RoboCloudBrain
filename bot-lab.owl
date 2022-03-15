@@ -10,7 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
+     xmlns:schema="https://schema.org/"
+     xmlns:bot-lab="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#">
     <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab">
         <owl:imports rdf:resource="https://w3id.org/bot-0.3.2"/>
     </owl:Ontology>
