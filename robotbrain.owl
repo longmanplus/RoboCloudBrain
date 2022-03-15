@@ -232,6 +232,20 @@
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#WeiSong">
+        <rdfs:label xml:lang="cn">宋伟</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
