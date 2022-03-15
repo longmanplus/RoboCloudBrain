@@ -34,6 +34,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bot#Zone"/>
         <rdfs:range rdf:resource="https://w3id.org/bot#ZoneType"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
     </owl:ObjectProperty>
     
 
