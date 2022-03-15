@@ -427,6 +427,9 @@
     <Declaration>
         <DataProperty IRI="#hasPreState"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#material"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#ApplicationSoftware"/>
         <Class IRI="#RobotSoftware"/>
@@ -1245,6 +1248,14 @@
         <DataProperty IRI="#hasPreState"/>
         <Class IRI="#RobotTask"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#material"/>
+        <Class IRI="#RobotHardware"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#material"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ApplicationSoftware</IRI>
