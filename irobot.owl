@@ -371,7 +371,7 @@
         <ObjectProperty IRI="#isOntopOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPartof"/>
+        <ObjectProperty IRI="#isPartOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPlanFor"/>
@@ -977,10 +977,6 @@
         <ObjectProperty IRI="#isNextTo"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isPartof"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isPlanFor"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1069,7 +1065,7 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPartof"/>
+        <ObjectProperty IRI="#isPartOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1145,7 +1141,7 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPartof"/>
+        <ObjectProperty IRI="#isPartOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
