@@ -240,6 +240,20 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <owl:equivalentClass rdf:resource="https://schema.org/Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <rdf:Description rdf:about="https://schema.org/Person"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
