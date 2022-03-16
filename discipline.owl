@@ -26,6 +26,8 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Agriculture">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
+        <rdfs:label xml:lang="en">Agriculture</rdfs:label>
+        <rdfs:label xml:lang="cn">农学</rdfs:label>
     </owl:Class>
     
 
@@ -51,6 +53,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
+        <rdfs:label xml:lang="cn">算法</rdfs:label>
     </owl:Class>
     
 
@@ -94,6 +97,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience">
         <rdfs:label xml:lang="en">Applied science</rdfs:label>
+        <rdfs:label xml:lang="cn">应用科学</rdfs:label>
     </owl:Class>
     
 
@@ -119,6 +123,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArchitectureAndDesign">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Architecture and design</rdfs:label>
+        <rdfs:label xml:lang="cn">农林设计</rdfs:label>
     </owl:Class>
     
 
@@ -128,6 +133,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Artificial intelligence</rdfs:label>
+        <rdfs:label xml:lang="cn">人工智能</rdfs:label>
     </owl:Class>
     
 
@@ -411,6 +417,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer application</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机应用</rdfs:label>
     </owl:Class>
     
 
@@ -420,6 +427,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerArchitecture">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer architecture</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机体系结构</rdfs:label>
     </owl:Class>
     
 
@@ -429,6 +437,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerCommunications">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer communications</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机通信</rdfs:label>
     </owl:Class>
     
 
@@ -447,6 +456,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerGraphics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer graphics</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机图形学</rdfs:label>
     </owl:Class>
     
 
@@ -456,6 +466,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer logic science</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机逻辑学</rdfs:label>
     </owl:Class>
     
 
@@ -467,6 +478,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience"/>
         <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics"/>
         <rdfs:label xml:lang="en">Computer science</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机科学</rdfs:label>
     </owl:Class>
     
 
@@ -476,6 +488,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerSecurity">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer security</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机安全</rdfs:label>
     </owl:Class>
     
 
@@ -575,6 +588,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataStructures">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Data structures</rdfs:label>
+        <rdfs:label xml:lang="cn">数据结构</rdfs:label>
     </owl:Class>
     
 
@@ -619,6 +633,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DistributedComputing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Distributed computing</rdfs:label>
+        <rdfs:label xml:lang="cn">分布式计算</rdfs:label>
     </owl:Class>
     
 
@@ -686,6 +701,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Education">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
+        <rdfs:label xml:lang="cn">教育学</rdfs:label>
     </owl:Class>
     
 
@@ -802,6 +818,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience">
         <rdfs:label xml:lang="en">Formal science</rdfs:label>
+        <rdfs:label xml:lang="cn">形式科学</rdfs:label>
     </owl:Class>
     
 
@@ -906,6 +923,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanComputerInteraction">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Human computer interaction</rdfs:label>
+        <rdfs:label xml:lang="cn">人机交互</rdfs:label>
     </owl:Class>
     
 
@@ -939,7 +957,9 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
+        <rdfs:label xml:lang="cn">人类学</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1154,6 +1174,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience"/>
+        <rdfs:label xml:lang="cn">数学</rdfs:label>
     </owl:Class>
     
 
@@ -1230,7 +1251,9 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience">
+        <rdfs:label xml:lang="cn">自然科学</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1276,6 +1299,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperatingSystems">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Operating systems</rdfs:label>
+        <rdfs:label xml:lang="cn">操作系统</rdfs:label>
     </owl:Class>
     
 
@@ -1322,6 +1346,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ParallelComputing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Parallel computing</rdfs:label>
+        <rdfs:label xml:lang="cn">并行计算</rdfs:label>
     </owl:Class>
     
 
@@ -1390,6 +1415,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguages">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Programming languages</rdfs:label>
+        <rdfs:label xml:lang="cn">程序设计语言</rdfs:label>
     </owl:Class>
     
 
@@ -1426,6 +1452,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
         <rdfs:label xml:lang="en">Quantum computing</rdfs:label>
+        <rdfs:label xml:lang="cn">量子计算</rdfs:label>
     </owl:Class>
     
 
@@ -1494,7 +1521,9 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
+        <rdfs:label xml:lang="cn">社会科学</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1520,6 +1549,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SoftwareEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Software engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">软件工程</rdfs:label>
     </owl:Class>
     
 
@@ -1581,6 +1611,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TheoryOfComputation">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Theory of computation</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机基础理论</rdfs:label>
     </owl:Class>
     
 

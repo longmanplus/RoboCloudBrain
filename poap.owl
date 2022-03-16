@@ -32,6 +32,7 @@
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/focus">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+        <rdfs:label xml:lang="cn">专注于</rdfs:label>
     </rdf:Description>
     
 
@@ -44,6 +45,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#QQ -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#QQ">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="cn">qq</rdfs:label>
+        <rdfs:label xml:lang="en">qq</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -60,6 +73,7 @@
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">economic benefit</rdfs:label>
+        <rdfs:label xml:lang="cn">经济效益</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -71,6 +85,7 @@
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">email address domain</rdfs:label>
+        <rdfs:label xml:lang="cn">邮箱域名</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -82,6 +97,7 @@
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">email address local part</rdfs:label>
+        <rdfs:label xml:lang="cn">邮箱本地地址</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -109,7 +125,30 @@
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">social benefit</rdfs:label>
+        <rdfs:label xml:lang="cn">社会效益</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#weChat -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#weChat">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">weChat</rdfs:label>
+        <rdfs:label xml:lang="cn">微信</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/title -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/title">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="cn">职称</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -126,7 +165,9 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline">
+        <rdfs:label xml:lang="cn">学科</rdfs:label>
+    </owl:Class>
     
 
 
@@ -134,7 +175,40 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <rdfs:label xml:lang="cn">邮箱地址</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
+        <rdfs:label xml:lang="cn">人</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/LabelProperty -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/LabelProperty">
+        <rdfs:label xml:lang="cn">标签属性</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+        <rdfs:label xml:lang="cn">线上账号</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
+        <rdfs:label xml:lang="cn">项目</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -148,9 +222,119 @@
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
+        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
+        <rdfs:label xml:lang="cn">图片物体</rdfs:label>
         <rdfs:comment xml:lang="en">Image object</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/Person">
+        <rdfs:label xml:lang="cn">人</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:label xml:lang="cn">文件</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:label xml:lang="cn">图片</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
+        <rdfs:label xml:lang="cn">线上聊天工具</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label xml:lang="cn">人</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
+        <rdfs:label xml:lang="cn">个人简历</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/account">
+        <rdfs:label xml:lang="cn">账号</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/accountName">
+        <rdfs:label xml:lang="cn">账号名字</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/accountServiceHomepage">
+        <rdfs:label xml:lang="cn">账号服务首页</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:label xml:lang="cn">年龄</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/aimChatID">
+        <owl:deprecated xml:lang="cn">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/birthday">
+        <rdfs:label xml:lang="cn">生日</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/currentProject">
+        <rdfs:label xml:lang="cn">当前项目</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdfs:label xml:lang="cn">拥有描述</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depicts">
+        <rdfs:label xml:lang="cn">描述</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/familyName">
+        <rdfs:label xml:lang="cn">姓</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/firstName">
+        <rdfs:label xml:lang="cn">名</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/fundedBy">
+        <rdfs:label xml:lang="cn">被资助</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:label xml:lang="cn">性别</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/givenName">
+        <rdfs:label xml:lang="cn">名</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/holdsAccount">
+        <rdfs:label xml:lang="cn">拥有账号</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:label xml:lang="cn">画像</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/interest">
+        <rdfs:label xml:lang="cn">拥有产权</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/knows">
+        <rdfs:label xml:lang="cn">认识</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName">
+        <rdfs:label xml:lang="cn">姓</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/made">
+        <rdfs:label xml:lang="cn">制造</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/maker">
+        <rdfs:label xml:lang="cn">制造者</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/member">
+        <rdfs:label xml:lang="cn">成员</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:label xml:lang="cn">名字</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/page">
+        <rdfs:label xml:lang="cn">主页</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/pastProject">
+        <rdfs:label xml:lang="cn">参与过的项目</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/plan">
+        <rdfs:label xml:lang="cn">规划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/publications">
+        <rdfs:label xml:lang="cn">发表</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/status">
+        <rdfs:label xml:lang="cn">状态</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/theme">
+        <rdfs:label xml:lang="cn">内容</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/topic">
+        <rdfs:label xml:lang="cn">主题</rdfs:label>
     </rdf:Description>
     
 
