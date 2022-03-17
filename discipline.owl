@@ -45,6 +45,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AlgebraicComputation">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Algebraic computation</rdfs:label>
+        <rdfs:label xml:lang="cn">代数计算</rdfs:label>
     </owl:Class>
     
 
@@ -53,6 +54,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
+        <rdfs:label xml:lang="en">Algorithms</rdfs:label>
         <rdfs:label xml:lang="cn">算法</rdfs:label>
     </owl:Class>
     
@@ -80,6 +82,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics"/>
         <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PureMathematics"/>
         <rdfs:label xml:lang="en">Applied mathematics</rdfs:label>
+        <rdfs:label xml:lang="cn">应用数学</rdfs:label>
     </owl:Class>
     
 
@@ -143,6 +146,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Artificial_Neural_Networks">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Artificial neural networks</rdfs:label>
+        <rdfs:label xml:lang="cn">人工神经网络</rdfs:label>
     </owl:Class>
     
 
@@ -170,6 +174,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AutomatedReasoning">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Automated reasoning</rdfs:label>
+        <rdfs:label xml:lang="cn">自动推理</rdfs:label>
     </owl:Class>
     
 
@@ -178,6 +183,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Biology">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="cn">生物学</rdfs:label>
     </owl:Class>
     
 
@@ -212,6 +218,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Chemistry">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="cn">化学</rdfs:label>
     </owl:Class>
     
 
@@ -248,6 +255,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CognitiveScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Cognitive science</rdfs:label>
+        <rdfs:label xml:lang="cn">认识科学</rdfs:label>
     </owl:Class>
     
 
@@ -265,6 +273,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CommunityInformatics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Community informatics</rdfs:label>
+        <rdfs:label xml:lang="cn">社区信息学</rdfs:label>
     </owl:Class>
     
 
@@ -309,6 +318,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalBiology">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Computational biology</rdfs:label>
+        <rdfs:label xml:lang="cn">计算生物学</rdfs:label>
     </owl:Class>
     
 
@@ -318,6 +328,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalChemistry">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Computational chemistry</rdfs:label>
+        <rdfs:label xml:lang="cn">计算化学</rdfs:label>
     </owl:Class>
     
 
@@ -336,6 +347,8 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalEconomics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Computational economics</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机金融</rdfs:label>
+        <rdfs:label xml:lang="cn">计算经济学</rdfs:label>
     </owl:Class>
     
 
@@ -354,6 +367,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalGeometry">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms"/>
         <rdfs:label xml:lang="en">Computational geometry</rdfs:label>
+        <rdfs:label xml:lang="cn">计算几何学</rdfs:label>
     </owl:Class>
     
 
@@ -498,6 +512,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerVision">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Computer vision</rdfs:label>
+        <rdfs:label xml:lang="cn">计算机视觉</rdfs:label>
     </owl:Class>
     
 
@@ -624,6 +639,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DistributedAlgorithms">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms"/>
         <rdfs:label xml:lang="en">Distributed algorithms</rdfs:label>
+        <rdfs:label xml:lang="cn">分布式算法</rdfs:label>
     </owl:Class>
     
 
@@ -667,6 +683,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EarthScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="cn">地理科学</rdfs:label>
     </owl:Class>
     
 
@@ -774,6 +791,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ExpertSystems">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Expert systems</rdfs:label>
+        <rdfs:label xml:lang="cn">专家系统</rdfs:label>
     </owl:Class>
     
 
@@ -1104,6 +1122,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MachineLearning">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Machine learning</rdfs:label>
+        <rdfs:label xml:lang="cn">机器学习</rdfs:label>
     </owl:Class>
     
 
@@ -1245,6 +1264,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalLanguageProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Natural language processing</rdfs:label>
+        <rdfs:label xml:lang="cn">自然语言处理</rdfs:label>
     </owl:Class>
     
 
@@ -1337,6 +1357,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ParallelAlgorithms">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms"/>
         <rdfs:label xml:lang="en">Parallel algorithms</rdfs:label>
+        <rdfs:label xml:lang="cn">并行算法</rdfs:label>
     </owl:Class>
     
 
@@ -1371,6 +1392,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Physics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="cn">物理</rdfs:label>
     </owl:Class>
     
 
@@ -1442,6 +1464,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PureMathematics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mathematics"/>
         <rdfs:label xml:lang="en">Pure mathematics</rdfs:label>
+        <rdfs:label xml:lang="cn">基础数学</rdfs:label>
     </owl:Class>
     
 
@@ -1462,6 +1485,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#RandomizedAlgorithms">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms"/>
         <rdfs:label xml:lang="en">Randomized algorithms</rdfs:label>
+        <rdfs:label xml:lang="cn">随机化算法</rdfs:label>
     </owl:Class>
     
 
@@ -1481,6 +1505,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
+        <rdfs:label xml:lang="en">Robotics</rdfs:label>
+        <rdfs:label xml:lang="cn">机器人学</rdfs:label>
     </owl:Class>
     
 
@@ -1558,6 +1584,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SpaceScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="cn">空间科学</rdfs:label>
     </owl:Class>
     
 
@@ -1628,6 +1655,8 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Transportation">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
+        <rdfs:label xml:lang="en">Transportation</rdfs:label>
+        <rdfs:label xml:lang="cn">交通运输</rdfs:label>
     </owl:Class>
     
 
