@@ -210,6 +210,21 @@
     
 
 
+    <!-- http://purl.org/goodrelations/v1#BusinessEntity -->
+
+    <rdf:Description rdf:about="http://purl.org/goodrelations/v1#BusinessEntity">
+        <rdfs:comment xml:lang="en">An instance of this class represents the legal agent making (or seeking) a particular offering. This can be a legal body or a person. A business entity has at least a primary mailing address and contact details. For this, typical address standards (vCard) and location data (geo, WGS84) can be attached. Note that the location of the business entity is not necessarily the location from which the product or service is being available (e.g. the branch or store). Use gr:Location for stores and branches.
+		
+Example: Siemens Austria AG, Volkswagen Ltd., Peter Miller&apos;s Cell phone Shop LLC
+
+Compatibility with schema.org: This class is equivalent to the union of http://schema.org/Person and http://schema.org/Organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+        <rdfs:isDefinedBy xml:lang="cn">经营性实体</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Business entity</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#AssetManagement -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#AssetManagement">
@@ -223,6 +238,9 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Association">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Association</rdfs:label>
+        <rdfs:label xml:lang="cn">协会</rdfs:label>
     </owl:Class>
     
 
@@ -231,6 +249,9 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Carveout">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Carveout</rdfs:label>
+        <rdfs:label xml:lang="cn">拆分</rdfs:label>
     </owl:Class>
     
 
@@ -239,6 +260,9 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Closedown">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Closedown</rdfs:label>
+        <rdfs:label xml:lang="cn">倒闭</rdfs:label>
     </owl:Class>
     
 
@@ -247,6 +271,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Closure">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
     </owl:Class>
     
 
@@ -255,6 +280,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Company">
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Company</rdfs:label>
         <rdfs:label xml:lang="cn">公司</rdfs:label>
     </owl:Class>
@@ -265,6 +291,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
     </owl:Class>
     
 
@@ -273,6 +300,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Factory">
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Factory</rdfs:label>
         <rdfs:label xml:lang="cn">工厂</rdfs:label>
     </owl:Class>
@@ -283,6 +311,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Founding">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
     </owl:Class>
     
 
@@ -291,6 +320,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#GovernmentAgency">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonprofitEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Government agency</rdfs:label>
         <rdfs:label xml:lang="cn">政府机构</rdfs:label>
     </owl:Class>
@@ -318,6 +348,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Kickoff">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
     </owl:Class>
     
 
@@ -326,6 +357,9 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#League">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">League</rdfs:label>
+        <rdfs:label xml:lang="cn">联盟</rdfs:label>
     </owl:Class>
     
 
@@ -343,6 +377,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Mergence">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Mergence</rdfs:label>
     </owl:Class>
     
@@ -352,7 +387,9 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Non-business entity</rdfs:label>
+        <rdfs:label xml:lang="cn">非经营性实体</rdfs:label>
     </owl:Class>
     
 
@@ -361,6 +398,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonprofitEntity">
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Nonprofit entity</rdfs:label>
         <rdfs:label xml:lang="cn">非盈利性实体</rdfs:label>
     </owl:Class>
@@ -428,10 +466,13 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Proposal -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Proposition -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Proposal">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Proposition">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Proposition</rdfs:label>
+        <rdfs:label xml:lang="cn">提案</rdfs:label>
     </owl:Class>
     
 
@@ -448,6 +489,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Relocation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Relocation</rdfs:label>
     </owl:Class>
     
@@ -457,6 +499,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Reorganization">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Reorganization</rdfs:label>
     </owl:Class>
     
@@ -475,6 +518,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInsitute">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonprofitEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Research institute</rdfs:label>
         <rdfs:label xml:lang="cn">研究机构</rdfs:label>
     </owl:Class>
@@ -503,6 +547,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#School">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonprofitEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">School</rdfs:label>
         <rdfs:label xml:lang="cn">学校</rdfs:label>
     </owl:Class>
@@ -521,7 +566,18 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Union">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Union</rdfs:label>
+        <rdfs:label xml:lang="cn">联合会</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </rdf:Description>
     
 
 
@@ -529,6 +585,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#DateTimeInterval">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Date-time interval</rdfs:label>
     </owl:Class>
     
@@ -538,6 +595,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Time instant</rdfs:label>
     </owl:Class>
     
@@ -547,6 +605,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Time interval</rdfs:label>
     </owl:Class>
     
@@ -556,6 +615,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Proper interval</rdfs:label>
     </owl:Class>
     
@@ -573,6 +633,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Temporal entity</rdfs:label>
     </owl:Class>
     
@@ -582,7 +643,18 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/locn#Address">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#FormalOrganization -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#FormalOrganization">
+        <rdfs:comment xml:lang="cn">一个在世界范围内，特别是在法律管辖范围内得到承认的组织，具有相关的权利和责任。 示例包括公司、慈善机构、政府或教会。 请注意，这是 `gr:BusinessEntity` 的超类，建议使用 GoodRelations 词汇表来表示业务分类，例如 DUNS 或 NAICS。</rdfs:comment>
+        <rdfs:label xml:lang="cn">正式组织</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -604,13 +676,16 @@
 
     <!-- http://www.w3.org/ns/prov#Activity -->
 
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label xml:lang="cn">行为主体</rdfs:label>
     </rdf:Description>
     
@@ -620,6 +695,9 @@
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="cn">人</rdfs:label>
     </rdf:Description>
     
 
@@ -877,6 +955,22 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/org#Role"/>
         <org:roleProperty rdf:resource="http://www.w3.org/ns/org#memberOf"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+        <rdfs:label xml:lang="cn">组织</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
