@@ -23,6 +23,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Datatypes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -97,7 +114,7 @@
     <!-- http://www.w3.org/ns/org#basedAt -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#basedAt">
-        <rdfs:comment xml:lang="cn">位于</rdfs:comment>
+        <rdfs:comment xml:lang="cn">位于场所</rdfs:comment>
         <rdfs:comment xml:lang="cn">表示人员所在的场所。 我们不限制一个人位于多个场所的可能性。</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -115,6 +132,22 @@
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#hasMember">
         <rdfs:label xml:lang="cn">有成员</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasMembership -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#hasMembership">
+        <rdfs:label xml:lang="cn">成员资格</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasPost -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#hasPost">
+        <rdfs:label xml:lang="cn">职位</rdfs:label>
     </rdf:Description>
     
 
@@ -168,10 +201,59 @@
     
 
 
+    <!-- http://www.w3.org/ns/org#memberOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#memberOf">
+        <rdfs:label xml:lang="cn">隶属于</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#organization -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#organization">
+        <rdfs:label xml:lang="cn">组织</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#postIn -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#postIn">
+        <rdfs:label xml:lang="cn">的职位</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#role -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#role">
+        <rdfs:label xml:lang="cn">角色</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/org#siteAddress -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#siteAddress">
         <rdfs:range rdf:resource="http://www.w3.org/ns/locn#Address"/>
+        <rdfs:label xml:lang="cn">场所地址</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#siteOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#siteOf">
+        <rdfs:label xml:lang="cn">场所隶属于</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#unitOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#unitOf">
+        <rdfs:label xml:lang="cn">单元隶属于</rdfs:label>
     </rdf:Description>
     
 
@@ -189,7 +271,11 @@
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="cn">描述</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -198,7 +284,10 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDate">
         <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+        <rdfs:label xml:lang="cn">XSD date格式的日期</rdfs:label>
         <rdfs:label xml:lang="en">in XSD date</rdfs:label>
+        <skos:definition xml:lang="en">Position of an instant, expressed using xsd:date</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -208,6 +297,10 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#addressArea">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. The domain of locn:addressArea is locn:Address.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">address area</rdfs:label>
+        <rdfs:label xml:lang="cn">地址区域</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -217,6 +310,10 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#fullAddress">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The complete address written as a string, with or without formatting. The domain of locn:fullAddress is locn:Address.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">full address</rdfs:label>
+        <rdfs:label xml:lang="cn">完整地址</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -227,6 +324,11 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. The domain of locn:locatorDesignator is locn:Address.</rdfs:comment>
+        <rdfs:comment xml:lang="en">在相关范围内唯一标识定位器的数字或字符序列。 定位器的完整标识可以包括一个或多个定位器指示符。 locn:locatorDesignator 的域是 locn:Address。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">locator designator</rdfs:label>
+        <rdfs:label xml:lang="cn">定位器指示符</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -237,7 +339,20 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. The domain of locn:locatorName is locn:Address.</rdfs:comment>
+        <rdfs:comment xml:lang="cn">专有名词应用于由定位器识别的现实世界实体。 定位器名称可以是财产或综合体的名称、建筑物或建筑物的一部分的名称，或者它可以是建筑物内的房间的名称。 locn:locatorName 的域是 locn:Address。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">locator name</rdfs:label>
+        <rdfs:label xml:lang="cn">定位器名称</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#identifier -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#identifier">
+        <rdfs:label xml:lang="cn">标识符</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -246,6 +361,10 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#atTime">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label xml:lang="en">at time</rdfs:label>
+        <rdfs:label xml:lang="cn">在时间</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -254,6 +373,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#atTime"/>
+        <rdfs:comment xml:lang="en">The time at which an activity ended. See also prov:startedAtTime.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label xml:lang="en">ended at time</rdfs:label>
+        <rdfs:label xml:lang="cn">结束在时间</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -262,6 +385,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#atTime"/>
+        <rdfs:comment xml:lang="en">The time at which an activity started. See also prov:endedAtTime.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label xml:lang="en">start at time</rdfs:label>
+        <rdfs:label xml:lang="cn">开始在时间</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1104,11 +1231,55 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <rdf:Description rdf:about="http://www.w3.org/ns/org#hasSubOrganization">
         <rdfs:label xml:lang="cn">有子机构</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#headOf">
+        <rdfs:label xml:lang="cn">作领导于</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/org#heldBy">
         <rdfs:label xml:lang="cn">被担任</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/org#linkedTo">
         <rdfs:label xml:lang="cn">关联到</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#location">
+        <rdfs:label xml:lang="cn">位置</rdfs:label>
+        <rdfs:comment xml:lang="cn">为组织内的人员提供位置描述，例如用于内部发布目的的_Mail Stop_</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#originalOrganization">
+        <rdfs:label xml:lang="cn">原组织</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#purpose">
+        <rdfs:comment xml:lang="cn">目的</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#remuneration">
+        <rdfs:label xml:lang="cn">薪酬</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#reportsTo">
+        <rdfs:label xml:lang="cn">报告给</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#resultedFrom">
+        <rdfs:label xml:lang="cn">引发于</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#resultingOrganization">
+        <rdfs:label xml:lang="cn">引发</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#subOrganizationOf">
+        <rdfs:label xml:lang="cn">子机构隶属于</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#transitiveSubOrganizationOf">
+        <rdfs:label xml:lang="cn">过渡子机构</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:label xml:lang="cn">派生于</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov"/>
+        <rdfs:label xml:lang="en">was derived from</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:label xml:lang="en">was generated by</rdfs:label>
+        <rdfs:label xml:lang="cn">产生于</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <rdfs:label xml:lang="en">Organization</rdfs:label>
