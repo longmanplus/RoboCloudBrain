@@ -68,6 +68,8 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#subElementNumber -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#subElementNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">A number to use as a locator for sub-elements in its host element. The count starts at 0 and goes clockwise.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
         <rdfs:label xml:lang="en">sub element number</rdfs:label>
