@@ -112,6 +112,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#ExtendedElement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#OriginalElement"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
         <rdfs:label xml:lang="en">Extended element</rdfs:label>
         <rdfs:label xml:lang="cn">扩展构件</rdfs:label>
