@@ -104,7 +104,7 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/locn#address">
         <rdfs:range rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:comment xml:lang="en">The locn:address property relationship associates any resource with the &lt;a href=&quot;#locn:Address&quot;&gt;Address&lt;/a&gt; Class</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">address</rdfs:label>
         <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:ObjectProperty>
@@ -298,7 +298,7 @@
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. The domain of locn:addressArea is locn:Address.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">address area</rdfs:label>
         <rdfs:label xml:lang="cn">地址区域</rdfs:label>
     </owl:DatatypeProperty>
@@ -311,7 +311,7 @@
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">The complete address written as a string, with or without formatting. The domain of locn:fullAddress is locn:Address.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">full address</rdfs:label>
         <rdfs:label xml:lang="cn">完整地址</rdfs:label>
     </owl:DatatypeProperty>
@@ -326,7 +326,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. The domain of locn:locatorDesignator is locn:Address.</rdfs:comment>
         <rdfs:comment xml:lang="en">在相关范围内唯一标识定位器的数字或字符序列。 定位器的完整标识可以包括一个或多个定位器指示符。 locn:locatorDesignator 的域是 locn:Address。</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">locator designator</rdfs:label>
         <rdfs:label xml:lang="cn">定位器指示符</rdfs:label>
     </owl:DatatypeProperty>
@@ -341,7 +341,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. The domain of locn:locatorName is locn:Address.</rdfs:comment>
         <rdfs:comment xml:lang="cn">专有名词应用于由定位器识别的现实世界实体。 定位器名称可以是财产或综合体的名称、建筑物或建筑物的一部分的名称，或者它可以是建筑物内的房间的名称。 locn:locatorName 的域是 locn:Address。</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">locator name</rdfs:label>
         <rdfs:label xml:lang="cn">定位器名称</rdfs:label>
     </owl:DatatypeProperty>
@@ -853,7 +853,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <owl:Class rdf:about="http://www.w3.org/ns/locn#Address">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">Address</rdfs:label>
         <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:Class>
