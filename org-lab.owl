@@ -219,7 +219,7 @@ Example: Siemens Austria AG, Volkswagen Ltd., Peter Miller&apos;s Cell phone Sho
 
 Compatibility with schema.org: This class is equivalent to the union of http://schema.org/Person and http://schema.org/Organization.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
-        <rdfs:isDefinedBy xml:lang="cn">经营性实体</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="cn">业务性实体</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Business entity</rdfs:label>
     </rdf:Description>
     
@@ -237,7 +237,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Association -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Association">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonbusinessEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Association</rdfs:label>
         <rdfs:label xml:lang="cn">协会</rdfs:label>
@@ -267,15 +267,6 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Closure -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Closure">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Company -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Company">
@@ -287,11 +278,24 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Completion -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Completion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Completion</rdfs:label>
+        <rdfs:label xml:lang="cn">完成</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:isDefinedBy xml:lang="en">Delivery</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="cn">交付</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -312,6 +316,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Founding">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Founding</rdfs:label>
+        <rdfs:label xml:lang="cn">成立</rdfs:label>
     </owl:Class>
     
 
@@ -349,6 +355,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Kickoff">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Kickoff</rdfs:label>
+        <rdfs:label xml:lang="cn">开始</rdfs:label>
     </owl:Class>
     
 
@@ -356,7 +364,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#League -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#League">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonbusinessEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">League</rdfs:label>
         <rdfs:label xml:lang="cn">联盟</rdfs:label>
@@ -379,17 +387,18 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Mergence</rdfs:label>
+        <rdfs:label xml:lang="cn">合并</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonbusinessEntity -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonbusinessEntity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
-        <rdfs:label xml:lang="en">Non-business entity</rdfs:label>
-        <rdfs:label xml:lang="cn">非经营性实体</rdfs:label>
+        <rdfs:label xml:lang="en">Nonbusiness entity</rdfs:label>
+        <rdfs:label xml:lang="cn">非业务性实体</rdfs:label>
     </owl:Class>
     
 
@@ -491,6 +500,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Relocation</rdfs:label>
+        <rdfs:label xml:lang="cn">搬迁</rdfs:label>
     </owl:Class>
     
 
@@ -501,6 +511,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Reorganization</rdfs:label>
+        <rdfs:label xml:lang="cn">重组</rdfs:label>
     </owl:Class>
     
 
@@ -565,7 +576,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Union -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Union">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Non-businessEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonbusinessEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Union</rdfs:label>
         <rdfs:label xml:lang="cn">联合会</rdfs:label>
@@ -587,6 +598,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Date-time interval</rdfs:label>
+        <rdfs:label xml:lang="cn">日期时间间隔</rdfs:label>
     </owl:Class>
     
 
@@ -597,6 +609,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Time instant</rdfs:label>
+        <rdfs:label xml:lang="cn">即时时间</rdfs:label>
     </owl:Class>
     
 
@@ -607,6 +620,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Time interval</rdfs:label>
+        <rdfs:label xml:lang="cn">时间间隔</rdfs:label>
     </owl:Class>
     
 
@@ -617,6 +631,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Proper interval</rdfs:label>
+        <rdfs:label xml:lang="cn">适当的间隔</rdfs:label>
     </owl:Class>
     
 
@@ -635,6 +650,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">Temporal entity</rdfs:label>
+        <rdfs:label xml:lang="cn">时间实体</rdfs:label>
     </owl:Class>
     
 
@@ -644,6 +660,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://www.w3.org/ns/locn#Address">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">Address</rdfs:label>
         <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:Class>
     
@@ -654,6 +671,15 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <rdf:Description rdf:about="http://www.w3.org/ns/org#FormalOrganization">
         <rdfs:comment xml:lang="cn">一个在世界范围内，特别是在法律管辖范围内得到承认的组织，具有相关的权利和责任。 示例包括公司、慈善机构、政府或教会。 请注意，这是 `gr:BusinessEntity` 的超类，建议使用 GoodRelations 词汇表来表示业务分类，例如 DUNS 或 NAICS。</rdfs:comment>
         <rdfs:label xml:lang="cn">正式组织</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Membership -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#Membership">
+        <rdfs:label xml:lang="cn">成员资格</rdfs:label>
+        <rdfs:label xml:lang="cn">表示行为主体在组织中的成员身份的性质。 表示行为主体、组织和角色之间的 n 元关系。 可以通过使用 `org:memberOf` 属性直接指示成员资格，而与特定角色无关。</rdfs:label>
     </rdf:Description>
     
 
@@ -670,6 +696,42 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalCollaboration">
         <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="cn">两个或多个组织之间的协作，例如一个项目。 它符合成为一个组织的标准，因为它具有独立于其特定成员的身份和明确目的，但既不是正式承认的法律实体，也不是某个更大组织内的子单位。 通常可能比其中的组织具有更短的生命周期，但不一定。 所有成员都是“组织：组织”而不是个人，这些组织可以在企业中扮演特定角色。 替代名称：_Project_ _Venture_ _Endeavour_ _Consortium_ _Endeavour_</rdfs:comment>
+        <rdfs:label xml:lang="cn">合作</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#OrganizationalUnit -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalUnit">
+        <rdfs:comment xml:lang="cn">诸如大学支持单位之类的组织，它是某个较大的正式组织的一部分，并且仅在该正式组织的范围内得到充分承认，它本身不是法人实体。 单元可以是大而复杂的，包含其他单元甚至正式组织。 替代名称：_OU_ _Unit_ _Department_</rdfs:comment>
+        <rdfs:label xml:lang="cn">组织单元</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Post -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#Post">
+        <rdfs:comment xml:lang="cn">职位代表组织内的某个职位，该职位独立于担任该职位的人而存在。 职位可用于代表一个人是依职权组织成员的情况（例如，苏格兰国务大臣是英国内阁的一部分，因为他是苏格兰事务大臣，而不是作为个人）。 一个职位可以由多个人担任，因此可以单独视为一个组织。</rdfs:comment>
+        <rdfs:label xml:lang="cn">职位</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Role -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#Role">
+        <rdfs:label xml:lang="cn">角色</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Site -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#Site">
+        <rdfs:label xml:lang="cn">场所</rdfs:label>
     </rdf:Description>
     
 
@@ -677,7 +739,10 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <!-- http://www.w3.org/ns/prov#Activity -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:comment xml:lang="en">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</rdfs:comment>
+        <rdfs:comment xml:lang="cn">活动是在一段时间内发生并作用于实体或与实体一起作用的事物； 它可能包括消费、处理、转换、修改、重新定位、使用或生成实体。</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+        <rdfs:label xml:lang="cn">活动</rdfs:label>
     </owl:Class>
     
 
