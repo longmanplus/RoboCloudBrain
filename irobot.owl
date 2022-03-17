@@ -401,34 +401,34 @@
         <DataProperty IRI="#Z"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#feature"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasDataValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDescription"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasFeature"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasLocalizationVector"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasOrientationVector"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasParameters"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPostState"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPreState"/>
+        <DataProperty IRI="#localizationVector"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#orientationVector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parameters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#posState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#preState"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ApplicationSoftware"/>
@@ -892,8 +892,16 @@
         <Class IRI="#VoiceAlgorithm"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#LeggedRobot"/>
+        <Class IRI="#TrackedRobot"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#RiseUp"/>
         <Class IRI="#TrunAround"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RobotHardware"/>
+        <Class IRI="#RobotSoftware"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#SlowDown"/>
@@ -1046,7 +1054,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSkill"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#Robot"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAboveOf"/>
@@ -1166,84 +1174,60 @@
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#X"/>
-        <DataProperty IRI="#hasLocalizationVector"/>
+        <DataProperty IRI="#localizationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#X"/>
+        <DataProperty IRI="#orientationVector"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Y"/>
-        <DataProperty IRI="#hasLocalizationVector"/>
+        <DataProperty IRI="#localizationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Y"/>
+        <DataProperty IRI="#orientationVector"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Z"/>
-        <DataProperty IRI="#hasLocalizationVector"/>
+        <DataProperty IRI="#localizationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Z"/>
+        <DataProperty IRI="#orientationVector"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#description"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#feature"/>
+        <DataProperty IRI="#hasDataValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasDataValue"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasDescription"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasFeature"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasLocalizationVector"/>
+        <DataProperty IRI="#localizationVector"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="#name"/>
         <DataProperty IRI="#hasDataValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasOrientationVector"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasParameters"/>
+        <DataProperty IRI="#parameters"/>
         <DataProperty IRI="#hasDataValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasPostState"/>
+        <DataProperty IRI="#posState"/>
         <DataProperty IRI="#hasDataValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasPreState"/>
+        <DataProperty IRI="#preState"/>
         <DataProperty IRI="#hasDataValue"/>
     </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasDescription"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasFeature"/>
-        <Class IRI="#Robot"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasLocalizationVector"/>
-        <Class IRI="#RobotComponent"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasName"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasParameters"/>
-        <Class IRI="#RobotSkill"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasParameters"/>
-        <Class IRI="#RobotTask"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPostState"/>
-        <Class IRI="#RobotTask"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPreState"/>
-        <Class IRI="#RobotTask"/>
-    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#material"/>
         <Class IRI="#RobotHardware"/>
@@ -1448,6 +1432,11 @@
         <Literal xml:lang="cn">外部传感器</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlatSpinPropulsivePlanktonicRobot</IRI>
+        <Literal>Flat spin propulsive planktonic robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FlatSpinPropulsivePlanktonicRobot</IRI>
         <Literal xml:lang="en">Flat spin propulsive planktonic robot</Literal>
@@ -1468,6 +1457,11 @@
         <Literal xml:lang="cn">翻转</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FloatingRobot</IRI>
+        <Literal>robot can swim above water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FloatingRobot</IRI>
         <Literal xml:lang="en">Floating robot</Literal>
@@ -1478,6 +1472,11 @@
         <Literal xml:lang="cn">浮游式机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlyingRobot</IRI>
+        <Literal>robot can fly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FlyingRobot</IRI>
         <Literal xml:lang="en">Flying robot</Literal>
@@ -1486,6 +1485,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FlyingRobot</IRI>
         <Literal xml:lang="cn">飞行式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GlidingFlyingRobots</IRI>
+        <Literal>&apos;Gliding flying robot&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1671,6 +1675,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LeftRight-PeristalticRobot</IRI>
         <Literal xml:lang="cn">左右蠕动机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LeggedRobot</IRI>
+        <Literal>robot can walk with leg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1953,6 +1962,11 @@
         <Literal xml:lang="cn">机器人</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RobotComponent</IRI>
+        <Literal>robot&apos;s compnent,include hardware and software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RobotComponent</IRI>
         <Literal xml:lang="en">Robot component</Literal>
@@ -2048,6 +2062,11 @@
         <Literal xml:lang="en">Squeezing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SquirmyRobot</IRI>
+        <Literal>robot moving with  squirmy method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SquirmyRobot</IRI>
         <Literal xml:lang="en">Squirmy robot</Literal>
@@ -2056,6 +2075,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SquirmyRobot</IRI>
         <Literal xml:lang="cn">蠕动式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StealthRobot</IRI>
+        <Literal>robot can dvie into water</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2218,6 +2242,11 @@
         <Literal xml:lang="cn">语音系统</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WheeledRobot</IRI>
+        <Literal>robot move with wheels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#WheeledRobot</IRI>
         <Literal xml:lang="en">Wheeled robot</Literal>
@@ -2226,6 +2255,41 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#WheeledRobot</IRI>
         <Literal xml:lang="cn">轮式机器人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#X</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#X</IRI>
+        <Literal xml:lang="cn">X</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Y</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Y</IRI>
+        <Literal xml:lang="cn">Y</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Z</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Z</IRI>
+        <Literal xml:lang="cn">Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#belongTo</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2238,6 +2302,11 @@
         <Literal xml:lang="cn">属于</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#connectedTo</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#connectedTo</IRI>
         <Literal xml:lang="en">connectedTo</Literal>
@@ -2246,6 +2315,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#connectedTo</IRI>
         <Literal xml:lang="cn">相连</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#depend</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2258,6 +2332,41 @@
         <Literal xml:lang="cn">依赖</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#description</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#description</IRI>
+        <Literal xml:lang="en">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#description</IRI>
+        <Literal xml:lang="cn">描述</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#feature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#feature</IRI>
+        <Literal xml:lang="en">feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#feature</IRI>
+        <Literal xml:lang="cn">特征</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasComponent</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasComponent</IRI>
         <Literal xml:lang="en">hasComponent</Literal>
@@ -2268,19 +2377,19 @@
         <Literal xml:lang="cn">组件</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDataValue</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasDataValue</IRI>
         <Literal xml:lang="en">hasDataValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasDescription</IRI>
-        <Literal xml:lang="en">hasDescription</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasFeature</IRI>
-        <Literal xml:lang="en">hasFeature</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasParticipant</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2293,6 +2402,11 @@
         <Literal xml:lang="cn">拥有参与者</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRobotChasis</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotChasis</IRI>
         <Literal xml:lang="en">hasRobotChasis</Literal>
@@ -2301,6 +2415,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotChasis</IRI>
         <Literal xml:lang="cn">拥有地盘</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRobotHand</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2313,6 +2432,11 @@
         <Literal xml:lang="cn">拥有机械臂</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRobotLeg</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotLeg</IRI>
         <Literal xml:lang="en">hasRobotLeg</Literal>
@@ -2321,6 +2445,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotLeg</IRI>
         <Literal xml:lang="cn">拥有机器足</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasSkill</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2333,6 +2462,11 @@
         <Literal xml:lang="cn">拥有技能</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isAboveOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isAboveOf</IRI>
         <Literal xml:lang="en">isAboveOf</Literal>
@@ -2341,6 +2475,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isAboveOf</IRI>
         <Literal xml:lang="cn">在上面</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isBehindOf</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2353,6 +2492,11 @@
         <Literal xml:lang="cn">后面</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isBelowOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isBelowOf</IRI>
         <Literal xml:lang="en">isBelowOf</Literal>
@@ -2361,6 +2505,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isBelowOf</IRI>
         <Literal xml:lang="cn">下面</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isInCenterOf</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2373,6 +2522,11 @@
         <Literal xml:lang="cn">在中心</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isInFrontOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isInFrontOf</IRI>
         <Literal xml:lang="en">isInFrontOf</Literal>
@@ -2381,6 +2535,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isInFrontOf</IRI>
         <Literal xml:lang="cn">前面</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isInsideOf</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2393,6 +2552,11 @@
         <Literal xml:lang="cn">在里面</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isLeftOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isLeftOf</IRI>
         <Literal xml:lang="en">isLeftOf</Literal>
@@ -2401,6 +2565,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isLeftOf</IRI>
         <Literal xml:lang="cn">左边</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isNextTo</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2413,6 +2582,11 @@
         <Literal xml:lang="cn">相邻</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isOntopOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isOntopOf</IRI>
         <Literal xml:lang="en">isOntopOf</Literal>
@@ -2421,6 +2595,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isOntopOf</IRI>
         <Literal xml:lang="cn">顶部</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isPartOf</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2433,6 +2612,11 @@
         <Literal xml:lang="cn">组成部分</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isPlanFor</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isPlanFor</IRI>
         <Literal xml:lang="en">isPlanFor</Literal>
@@ -2441,6 +2625,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isPlanFor</IRI>
         <Literal xml:lang="cn">计划</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isRightOf</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2454,6 +2643,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#localizationVector</IRI>
+        <Literal xml:lang="en">localizationVector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#localizationVector</IRI>
+        <Literal xml:lang="cn">定位坐标</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#location</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#location</IRI>
         <Literal xml:lang="en">location</Literal>
     </AnnotationAssertion>
@@ -2461,6 +2665,46 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#location</IRI>
         <Literal xml:lang="cn">位置</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#material</IRI>
+        <Literal xml:lang="cn">设备材料</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#material</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#material</IRI>
+        <Literal xml:lang="en">material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#material</IRI>
+        <Literal xml:lang="cn">材质</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="cn">名字</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#near</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2473,6 +2717,71 @@
         <Literal xml:lang="cn">旁边</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#orientationVector</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orientationVector</IRI>
+        <Literal xml:lang="en">orientationVector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orientationVector</IRI>
+        <Literal xml:lang="cn">朝向坐标</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#parameters</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameters</IRI>
+        <Literal xml:lang="en">parameters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameters</IRI>
+        <Literal xml:lang="cn">参数</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#posState</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#posState</IRI>
+        <Literal xml:lang="en">posState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#posState</IRI>
+        <Literal xml:lang="cn">后置状态</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#preState</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#preState</IRI>
+        <Literal xml:lang="en">preState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#preState</IRI>
+        <Literal xml:lang="cn">前置状态</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#require</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#require</IRI>
         <Literal xml:lang="en">require</Literal>
@@ -2481,6 +2790,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#require</IRI>
         <Literal xml:lang="cn">需要</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#requireSkill</IRI>
+        <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
