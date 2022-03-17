@@ -83,13 +83,36 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/locn#address">
         <rdfs:range rdf:resource="http://www.w3.org/ns/locn#Address"/>
+        <rdfs:comment xml:lang="en">The locn:address property relationship associates any resource with the &lt;a href=&quot;#locn:Address&quot;&gt;Address&lt;/a&gt; Class</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+        <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/ns/org#basedAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#basedAt"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#basedAt">
+        <rdfs:comment xml:lang="cn">位于</rdfs:comment>
+        <rdfs:comment xml:lang="cn">表示人员所在的场所。 我们不限制一个人位于多个场所的可能性。</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#changedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#changedBy">
+        <rdfs:label xml:lang="cn">被改变</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasMember -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#hasMember">
+        <rdfs:label xml:lang="cn">有成员</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -1031,6 +1054,9 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#classification">
+        <rdfs:label xml:lang="cn">分类</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="cn">组织</rdfs:label>
