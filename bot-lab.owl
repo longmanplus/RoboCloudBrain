@@ -186,7 +186,6 @@
 
     <rdf:Description rdf:about="https://schema.org/Person">
         <rdfs:label xml:lang="cn">人</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://schema.org"/>
     </rdf:Description>

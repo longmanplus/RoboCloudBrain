@@ -237,6 +237,14 @@
     
 
 
+    <!-- http://schema.org/Person -->
+
+    <rdf:Description rdf:about="http://schema.org/Person">
+        <owl:equivalentClass rdf:resource="https://schema.org/Person"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/org#OrganizationalCollaboration -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalCollaboration">
@@ -265,9 +273,23 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <owl:equivalentClass rdf:resource="https://schema.org/Person"/>
+    </rdf:Description>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Project -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <rdf:Description rdf:about="https://schema.org/Person"/>
     
 
 
