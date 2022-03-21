@@ -31,11 +31,11 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#academicDegree">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicBackground"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
         <rdfs:comment xml:lang="cn">学位</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">academicDegree</rdfs:label>
+        <rdfs:label xml:lang="en">academic degree</rdfs:label>
         <rdfs:label xml:lang="cn">学位</rdfs:label>
     </owl:ObjectProperty>
     
@@ -45,7 +45,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">birthplace</rdfs:label>
         <rdfs:label xml:lang="cn">出生地</rdfs:label>
@@ -57,7 +57,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicBackground"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment xml:lang="cn">毕业学校</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
@@ -272,13 +272,13 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicBackground -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicBackground">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="cn">AcademicBackground, include doctor/master /bachelor</rdfs:comment>
-        <rdfs:label xml:lang="en">Academic background</rdfs:label>
-        <rdfs:label xml:lang="cn">教育背景</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Academic degree</rdfs:label>
+        <rdfs:label xml:lang="cn">学位</rdfs:label>
     </owl:Class>
     
 
@@ -289,6 +289,17 @@
         <rdfs:comment xml:lang="en">classifation from https://en.wikipedia.org/wiki/Outline_of_academic_disciplinesi</rdfs:comment>
         <rdfs:label xml:lang="en">Discipline</rdfs:label>
         <rdfs:label xml:lang="cn">学科</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Educational attainment</rdfs:label>
+        <rdfs:label xml:lang="cn">学位</rdfs:label>
     </owl:Class>
     
 
@@ -351,6 +362,14 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label xml:lang="cn">人</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Project -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
@@ -396,9 +415,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineGamingAccount">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <rdfs:label xml:lang="cn">人</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
         <rdfs:label xml:lang="cn">个人简历</rdfs:label>
