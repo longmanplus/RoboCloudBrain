@@ -237,6 +237,14 @@
     
 
 
+    <!-- http://www.w3.org/ns/org#OrganizationalCollaboration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalCollaboration">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
@@ -254,6 +262,12 @@
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
     
 
 
