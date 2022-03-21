@@ -368,9 +368,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
-        <owl:deprecated xml:lang="en">true</owl:deprecated>
+        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
@@ -493,7 +492,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/mbox_sha1sum">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/member">
         <rdfs:label xml:lang="cn">成员</rdfs:label>
@@ -516,11 +514,8 @@
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/plan">
         <rdfs:label xml:lang="cn">规划</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/primaryTopic">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
-    </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/schoolHomepage">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/sha1">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -535,34 +530,26 @@
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/theme">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
         <rdfs:label xml:lang="cn">内容</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/thumbnail">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/tipjar">
         <owl:deprecated xml:lang="cn">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/topic">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
         <rdfs:label xml:lang="cn">主题</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/topic_interest">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/weblog">
         <owl:deprecated xml:lang="cn">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/workInfoHomepage">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/workplaceHomepage">
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/yahooChatID">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-        <owl:deprecated xml:lang="cn">true</owl:deprecated>
     </rdf:Description>
     
 
