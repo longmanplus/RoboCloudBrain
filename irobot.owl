@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
-    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -329,9 +329,6 @@
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasParticipant"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasRobotChasis"/>
     </Declaration>
     <Declaration>
@@ -389,9 +386,6 @@
         <ObjectProperty IRI="#require"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#requireSkill"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#X"/>
     </Declaration>
     <Declaration>
@@ -401,34 +395,13 @@
         <DataProperty IRI="#Z"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#feature"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDataValue"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#localizationVector"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#material"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#name"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#orientationVector"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#parameters"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#posState"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#preState"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ApplicationSoftware"/>
@@ -929,10 +902,6 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasParticipant"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasRobotChasis"/>
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
@@ -1004,10 +973,10 @@
         <ObjectProperty IRI="#require"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#requireSkill"/>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#depend"/>
         <ObjectProperty IRI="#require"/>
-    </SubObjectPropertyOf>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isBehindOf"/>
         <ObjectProperty IRI="#isInFrontOf"/>
@@ -1030,15 +999,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#depend"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#RobotHardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#depend"/>
+        <Class IRI="#RobotTask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasParticipant"/>
-        <Class IRI="#RobotTask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRobotChasis"/>
@@ -1086,10 +1055,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#require"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#RobotHardware"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#requireSkill"/>
+        <ObjectProperty IRI="#require"/>
         <Class IRI="#RobotTask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1106,14 +1075,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#depend"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#RobotSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#depend"/>
+        <Class IRI="#RobotSoftware"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasParticipant"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1162,11 +1131,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#require"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#RobotSkill"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#requireSkill"/>
-        <Class IRI="#RobotSkill"/>
+        <ObjectProperty IRI="#require"/>
+        <Class IRI="#RobotSoftware"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1197,36 +1166,8 @@
         <DataProperty IRI="#orientationVector"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#description"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#feature"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasDataValue"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#localizationVector"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#name"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#parameters"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#posState"/>
-        <DataProperty IRI="#hasDataValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#preState"/>
-        <DataProperty IRI="#hasDataValue"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#material"/>
@@ -2333,36 +2274,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#description</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#description</IRI>
-        <Literal xml:lang="en">description</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#description</IRI>
-        <Literal xml:lang="cn">描述</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#feature</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#feature</IRI>
-        <Literal xml:lang="en">feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#feature</IRI>
-        <Literal xml:lang="cn">特征</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#hasComponent</IRI>
         <IRI></IRI>
     </AnnotationAssertion>
@@ -2375,31 +2286,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasComponent</IRI>
         <Literal xml:lang="cn">组件</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasDataValue</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasDataValue</IRI>
-        <Literal xml:lang="en">hasDataValue</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#hasParticipant</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasParticipant</IRI>
-        <Literal xml:lang="en">hasParticipant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasParticipant</IRI>
-        <Literal xml:lang="cn">拥有参与者</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -2687,21 +2573,6 @@
         <Literal xml:lang="cn">材质</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#name</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#name</IRI>
-        <Literal xml:lang="en">name</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#name</IRI>
-        <Literal xml:lang="cn">名字</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#near</IRI>
         <IRI></IRI>
@@ -2733,51 +2604,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#parameters</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#parameters</IRI>
-        <Literal xml:lang="en">parameters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#parameters</IRI>
-        <Literal xml:lang="cn">参数</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#posState</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#posState</IRI>
-        <Literal xml:lang="en">posState</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#posState</IRI>
-        <Literal xml:lang="cn">后置状态</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#preState</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#preState</IRI>
-        <Literal xml:lang="en">preState</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#preState</IRI>
-        <Literal xml:lang="cn">前置状态</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#require</IRI>
         <IRI></IRI>
     </AnnotationAssertion>
@@ -2790,21 +2616,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#require</IRI>
         <Literal xml:lang="cn">需要</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#requireSkill</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#requireSkill</IRI>
-        <Literal xml:lang="en">requireSkill</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#requireSkill</IRI>
-        <Literal xml:lang="cn">需要技能</Literal>
     </AnnotationAssertion>
 </Ontology>
 
