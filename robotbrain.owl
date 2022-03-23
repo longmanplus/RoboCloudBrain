@@ -54,6 +54,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom">
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#School"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia">
