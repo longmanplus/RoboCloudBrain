@@ -47,9 +47,7 @@
 
     <!-- http://xmlns.com/foaf/0.1/img -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/img">
-        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/img"/>
     
 
 
@@ -81,11 +79,26 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInsitute"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#School"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom">
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom">
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#School"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -142,6 +155,14 @@
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#basedAt">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/img -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
     </rdf:Description>
     
 
