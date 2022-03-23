@@ -27,20 +27,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#academicDegree -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#academicDegree">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
-        <rdfs:comment xml:lang="cn">学位</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">academic degree</rdfs:label>
-        <rdfs:label xml:lang="cn">学位</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded">
@@ -49,15 +35,16 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasAcademicDegree -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace">
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasAcademicDegree">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
+        <rdfs:comment xml:lang="cn">学位</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">birthplace</rdfs:label>
-        <rdfs:label xml:lang="cn">出生地</rdfs:label>
+        <rdfs:label xml:lang="en">has academic degree</rdfs:label>
+        <rdfs:label xml:lang="cn">学位</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -156,6 +143,15 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit"/>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -267,17 +263,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/dc/terms/Location -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
-        <rdfs:label xml:lang="en">Location</rdfs:label>
-        <rdfs:label xml:lang="cn">地方</rdfs:label>
-    </owl:Class>
     
 
 
@@ -477,8 +462,8 @@
         <rdfs:label xml:lang="en">workMate</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
