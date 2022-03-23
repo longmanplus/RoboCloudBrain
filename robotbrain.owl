@@ -111,6 +111,14 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/img -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
+    </rdf:Description>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/made -->
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">

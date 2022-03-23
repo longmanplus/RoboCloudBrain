@@ -58,7 +58,6 @@
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment xml:lang="cn">毕业学校</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">graduateFrom</rdfs:label>
@@ -275,6 +274,15 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#BachelorDegree"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#DoctorDegree"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#MasterDegree"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">Academic degree</rdfs:label>
@@ -296,6 +304,15 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#HigherEducation"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#PrimaryEducation"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#SecondaryEducation"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">Educational attainment</rdfs:label>
@@ -354,14 +371,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
-        <rdfs:label xml:lang="cn">机构</rdfs:label>
-    </rdf:Description>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
@@ -375,6 +384,71 @@
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
         <rdfs:label xml:lang="cn">项目</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#BachelorDegree -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#BachelorDegree">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
+        <rdfs:label xml:lang="en">bachelor degree</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#DoctorDegree -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#DoctorDegree">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
+        <rdfs:label xml:lang="en">doctor degree</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#HigherEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#HigherEducation">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment"/>
+        <rdfs:label xml:lang="en">higher education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#MasterDegree -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#MasterDegree">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
+        <rdfs:label xml:lang="en">master degree</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#PrimaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#PrimaryEducation">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment"/>
+        <rdfs:label xml:lang="en">primary education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#SecondaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#SecondaryEducation">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EducationalAttainment"/>
+        <rdfs:label xml:lang="en">secondary education</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -415,6 +489,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineGamingAccount">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label xml:lang="cn">机构</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
         <rdfs:label xml:lang="cn">个人简历</rdfs:label>
