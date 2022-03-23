@@ -41,6 +41,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded">
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace">
@@ -54,24 +62,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#graduateFrom">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:comment xml:lang="cn">毕业学校</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">graduateFrom</rdfs:label>
-        <rdfs:label xml:lang="cn">毕业于</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
@@ -249,9 +245,7 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate"/>
     
 
 
@@ -350,6 +344,14 @@
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
+        <rdfs:label xml:lang="cn">人</rdfs:label>
     </rdf:Description>
     
 
@@ -470,13 +472,13 @@
 
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate">
         <rdfs:label xml:lang="cn">同事</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:comment xml:lang="cn">同事关系</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">workMate</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
+        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
@@ -484,9 +486,6 @@
         <rdfs:comment xml:lang="en">Image object</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/Person">
-        <rdfs:label xml:lang="cn">人</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
         <rdfs:label xml:lang="cn">人</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
