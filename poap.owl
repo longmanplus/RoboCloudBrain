@@ -123,6 +123,26 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#female"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">hasGender</rdfs:label>
+        <rdfs:label xml:lang="cn">性别</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#pastProject -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#pastProject">
@@ -485,14 +505,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/gender -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
-        <rdfs:label xml:lang="cn">性别</rdfs:label>
-    </rdf:Description>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/lastName -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName">
@@ -623,6 +635,25 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gender -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gender">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#female"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="cn">include male and female</rdfs:comment>
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <rdfs:label xml:lang="cn">性别</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -634,12 +665,6 @@
     <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#workMate"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:label xml:lang="cn">人</rdfs:label>
     </rdf:Description>
     
@@ -715,19 +740,16 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#dfdasfa -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#dfdasfa"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#dfdasfa">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gender"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#female -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#female">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/gender"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gender"/>
     </owl:NamedIndividual>
     
 
@@ -735,12 +757,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#male -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#male">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/gender"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gender"/>
     </owl:NamedIndividual>
     
 
@@ -768,8 +785,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
@@ -821,6 +838,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/geekcode">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:label xml:lang="cn">性别</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/givenName">
         <rdfs:label xml:lang="cn">名</rdfs:label>
