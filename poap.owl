@@ -785,8 +785,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
+        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
@@ -841,6 +841,7 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
         <rdfs:label xml:lang="cn">性别</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/givenName">
         <rdfs:label xml:lang="cn">名</rdfs:label>
