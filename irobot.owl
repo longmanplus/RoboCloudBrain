@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
-    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -317,6 +317,9 @@
         <Class IRI="#WheeledRobot"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#belongTo"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#connectedTo"/>
     </Declaration>
     <Declaration>
@@ -374,10 +377,10 @@
         <ObjectProperty IRI="#isRightOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#near"/>
+        <ObjectProperty IRI="#location"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#near"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#require"/>
@@ -883,8 +886,12 @@
         <Class IRI="#Stop"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#connectedTo"/>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#depend"/>
@@ -912,7 +919,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isAboveOf"/>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isBehindOf"/>
@@ -924,7 +931,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isInCenterOf"/>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isInFrontOf"/>
@@ -932,7 +939,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isInsideOf"/>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isLeftOf"/>
@@ -940,7 +947,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isNextTo"/>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isOntopOf"/>
@@ -955,12 +962,12 @@
         <ObjectProperty IRI="#isNextTo"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#near"/>
-        <ObjectProperty IRI="#relativeLocation"/>
+        <ObjectProperty IRI="#location"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#relativeLocation"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="#near"/>
+        <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#require"/>
@@ -969,10 +976,6 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#depend"/>
         <ObjectProperty IRI="#require"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasComponent"/>
-        <ObjectProperty IRI="#isPartOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isBehindOf"/>
@@ -987,15 +990,20 @@
         <ObjectProperty IRI="#isRightOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#connectedTo"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#depend"/>
-        <ObjectUnionOf>
-            <Class IRI="#RobotHardware"/>
-            <Class IRI="#RobotTask"/>
-        </ObjectUnionOf>
+        <Class IRI="#RobotHardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#depend"/>
+        <Class IRI="#RobotTask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1047,25 +1055,31 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#require"/>
-        <ObjectUnionOf>
-            <Class IRI="#RobotHardware"/>
-            <Class IRI="#RobotTask"/>
-        </ObjectUnionOf>
+        <Class IRI="#RobotHardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#require"/>
+        <Class IRI="#RobotTask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#connectedTo"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#depend"/>
-        <ObjectUnionOf>
-            <Class IRI="#RobotSkill"/>
-            <Class IRI="#RobotSoftware"/>
-        </ObjectUnionOf>
+        <Class IRI="#RobotSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#depend"/>
+        <Class IRI="#RobotSoftware"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1117,10 +1131,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#require"/>
-        <ObjectUnionOf>
-            <Class IRI="#RobotSkill"/>
-            <Class IRI="#RobotSoftware"/>
-        </ObjectUnionOf>
+        <Class IRI="#RobotSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#require"/>
+        <Class IRI="#RobotSoftware"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1155,33 +1170,9 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#X"/>
-        <Class IRI="#Robot"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Y"/>
-        <Class IRI="#Robot"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Z"/>
-        <Class IRI="#Robot"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#material"/>
         <Class IRI="#RobotHardware"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#X"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Y"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Z"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#material"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
@@ -2238,6 +2229,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#belongTo</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongTo</IRI>
+        <Literal xml:lang="en">belongTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongTo</IRI>
+        <Literal xml:lang="cn">属于</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#connectedTo</IRI>
         <IRI></IRI>
     </AnnotationAssertion>
@@ -2294,7 +2300,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotChasis</IRI>
-        <Literal xml:lang="cn">拥有底盘</Literal>
+        <Literal xml:lang="cn">拥有地盘</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -2532,6 +2538,21 @@
         <Literal xml:lang="cn">定位坐标</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#location</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location</IRI>
+        <Literal xml:lang="en">location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location</IRI>
+        <Literal xml:lang="cn">位置</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#material</IRI>
         <Literal xml:lang="cn">设备材料</Literal>
@@ -2580,21 +2601,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#orientationVector</IRI>
         <Literal xml:lang="cn">朝向坐标</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#relativeLocation</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#relativeLocation</IRI>
-        <Literal xml:lang="en">relativeLocation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#relativeLocation</IRI>
-        <Literal xml:lang="cn">相对位置</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
