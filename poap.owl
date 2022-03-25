@@ -85,6 +85,20 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#depicts -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#depicts">
+        <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:comment xml:lang="en">A thing depicted in this representation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">depicts</rdfs:label>
+        <rdfs:label xml:lang="cn">描述</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#focusOn -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#focusOn">
@@ -199,11 +213,20 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdfs:label xml:lang="cn">拥有描述</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/depicts -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depicts">
         <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:label xml:lang="cn">描述</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     
 
@@ -381,14 +404,14 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#faceInfo -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#facialFeature -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#faceInfo">
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#facialFeature">
         <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">face info</rdfs:label>
-        <rdfs:label xml:lang="cn">人脸信息</rdfs:label>
+        <rdfs:label xml:lang="en">facial feature</rdfs:label>
+        <rdfs:label xml:lang="cn">人脸特征</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -460,22 +483,9 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#socialBenefit -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#priority -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#socialBenefit">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">social benefit</rdfs:label>
-        <rdfs:label xml:lang="cn">社会效益</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#vipLevel -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#vipLevel">
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#priority">
         <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -491,8 +501,21 @@
             </rdfs:Datatype>
         </rdfs:range>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="cn">VIP等级</rdfs:label>
-        <rdfs:label xml:lang="en">vip level</rdfs:label>
+        <rdfs:label xml:lang="en">priority</rdfs:label>
+        <rdfs:label xml:lang="cn">优先级</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#socialBenefit -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#socialBenefit">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">social benefit</rdfs:label>
+        <rdfs:label xml:lang="cn">社会效益</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -743,6 +766,14 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:label xml:lang="cn">图片</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/LabelProperty -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/LabelProperty">
@@ -884,8 +915,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
+        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
@@ -897,9 +928,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
         <rdfs:label xml:lang="cn">团体</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Image">
-        <rdfs:label xml:lang="cn">图片</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
         <rdfs:label xml:lang="cn">线上聊天工具</rdfs:label>
@@ -925,9 +953,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/based_near">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depiction">
-        <rdfs:label xml:lang="cn">拥有描述</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/dnaChecksum">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
