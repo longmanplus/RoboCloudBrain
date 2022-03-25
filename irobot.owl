@@ -401,7 +401,7 @@
         <DataProperty IRI="#cruiseDuration"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#dimensions"/>
+        <DataProperty IRI="#dimension"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#enduranceMileage"/>
@@ -425,7 +425,7 @@
         <DataProperty IRI="#orientationVector"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#submergedDepth"/>
@@ -1200,31 +1200,31 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#accelerateRate"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#carryingCapacity"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#cruiseDuration"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#dimensions"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#dimension"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#enduranceMileage"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#flightAltitude"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#flyingDistance"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#localizationVector"/>
@@ -1232,15 +1232,15 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#moveSpeed"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#submergedDepth"/>
-        <DataProperty IRI="#robotParameters"/>
+        <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#weight"/>
@@ -1274,7 +1274,7 @@
         <Class IRI="#Robot"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#dimensions"/>
+        <DataProperty IRI="#dimension"/>
         <ObjectUnionOf>
             <Class IRI="#Robot"/>
             <Class IRI="#RobotHardware"/>
@@ -1354,7 +1354,7 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#dimensions"/>
+        <DataProperty IRI="#dimension"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2557,27 +2557,27 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#dimensions</IRI>
+        <IRI>#dimension</IRI>
         <Literal xml:lang="cn">length*width*height</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#dimensions</IRI>
+        <IRI>#dimension</IRI>
         <IRI></IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#dimensions</IRI>
-        <Literal xml:lang="en">dimensions</Literal>
+        <IRI>#dimension</IRI>
+        <Literal xml:lang="en">dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#dimensions</IRI>
+        <IRI>#dimension</IRI>
         <Literal xml:lang="cn">尺寸</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:units"/>
-        <IRI>#dimensions</IRI>
+        <IRI>#dimension</IRI>
         <Literal>cm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
