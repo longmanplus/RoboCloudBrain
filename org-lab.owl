@@ -361,6 +361,8 @@
     <!-- http://www.w3.org/ns/org#identifier -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#identifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="cn">标识符</rdfs:label>
     </rdf:Description>
     
@@ -886,6 +888,12 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <!-- http://www.w3.org/ns/org#Membership -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#Membership">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/org#organization"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/org#Organization"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:label xml:lang="cn">成员资格</rdfs:label>
         <rdfs:label xml:lang="cn">表示行为主体在组织中的成员身份的性质。 表示行为主体、组织和角色之间的 n 元关系。 可以通过使用 `org:memberOf` 属性直接指示成员资格，而与特定角色无关。</rdfs:label>
     </rdf:Description>
