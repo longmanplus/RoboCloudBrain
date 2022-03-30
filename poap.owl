@@ -238,11 +238,11 @@
 
     <!-- http://xmlns.com/foaf/0.1/knows -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/knows">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="cn">认识</rdfs:label>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -456,13 +456,13 @@
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range>
             <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
                 <owl:withRestrictions rdf:parseType="Collection">
                     <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</xsd:minInclusive>
+                        <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</xsd:minLength>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</xsd:maxExclusive>
+                        <xsd:maxLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxLength>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
@@ -617,10 +617,10 @@
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                 <owl:withRestrictions rdf:parseType="Collection">
                     <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</xsd:minInclusive>
+                        <xsd:maxLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxLength>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</xsd:maxExclusive>
+                        <xsd:maxLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:maxLength>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
@@ -906,8 +906,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
+        <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
