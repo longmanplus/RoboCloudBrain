@@ -499,6 +499,18 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonbusinessEntity"/>
+        <rdfs:comment xml:lang="en">A competition to do better than other people, usually in which prizes are given</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">Contest</rdfs:label>
+        <rdfs:label xml:lang="cn">比赛</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery">
