@@ -79,21 +79,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded -->
-
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInsitute"/>
-                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#School"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia">
