@@ -48,8 +48,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#awarded">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicDegree"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">awarded</rdfs:label>
         <rdfs:label xml:lang="cn">授予</rdfs:label>
@@ -118,7 +118,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
         <rdfs:comment xml:lang="cn">An organization funding a project or person.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">fundedBy</rdfs:label>
@@ -407,6 +407,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#fundingAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#fundingAmount">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="en">funding amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#nickName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#nickName">
@@ -653,10 +663,18 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">Academic degree</rdfs:label>
         <rdfs:label xml:lang="cn">学位</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
@@ -696,6 +714,14 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
         <rdfs:label xml:lang="cn">邮箱地址</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
     </owl:Class>
     
 
@@ -906,8 +932,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
