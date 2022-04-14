@@ -296,6 +296,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#age -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -417,6 +418,17 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#height -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#height">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+        <rdfs:label xml:lang="cn">身高</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#nickName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#nickName">
@@ -517,6 +529,17 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">social benefit</rdfs:label>
         <rdfs:label xml:lang="cn">社会效益</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#weight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">weight</rdfs:label>
+        <rdfs:label xml:lang="cn">体重</rdfs:label>
     </owl:DatatypeProperty>
     
 
