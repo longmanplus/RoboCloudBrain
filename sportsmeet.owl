@@ -18,8 +18,6 @@
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet">
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
-        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline"/>
-        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
     </owl:Ontology>
@@ -47,7 +45,9 @@
 
     <!-- http://xmlns.com/foaf/0.1/img -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/img"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -150,14 +150,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/img -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
-        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
-    </rdf:Description>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/made -->
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">
@@ -193,51 +185,11 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience -->
-
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience -->
-
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities -->
-
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience -->
-
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience -->
-
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
