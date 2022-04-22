@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#"
+     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://www.w3.org/2006/vcard/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain">
+        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
+        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline"/>
+        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
+        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/org#location -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/org#location">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/img -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/img"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Interaction"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#communication"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:label xml:lang="en">has media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involved -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involved">
+        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involvedIn"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involvedIn">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:label xml:lang="en">involved in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#originator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#originator">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gift"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Message"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#receiver -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#receiver">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gift"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Message"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#basedAt -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#basedAt">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/img -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/made -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic_interest -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/topic_interest">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Interaction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Interaction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Message -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Message">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#communication -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#communication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#OrganizationalCollaboration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalCollaboration">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#belongTo">
+        <rdfs:comment xml:lang="en">What to do?</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasComponent">
+        <rdfs:comment xml:lang="en">what to do?</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#isPartOf">
+        <rdfs:comment xml:lang="en">what to do?</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#location">
+        <rdfs:comment xml:lang="en">what do do?</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#require">
+        <rdfs:comment xml:lang="en">what to do?</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#WeiSong">
+        <rdfs:label xml:lang="cn">宋伟</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/family_name">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/givenname">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
