@@ -16,7 +16,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
-    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain">
+    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet">
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline"/>
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
