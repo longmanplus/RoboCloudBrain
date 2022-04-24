@@ -346,7 +346,7 @@
         <rdfs:domain rdf:resource="http://www.w3.org/ns/locn#Address"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. The domain of locn:locatorDesignator is locn:Address.</rdfs:comment>
-        <rdfs:comment xml:lang="en">在相关范围内唯一标识定位器的数字或字符序列。 定位器的完整标识可以包括一个或多个定位器指示符。 locn:locatorDesignator 的域是 locn:Address。</rdfs:comment>
+        <rdfs:comment xml:lang="cn">在相关范围内唯一标识定位器的数字或字符序列。 定位器的完整标识可以包括一个或多个定位器指示符。 locn:locatorDesignator 的域是 locn:Address。</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn.ttl"/>
         <rdfs:label xml:lang="en">locator designator</rdfs:label>
         <rdfs:label xml:lang="cn">定位器指示符</rdfs:label>
