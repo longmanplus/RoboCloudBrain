@@ -14,6 +14,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet">
+        <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <owl:imports rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
     </owl:Ontology>
