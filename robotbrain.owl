@@ -273,6 +273,14 @@
     
 
 
+    <!-- http://www.w3.org/ns/org#Site -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#Site">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Site"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
@@ -296,6 +304,12 @@
     <!-- http://xmlns.com/foaf/0.1/Project -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- https://w3id.org/bot#Site -->
+
+    <rdf:Description rdf:about="https://w3id.org/bot#Site"/>
     
 
 
