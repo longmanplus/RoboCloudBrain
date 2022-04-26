@@ -21,6 +21,18 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound"/>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchType -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchType"/>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#AdversarySport -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#AdversarySport">
@@ -260,12 +272,29 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Double -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Double">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchType"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#DragonBoat -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#DragonBoat">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#WaterSport"/>
         <rdfs:label xml:lang="en">Dragon Boat</rdfs:label>
         <rdfs:label xml:lang="cn">龙舟</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#EighthFinal -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#EighthFinal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound"/>
+        <rdfs:label xml:lang="en">Eighth Final</rdfs:label>
     </owl:Class>
     
 
@@ -300,6 +329,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Final -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Final">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound"/>
+        <rdfs:label xml:lang="en">Final</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Football -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Football">
@@ -307,6 +345,12 @@
         <rdfs:label xml:lang="en">Football</rdfs:label>
         <rdfs:label xml:lang="cn">足球</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
     
 
 
@@ -400,6 +444,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Man -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Man">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Marathon_Swimming -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Marathon_Swimming">
@@ -410,12 +462,38 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Mixed -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Mixed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#ModernPentathlon -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#ModernPentathlon">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#CompetitiveSport"/>
         <rdfs:label xml:lang="en">Modern Pentathlon</rdfs:label>
         <rdfs:label xml:lang="cn">现代五项</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#QualifyingHeat -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#QualifyingHeat">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound"/>
+        <rdfs:label xml:lang="en">Qualifying Heat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#QuarterFinal -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#QuarterFinal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound"/>
+        <rdfs:label xml:lang="en">Quarter Final</rdfs:label>
     </owl:Class>
     
 
@@ -460,6 +538,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SemiFinal -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SemiFinal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchRound"/>
+        <rdfs:label xml:lang="en">Semi Final</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Sepaktakraw -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Sepaktakraw">
@@ -476,6 +563,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#CompetitiveSport"/>
         <rdfs:label xml:lang="en">Shooting</rdfs:label>
         <rdfs:label xml:lang="cn">射击</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Single -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Single">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchType"/>
     </owl:Class>
     
 
@@ -560,6 +655,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Team -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Team">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#MatchType"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Tennis -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Tennis">
@@ -626,6 +729,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#CompetitiveSport"/>
         <rdfs:label xml:lang="en">Weightlifting</rdfs:label>
         <rdfs:label xml:lang="cn">举重</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Woman -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Woman">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
     </owl:Class>
     
 
