@@ -69,7 +69,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline"/>
         <rdfs:comment xml:lang="cn">比赛项目</rdfs:comment>
         <rdfs:label xml:lang="en">sports discipline</rdfs:label>
     </owl:ObjectProperty>
@@ -145,12 +145,6 @@
         <rdfs:label xml:lang="en">Sports Team</rdfs:label>
         <rdfs:label xml:lang="cn">运动队</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
     
 
 
