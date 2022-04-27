@@ -351,12 +351,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderComposition -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderComposition">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsCategory"/>
-        <rdfs:label xml:lang="en">Gender diversity</rdfs:label>
-        <rdfs:label xml:lang="cn">性别多样性</rdfs:label>
+        <rdfs:label xml:lang="en">Gender composition</rdfs:label>
+        <rdfs:label xml:lang="cn">性别组成</rdfs:label>
     </owl:Class>
     
 
@@ -454,7 +454,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Man -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Man">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderComposition"/>
         <rdfs:label xml:lang="en">Man</rdfs:label>
         <rdfs:label xml:lang="cn">男子</rdfs:label>
     </owl:Class>
@@ -474,7 +474,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Mixed -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Mixed">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderComposition"/>
         <rdfs:label xml:lang="en">Mixed</rdfs:label>
         <rdfs:label xml:lang="cn">混合</rdfs:label>
     </owl:Class>
@@ -772,7 +772,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Woman -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Woman">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderComposition"/>
         <rdfs:label xml:lang="en">Woman</rdfs:label>
         <rdfs:label xml:lang="cn">女子</rdfs:label>
     </owl:Class>
