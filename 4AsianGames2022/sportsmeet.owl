@@ -39,21 +39,17 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasOrigin -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasOrigin">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#SportsTeam"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#SportsTeam"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Origin"/>
         <rdfs:label xml:lang="en">has origin</rdfs:label>
         <rdfs:label xml:lang="cn">源自</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#onBehalfOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#onBehalfOf">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Origin"/>
-        <rdfs:label xml:lang="en">on behalf of</rdfs:label>
-        <rdfs:label xml:lang="cn">名义</rdfs:label>
     </owl:ObjectProperty>
     
 
