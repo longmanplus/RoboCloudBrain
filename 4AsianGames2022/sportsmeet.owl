@@ -36,6 +36,24 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasGenderComposition -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasGenderComposition">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#SportsTeam"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderComposition"/>
+        <rdfs:comment xml:lang="cn">性别构成</rdfs:comment>
+        <rdfs:label xml:lang="en">has gender composition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasOrigin -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasOrigin">
@@ -68,17 +86,6 @@
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline"/>
         <rdfs:comment xml:lang="cn">比赛项目</rdfs:comment>
         <rdfs:label xml:lang="en">sports discipline</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsGenderDiversity -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsGenderDiversity">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
-        <rdfs:comment xml:lang="cn">比赛性别多样性</rdfs:comment>
-        <rdfs:label xml:lang="en">sports gender diversity</rdfs:label>
     </owl:ObjectProperty>
     
 
