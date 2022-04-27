@@ -142,7 +142,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#SportsTeam">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonprofitEntity"/>
-        <rdfs:label xml:lang="en">Sports Team</rdfs:label>
+        <rdfs:label xml:lang="en">Sports team</rdfs:label>
         <rdfs:label xml:lang="cn">运动队</rdfs:label>
     </owl:Class>
     
