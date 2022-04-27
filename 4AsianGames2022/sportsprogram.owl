@@ -24,6 +24,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Round -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Round">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsCategory"/>
         <rdfs:comment xml:lang="en">Round</rdfs:comment>
         <rdfs:label xml:lang="cn">轮次</rdfs:label>
     </owl:Class>
@@ -33,6 +34,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Scale -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Scale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsCategory"/>
         <rdfs:comment xml:lang="cn">规模</rdfs:comment>
         <rdfs:label xml:lang="en">Scale</rdfs:label>
     </owl:Class>
@@ -42,7 +44,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#AdversarySport -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#AdversarySport">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline"/>
         <rdfs:label xml:lang="en">Adversary Sport</rdfs:label>
         <rdfs:label xml:lang="cn">对抗性比赛</rdfs:label>
     </owl:Class>
@@ -102,7 +104,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#BallSport -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#BallSport">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline"/>
         <rdfs:label xml:lang="en">Ball Sport</rdfs:label>
         <rdfs:label xml:lang="cn">球类比赛</rdfs:label>
     </owl:Class>
@@ -202,7 +204,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#CompetitiveSport -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#CompetitiveSport">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline"/>
         <rdfs:label xml:lang="en">Competitive Sport</rdfs:label>
         <rdfs:label xml:lang="cn">竞技性比赛</rdfs:label>
     </owl:Class>
@@ -255,15 +257,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#CompetitiveSport"/>
         <rdfs:label xml:lang="en">Cycling Track</rdfs:label>
         <rdfs:label xml:lang="cn">场地自行车</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline">
-        <rdfs:label xml:lang="en">Discipline</rdfs:label>
-        <rdfs:label xml:lang="cn">赛事项目</rdfs:label>
     </owl:Class>
     
 
@@ -361,6 +354,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsCategory"/>
         <rdfs:label xml:lang="en">Gender Diversity</rdfs:label>
         <rdfs:label xml:lang="cn">性别多样性</rdfs:label>
     </owl:Class>
@@ -637,6 +631,24 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsCategory -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsCategory">
+        <rdfs:label xml:lang="en">Sports Category</rdfs:label>
+        <rdfs:label xml:lang="cn">运动类别</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline">
+        <rdfs:label xml:lang="en">Sports Discipline</rdfs:label>
+        <rdfs:label xml:lang="cn">运动项目</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Squash -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Squash">
@@ -740,7 +752,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#WaterSport -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#WaterSport">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#SportsDiscipline"/>
         <rdfs:label xml:lang="en">Water Sport</rdfs:label>
         <rdfs:label xml:lang="cn">水上比赛</rdfs:label>
     </owl:Class>
