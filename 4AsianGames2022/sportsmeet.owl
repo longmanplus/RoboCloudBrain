@@ -123,7 +123,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest -->
 
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
     </rdf:Description>
     
 
@@ -145,6 +145,12 @@
         <rdfs:label xml:lang="en">Sports Team</rdfs:label>
         <rdfs:label xml:lang="cn">运动队</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
     
 
 
