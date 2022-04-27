@@ -36,11 +36,46 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#programDiscipline -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsDiscipline -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#programDiscipline">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsDiscipline">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#Discipline"/>
+        <rdfs:comment xml:lang="cn">比赛项目</rdfs:comment>
+        <rdfs:label xml:lang="en">sports discipline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsGenderDiversity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsGenderDiversity">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsprogram#GenderDiversity"/>
+        <rdfs:comment xml:lang="cn">比赛性别多样性</rdfs:comment>
+        <rdfs:label xml:lang="en">sports gender diversity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsRound -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsRound">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Round"/>
+        <rdfs:comment xml:lang="cn">比赛轮次</rdfs:comment>
+        <rdfs:label xml:lang="en">spoorts round</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsScale -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#sportsScale">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Scale"/>
+        <rdfs:comment xml:lang="cn">比赛规模</rdfs:comment>
+        <rdfs:label xml:lang="en">sports scale</rdfs:label>
     </owl:ObjectProperty>
     
 
