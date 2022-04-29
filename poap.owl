@@ -383,9 +383,10 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#citizenship -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#citizenship">
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="cn">公民身份。以中国大陆和香港法律而言， “ 国籍” 和 “公民身分” 的含义大致相同。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">citizenship</rdfs:label>
         <rdfs:label xml:lang="cn">国籍</rdfs:label>
     </owl:DatatypeProperty>
@@ -442,11 +443,11 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#facialFeature -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#facialFeature">
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">facial feature</rdfs:label>
-        <rdfs:label xml:lang="cn">人脸特征</rdfs:label>
+        <rdfs:label xml:lang="cn">面部特征</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -456,7 +457,9 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#fundingAmount">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">funding amount</rdfs:label>
+        <rdfs:label xml:lang="cn">资金量</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -465,11 +468,11 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#height">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">height</rdfs:label>
-        <rdfs:label xml:lang="cn">身高</rdfs:label>
+        <rdfs:label xml:lang="cn">高度</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -544,7 +547,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#priority -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#priority">
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -582,11 +585,11 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#weight">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">weight</rdfs:label>
-        <rdfs:label xml:lang="cn">体重</rdfs:label>
+        <rdfs:label xml:lang="cn">重量</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -616,6 +619,15 @@
             </rdfs:Datatype>
         </rdfs:range>
     </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/org#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/org#identifier">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -691,7 +703,7 @@
     <!-- http://xmlns.com/foaf/0.1/title -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/title">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1013,8 +1025,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
