@@ -372,7 +372,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#birthplace">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">birthplace</rdfs:label>
         <rdfs:label xml:lang="cn">出生地</rdfs:label>
@@ -411,7 +411,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressDomain">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressPart"/>
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&apos;email address domain&apos;</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">email address domain</rdfs:label>
@@ -425,7 +425,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressLocalPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressPart"/>
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&apos;email address local part&apos;</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">email address local part</rdfs:label>
@@ -444,7 +444,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#facialFeature">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">facial feature</rdfs:label>
         <rdfs:label xml:lang="cn">面部特征</rdfs:label>
@@ -490,7 +490,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">nickName</rdfs:label>
         <rdfs:label xml:lang="cn">别称</rdfs:label>
