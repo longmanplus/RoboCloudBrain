@@ -300,6 +300,19 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NationalIdentificationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NationalIdentificationNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">national identification number</rdfs:label>
+        <rdfs:label xml:lang="cn">身份证号码</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.w3.org/2006/time#inXSDDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDate">
