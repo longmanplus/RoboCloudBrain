@@ -36,6 +36,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#awardFor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#awardFor">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Contest"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasGenderComposition -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#hasGenderComposition">
@@ -120,6 +129,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Contest"/>
     
 
 
