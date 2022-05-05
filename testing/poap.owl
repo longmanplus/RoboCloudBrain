@@ -997,6 +997,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#rj -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#rj">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <numberOfvisits rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</numberOfvisits>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</foaf:age>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1006,8 +1016,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
