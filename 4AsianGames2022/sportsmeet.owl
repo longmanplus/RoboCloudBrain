@@ -143,6 +143,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet#Contest">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
         <rdfs:comment xml:lang="en">A competition to do better than other people, usually in which prizes are given</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/sportsmeet"/>
         <rdfs:label xml:lang="en">Contest</rdfs:label>
