@@ -64,6 +64,19 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="cn">由(某机构等)授予</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">be awarded by</rdfs:label>
+        <rdfs:label xml:lang="cn">由授予</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFunded -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFunded">
@@ -81,6 +94,20 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">be funded</rdfs:label>
         <rdfs:label xml:lang="cn">被资助</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="cn">由(某机构等)资助</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">be funded by</rdfs:label>
+        <rdfs:label xml:lang="cn">由资助</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -169,6 +196,17 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">has gender</rdfs:label>
         <rdfs:label xml:lang="cn">性别</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasResult">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Result"/>
+        <rdfs:label xml:lang="en">has result</rdfs:label>
+        <rdfs:label xml:lang="cn">有成果，有结果</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -568,6 +606,18 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#professionalSkill -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#professionalSkill">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">professional skill</rdfs:label>
+        <rdfs:label xml:lang="cn">专业技能</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#socialBenefit -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#socialBenefit">
@@ -744,6 +794,18 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment xml:lang="cn">大多数学术成果都以论文、书籍等学术出版物形式被出版</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Academic publication</rdfs:label>
+        <rdfs:label xml:lang="cn">学术出版物</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award">
@@ -756,7 +818,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline">
-        <rdfs:comment xml:lang="en">classifation from https://en.wikipedia.org/wiki/Outline_of_academic_disciplinesi</rdfs:comment>
+        <rdfs:comment xml:lang="en">classifation from https://en.wikipedia.org/wiki/Outline_of_academic_disciplines</rdfs:comment>
         <rdfs:label xml:lang="en">Discipline</rdfs:label>
         <rdfs:label xml:lang="cn">学科</rdfs:label>
     </owl:Class>
@@ -796,6 +858,9 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Funding</rdfs:label>
+        <rdfs:label xml:lang="cn">资金</rdfs:label>
     </owl:Class>
     
 
@@ -825,6 +890,29 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">Gift</rdfs:label>
         <rdfs:label xml:lang="cn">礼物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Result -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Result">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Result</rdfs:label>
+        <rdfs:label xml:lang="cn">结果；业绩；成果</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#TalentPlan -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#TalentPlan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
+        <rdfs:comment xml:lang="cn">人才计划，可能包含头衔、资金等</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Talent plan</rdfs:label>
+        <rdfs:label xml:lang="cn">人才计划</rdfs:label>
     </owl:Class>
     
 
@@ -1006,8 +1094,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
