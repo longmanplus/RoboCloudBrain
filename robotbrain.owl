@@ -137,6 +137,28 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#orient -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#orient">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Apparatus"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
+                    <rdf:Description rdf:about="https://w3id.org/bot#Element"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+        <rdfs:comment xml:lang="cn">用于描述人机交互场景中的人或物相对于客体的朝向。例如：机器人正对人，机器人左侧有一个桌子，则 桌子- orient - Left</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
+        <rdfs:label xml:lang="en">orient</rdfs:label>
+        <rdfs:label xml:lang="cn">朝向</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#originator -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#originator">
@@ -246,6 +268,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
     
 
 
