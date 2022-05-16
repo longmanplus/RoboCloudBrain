@@ -110,6 +110,25 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Above"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Behind"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Below"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Front"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Left"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Right"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#ExtendedElement -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#ExtendedElement">
@@ -173,6 +192,65 @@
         <rdfs:label xml:lang="en">Zone type</rdfs:label>
         <rdfs:label xml:lang="cn">区域类别</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Above -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Above">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Behind -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Behind">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Below -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Below">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Front -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Front">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Left -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Left">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Right -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Right">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction"/>
+    </owl:NamedIndividual>
     
 
 
