@@ -117,6 +117,27 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:comment xml:lang="en">拥有状态，表示物体现在的状态</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
+        <rdfs:label xml:lang="en">has state</rdfs:label>
+        <rdfs:label xml:lang="cn">拥有状态</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involved -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#involved">
@@ -260,6 +281,43 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#keyWord -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#keyWord">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="cn">对每个thing的关键称呼，比如云脑项目的关键词是--机器人智能云脑平台</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
+        <rdfs:label xml:lang="en">key word</rdfs:label>
+        <rdfs:label xml:lang="cn">关键词</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#usage -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#usage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotComponent"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotSkill"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotTask"/>
+                    <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>用途，表达物体、机器人等用途</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
+        <rdfs:label xml:lang="en">usage</rdfs:label>
+        <rdfs:label xml:lang="cn">用途</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -364,6 +422,17 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>状态，表达物体、建筑的状态</rdfs:comment>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+        <rdfs:label xml:lang="cn">状态</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Synonym -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Synonym">
@@ -442,9 +511,15 @@
     
 
 
+    <!-- https://w3id.org/bot#Building -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Building"/>
+    
+
+
     <!-- https://w3id.org/bot#Site -->
 
-    <rdf:Description rdf:about="https://w3id.org/bot#Site"/>
+    <owl:Class rdf:about="https://w3id.org/bot#Site"/>
     
 
 

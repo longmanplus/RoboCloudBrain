@@ -434,9 +434,6 @@
         <DataProperty IRI="#taskVars"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#uage"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#weight"/>
     </Declaration>
     <Declaration>
@@ -1253,10 +1250,6 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#uage"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#weight"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1322,8 +1315,8 @@
         <Class IRI="#SquirmyRobot"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#uage"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <DataProperty IRI="#taskVars"/>
+        <Class IRI="#RobotTask"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#weight"/>
@@ -1425,7 +1418,7 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#uage"/>
+        <DataProperty IRI="#taskVars"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3061,26 +3054,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#taskVars</IRI>
         <Literal xml:lang="cn">任务参数</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#uage</IRI>
-        <Literal xml:lang="cn">任务、技能、物体等用途</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#uage</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#uage</IRI>
-        <Literal xml:lang="en">usage</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#uage</IRI>
-        <Literal xml:lang="cn">用途</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
