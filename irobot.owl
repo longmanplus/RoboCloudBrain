@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
-    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -429,6 +429,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#submergedDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taskVars"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#weight"/>
@@ -1243,6 +1246,10 @@
         <DataProperty IRI="#robotParameter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#taskVars"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#weight"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1306,6 +1313,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#submergedDepth"/>
         <Class IRI="#SquirmyRobot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taskVars"/>
+        <Class IRI="#RobotTask"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#weight"/>
@@ -1405,6 +1416,10 @@
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
             </FacetRestriction>
         </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#taskVars"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#weight"/>
@@ -3019,6 +3034,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:units"/>
         <IRI>#submergedDepth</IRI>
         <Literal>m</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#taskVars</IRI>
+        <Literal xml:lang="en">robot task vars, is a list,example:@peo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#taskVars</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#taskVars</IRI>
+        <Literal xml:lang="en">taskVars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#taskVars</IRI>
+        <Literal xml:lang="cn">任务参数</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
