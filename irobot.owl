@@ -1073,7 +1073,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#inherentlyDepend"/>
-        <Class IRI="#RobotHardware"/>
+        <Class IRI="#RobotSoftware"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAboveOf"/>
@@ -1144,7 +1144,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#inherentlyDepend"/>
-        <Class IRI="#RobotSoftware"/>
+        <Class IRI="#RobotHardware"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAboveOf"/>
