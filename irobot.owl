@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot">
-    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
+    <Prefix name="" IRI="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -338,6 +338,9 @@
         <ObjectProperty IRI="#hasSkill"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#inherentlyDepend"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isAboveOf"/>
     </Declaration>
     <Declaration>
@@ -375,6 +378,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#near"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#noninherentlyDepend"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#relativeLocation"/>
@@ -938,10 +944,6 @@
         <ObjectProperty IRI="#relativeLocation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#depend"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -960,6 +962,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasSkill"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inherentlyDepend"/>
+        <ObjectProperty IRI="#depend"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isAboveOf"/>
@@ -1010,6 +1016,10 @@
         <ObjectProperty IRI="#relativeLocation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#noninherentlyDepend"/>
+        <ObjectProperty IRI="#depend"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#relativeLocation"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1018,12 +1028,12 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#depend"/>
-        <ObjectProperty IRI="#require"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#inherentlyDepend"/>
+        <ObjectProperty IRI="#require"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isBehindOf"/>
@@ -1040,13 +1050,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#connectedTo"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#depend"/>
-        <ObjectUnionOf>
-            <Class IRI="#RobotHardware"/>
-            <Class IRI="#RobotTask"/>
-        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1069,6 +1072,10 @@
         <Class IRI="#Robot"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inherentlyDepend"/>
+        <Class IRI="#RobotHardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAboveOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
@@ -1097,6 +1104,10 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#noninherentlyDepend"/>
+        <Class IRI="#RobotTask"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#require"/>
         <ObjectUnionOf>
             <Class IRI="#RobotHardware"/>
@@ -1110,13 +1121,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#connectedTo"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#depend"/>
-        <ObjectUnionOf>
-            <Class IRI="#RobotSkill"/>
-            <Class IRI="#RobotSoftware"/>
-        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1137,6 +1141,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSkill"/>
         <Class IRI="#RobotSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inherentlyDepend"/>
+        <Class IRI="#RobotSoftware"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAboveOf"/>
@@ -1165,6 +1173,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#near"/>
         <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#noninherentlyDepend"/>
+        <Class IRI="#RobotSkill"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#require"/>
@@ -2528,7 +2540,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#connectedTo</IRI>
-        <Literal xml:lang="en">connectedTo</Literal>
+        <Literal xml:lang="en">connected to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2554,21 +2566,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:units"/>
         <IRI>#cruiseDuration</IRI>
         <Literal>minutes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#depend</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#depend</IRI>
-        <Literal xml:lang="en">depend</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#depend</IRI>
-        <Literal xml:lang="cn">依赖</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2658,7 +2655,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasComponent</IRI>
-        <Literal xml:lang="en">hasComponent</Literal>
+        <Literal xml:lang="en">has component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2673,7 +2670,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotChasis</IRI>
-        <Literal xml:lang="en">hasRobotChasis</Literal>
+        <Literal xml:lang="en">has robot chasis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2688,7 +2685,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotHand</IRI>
-        <Literal xml:lang="en">hasRobotHand</Literal>
+        <Literal xml:lang="en">has robot hand</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2703,7 +2700,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasRobotLeg</IRI>
-        <Literal xml:lang="en">hasRobotLeg</Literal>
+        <Literal xml:lang="en">has robot leg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2718,12 +2715,27 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasSkill</IRI>
-        <Literal xml:lang="en">hasSkill</Literal>
+        <Literal xml:lang="en">has skill</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasSkill</IRI>
         <Literal xml:lang="cn">拥有技能</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#inherentlyDepend</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inherentlyDepend</IRI>
+        <Literal xml:lang="en">inherently depend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inherentlyDepend</IRI>
+        <Literal xml:lang="cn">固有依赖</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -2733,7 +2745,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isAboveOf</IRI>
-        <Literal xml:lang="en">isAboveOf</Literal>
+        <Literal xml:lang="en">is above of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2748,7 +2760,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isBehindOf</IRI>
-        <Literal xml:lang="en">isBehindOf</Literal>
+        <Literal xml:lang="en">is behind of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2763,7 +2775,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isBelowOf</IRI>
-        <Literal xml:lang="en">isBelowOf</Literal>
+        <Literal xml:lang="en">is below of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2778,7 +2790,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isInCenterOf</IRI>
-        <Literal xml:lang="en">isInCenterOf</Literal>
+        <Literal xml:lang="en">is in center of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2793,7 +2805,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isInFrontOf</IRI>
-        <Literal xml:lang="en">isInFrontOf</Literal>
+        <Literal xml:lang="en">is in front of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2808,7 +2820,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isInsideOf</IRI>
-        <Literal xml:lang="en">isInsideOf</Literal>
+        <Literal xml:lang="en">is inside of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2823,7 +2835,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isLeftOf</IRI>
-        <Literal xml:lang="en">isLeftOf</Literal>
+        <Literal xml:lang="en">is left of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2838,7 +2850,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isNextTo</IRI>
-        <Literal xml:lang="en">isNextTo</Literal>
+        <Literal xml:lang="en">is next to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2853,7 +2865,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isOntopOf</IRI>
-        <Literal xml:lang="en">isOntopOf</Literal>
+        <Literal xml:lang="en">is on top of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2868,7 +2880,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isPartOf</IRI>
-        <Literal xml:lang="en">isPartOf</Literal>
+        <Literal xml:lang="en">is part of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2883,7 +2895,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isPlanFor</IRI>
-        <Literal xml:lang="en">isPlanFor</Literal>
+        <Literal xml:lang="en">is plan for</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2898,7 +2910,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isRightOf</IRI>
-        <Literal xml:lang="en">isRightOf</Literal>
+        <Literal xml:lang="en">is right of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2969,6 +2981,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#near</IRI>
         <Literal xml:lang="cn">旁边</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#noninherentlyDepend</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#noninherentlyDepend</IRI>
+        <Literal xml:lang="en">noninherently depend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#noninherentlyDepend</IRI>
+        <Literal xml:lang="cn">非固有依赖</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
