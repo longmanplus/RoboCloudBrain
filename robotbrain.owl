@@ -309,9 +309,9 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction -->
 
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Direction">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -363,6 +363,54 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Apparatus -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Apparatus"/>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gift -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Gift"/>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#BatteryLevel -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#BatteryLevel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#FullBattery"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#LowBattery"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Battery level</rdfs:label>
+        <rdfs:label xml:lang="cn">电量</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Cleanliness -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Cleanliness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Clean"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Dirty"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Cleanliness</rdfs:label>
+        <rdfs:label xml:lang="cn">洁净度</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Explication -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Explication">
@@ -370,6 +418,22 @@
         <rdfs:comment xml:lang="en">a detailed explanation of the meaning of something</rdfs:comment>
         <rdfs:label xml:lang="en">Explication</rdfs:label>
         <rdfs:label xml:lang="cn">解说</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthness -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthy"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#unhealthy"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
     </owl:Class>
     
 
@@ -396,6 +460,74 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Message">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Orderliness -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Orderliness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Disordered"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Ordered"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Orderliness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfectness -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfectness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Broken"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfect"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Perfectness</rdfs:label>
+        <rdfs:label xml:lang="cn">完整度</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiety -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiety">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Hungered"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiated"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Satiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepiness -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepiness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Refreshed"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepy"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
     </owl:Class>
     
 
@@ -427,6 +559,40 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="en">Technology</rdfs:label>
         <rdfs:label xml:lang="cn">技术</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirst -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirst">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#NonThirsty"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirsty"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#TrafficCondition -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#TrafficCondition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Congestion"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Unimpeded"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Traffic condition</rdfs:label>
+        <rdfs:label xml:lang="cn">交通状况</rdfs:label>
     </owl:Class>
     
 
@@ -506,11 +672,193 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Broken -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Broken">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfectness"/>
+        <rdfs:label xml:lang="en">broken</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Clean -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Clean">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Cleanliness"/>
+        <rdfs:label xml:lang="en">clean</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Congestion -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Congestion">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#TrafficCondition"/>
+        <rdfs:label xml:lang="en">congestion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Dirty -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Dirty">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Cleanliness"/>
+        <rdfs:label xml:lang="en">dirty</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Disordered -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Disordered">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Orderliness"/>
+        <rdfs:label xml:lang="en">disordered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#FullBattery -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#FullBattery">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#BatteryLevel"/>
+        <rdfs:label xml:lang="en">full battery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthy">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthness"/>
+        <rdfs:label xml:lang="en">healthy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Hungered -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Hungered">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiety"/>
+        <rdfs:label xml:lang="en">hungered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#LowBattery -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#LowBattery">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#BatteryLevel"/>
+        <rdfs:label xml:lang="en">low battery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#NonThirsty -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#NonThirsty">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirst"/>
+        <rdfs:label xml:lang="en">non thirsty</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Ordered -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Ordered">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Orderliness"/>
+        <rdfs:label xml:lang="en">ordered</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfect -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfect">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Perfectness"/>
+        <rdfs:label xml:lang="en">perfect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Refreshed -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Refreshed">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepiness"/>
+        <rdfs:label xml:lang="en">refreshed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiated -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiated">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Satiety"/>
+        <rdfs:label xml:lang="en">satiated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepy">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Sleepiness"/>
+        <rdfs:label xml:lang="en">sleepy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirsty -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirsty">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirst"/>
+        <rdfs:label xml:lang="en">thirsty</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Unimpeded -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Unimpeded">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#TrafficCondition"/>
+        <rdfs:label xml:lang="en">unimpeded</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#unhealthy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#unhealthy">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Healthness"/>
+        <rdfs:label xml:lang="en">unhealthy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Behind">
+        <rdfs:label xml:lang="en">behind</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Below">
+        <rdfs:label xml:lang="en">below</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#Right">
+        <rdfs:label xml:lang="en">right</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#belongTo">
         <rdfs:comment xml:lang="en">What to do?</rdfs:comment>
     </rdf:Description>
