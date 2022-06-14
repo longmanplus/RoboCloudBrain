@@ -79,6 +79,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasResult -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasResult">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#beUsedFor -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#beUsedFor">
@@ -100,6 +108,26 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#enrolledOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#enrolledOrganization">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Enrollment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label xml:lang="en">enrolled organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasEnrollment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasEnrollment">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Enrollment"/>
+        <rdfs:label xml:lang="en">has enrollment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia">
@@ -113,6 +141,23 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <rdfs:label xml:lang="en">has media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasRole">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Role"/>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -264,6 +309,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#enrollmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#enrollmentDate">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Enrollment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">enrollment date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasQuality -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasQuality">
@@ -407,6 +462,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
         <rdfs:label xml:lang="en">Cleanliness</rdfs:label>
         <rdfs:label xml:lang="cn">洁净度</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Enrollment -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Enrollment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
@@ -601,7 +664,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:label xml:lang="en">word</rdfs:label>
+        <rdfs:label xml:lang="en">Word</rdfs:label>
         <rdfs:label xml:lang="cn">词</rdfs:label>
     </owl:Class>
     
@@ -876,6 +939,21 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#WeiSong">
         <rdfs:label xml:lang="cn">宋伟</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#Membership">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#hasMembership">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#memberDuring">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#organization">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#role">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/family_name">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
