@@ -430,6 +430,24 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Availability -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Availability">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Available"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Unavailable"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
+        <rdfs:label xml:lang="en">Availability</rdfs:label>
+        <rdfs:label xml:lang="cn">可用状态</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#BatteryLevel -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#BatteryLevel">
@@ -743,6 +761,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Available -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Available">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Availability"/>
+        <rdfs:label xml:lang="en">available</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Broken -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Broken">
@@ -883,6 +910,15 @@
     <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirsty">
         <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Thirst"/>
         <rdfs:label xml:lang="en">thirsty</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Unavailable -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Unavailable">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Availability"/>
+        <rdfs:label xml:lang="en">unavailable</rdfs:label>
     </owl:NamedIndividual>
     
 
