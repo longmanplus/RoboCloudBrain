@@ -128,6 +128,19 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasHomoionym -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasHomoionym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word"/>
+        <rdfs:label xml:lang="en">has homoionym</rdfs:label>
+        <rdfs:label xml:lang="cn">有近义词</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasMedia">
@@ -180,6 +193,19 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
         <rdfs:label xml:lang="en">has state</rdfs:label>
         <rdfs:label xml:lang="cn">拥有状态</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasSynonym -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasSynonym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word"/>
+        <rdfs:label xml:lang="en">has synonym</rdfs:label>
+        <rdfs:label xml:lang="cn">有同义词</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -519,16 +545,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Homoionym -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Homoionym">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word"/>
-        <rdfs:label xml:lang="en">Homoionym</rdfs:label>
-        <rdfs:seeAlso xml:lang="cn">近义词</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Interaction -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Interaction">
@@ -620,16 +636,6 @@
         <rdfs:comment>状态，表达物体、建筑的状态</rdfs:comment>
         <rdfs:label xml:lang="en">State</rdfs:label>
         <rdfs:label xml:lang="cn">状态</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Synonym -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Synonym">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Word"/>
-        <rdfs:seeAlso xml:lang="en">Synonym</rdfs:seeAlso>
-        <rdfs:seeAlso xml:lang="cn">同义词</rdfs:seeAlso>
     </owl:Class>
     
 

@@ -440,9 +440,6 @@
         <DataProperty IRI="#taskVars"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#weight"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#littile_fat"/>
     </Declaration>
     <Declaration>
@@ -934,11 +931,6 @@
         <Class IRI="#WheeledRobot"/>
         <NamedIndividual IRI="#littile_fat"/>
     </ClassAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#weight"/>
-        <NamedIndividual IRI="#littile_fat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
-    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#connectedTo"/>
         <ObjectProperty IRI="#relativeLocation"/>
@@ -1261,10 +1253,6 @@
         <DataProperty IRI="#taskVars"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#weight"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#X"/>
         <Class IRI="#Robot"/>
@@ -1329,13 +1317,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#taskVars"/>
         <Class IRI="#RobotTask"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#weight"/>
-        <ObjectUnionOf>
-            <Class IRI="#Robot"/>
-            <Class IRI="#RobotHardware"/>
-        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#X"/>
@@ -1432,15 +1413,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#taskVars"/>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#weight"/>
-        <DatatypeRestriction>
-            <Datatype abbreviatedIRI="xsd:float"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
-            </FacetRestriction>
-        </DatatypeRestriction>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3081,26 +3053,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#taskVars</IRI>
         <Literal xml:lang="cn">任务参数</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#weight</IRI>
-        <IRI></IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#weight</IRI>
-        <Literal xml:lang="en">weight</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#weight</IRI>
-        <Literal xml:lang="cn">重量</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:units"/>
-        <IRI>#weight</IRI>
-        <Literal>kg</Literal>
     </AnnotationAssertion>
 </Ontology>
 
