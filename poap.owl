@@ -824,7 +824,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">Educational attainment</rdfs:label>
-        <rdfs:label xml:lang="cn">学位</rdfs:label>
+        <rdfs:label xml:lang="cn">学历</rdfs:label>
     </owl:Class>
     
 
