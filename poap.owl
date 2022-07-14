@@ -77,9 +77,23 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFunded -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFunded">
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="cn">由(某机构等)资助</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">be funded by</rdfs:label>
+        <rdfs:label xml:lang="cn">由资助</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedTo">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedTo"/>
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
         <rdfs:range>
@@ -93,20 +107,6 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">be funded to</rdfs:label>
         <rdfs:label xml:lang="cn">被资助给</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment xml:lang="cn">由(某机构等)资助</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">be funded by</rdfs:label>
-        <rdfs:label xml:lang="cn">由资助</rdfs:label>
     </owl:ObjectProperty>
     
 
