@@ -284,6 +284,21 @@
     
 
 
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/org#basedAt -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/org#basedAt">
