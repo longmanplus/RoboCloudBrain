@@ -89,12 +89,37 @@
     
 
 
+    <!-- http://www.w3.org/2006/time#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#after">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+        <rdfs:label xml:lang="en">is after</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#before">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+        <rdfs:label xml:lang="en">is before</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/2006/time#hasBeginning -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBeginning">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasTime"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">has beginning</rdfs:label>
         <rdfs:label xml:lang="cn">有开始</rdfs:label>
     </owl:ObjectProperty>
@@ -107,6 +132,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasTime"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">has end</rdfs:label>
         <rdfs:label xml:lang="cn">有结束</rdfs:label>
     </owl:ObjectProperty>
@@ -117,8 +143,33 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasTime">
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">has time</rdfs:label>
         <rdfs:label xml:lang="cn">有时间</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalAfter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#after"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+        <rdfs:label xml:lang="en">interval after</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalBefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalBefore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#before"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
+        <rdfs:label xml:lang="en">interval before</rdfs:label>
     </owl:ObjectProperty>
     
 
