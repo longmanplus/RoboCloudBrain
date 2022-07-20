@@ -796,6 +796,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
     </rdf:Description>
     
 
@@ -922,6 +923,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:comment xml:lang="en">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</rdfs:comment>
         <rdfs:comment xml:lang="cn">活动是在一段时间内发生并作用于实体或与实体一起作用的事物； 它可能包括消费、处理、转换、修改、重新定位、使用或生成实体。</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
         <rdfs:label xml:lang="cn">活动</rdfs:label>
     </owl:Class>
     
@@ -931,6 +933,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="cn">行为主体</rdfs:label>
     </rdf:Description>
     
@@ -941,7 +944,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
-        <rdfs:label xml:lang="cn">组织</rdfs:label>
+        <rdfs:label xml:lang="cn">组织机构</rdfs:label>
     </rdf:Description>
     
 
