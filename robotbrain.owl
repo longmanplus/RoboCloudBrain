@@ -737,6 +737,8 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
         <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label xml:lang="en">Instantaneous Event</rdfs:label>
+        <rdfs:label xml:lang="cn">瞬时事件</rdfs:label>
     </owl:Class>
     
 

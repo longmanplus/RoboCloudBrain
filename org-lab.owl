@@ -359,7 +359,14 @@
     <!-- http://www.w3.org/ns/prov#atTime -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#atTime">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
@@ -926,6 +933,12 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:label xml:lang="en">Activity</rdfs:label>
         <rdfs:label xml:lang="cn">活动</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
     
 
 
