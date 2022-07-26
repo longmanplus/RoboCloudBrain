@@ -721,16 +721,23 @@
     <!-- http://xmlns.com/foaf/0.1/title -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/title">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                 <owl:withRestrictions rdf:parseType="Collection">
                     <rdf:Description>
-                        <xsd:maxLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxLength>
+                        <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</xsd:minLength>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:maxLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:maxLength>
+                        <xsd:maxLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</xsd:maxLength>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>

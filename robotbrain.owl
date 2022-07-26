@@ -392,6 +392,30 @@
     
 
 
+    <!-- http://www.w3.org/2006/time#inXSDDateTimeStamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDateTimeStamp">
+        <rdfs:label xml:lang="en">in XSD Date-Time-Stamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDgYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDgYear">
+        <rdfs:label xml:lang="en">in XSD g-Year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDgYearMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDgYearMonth">
+        <rdfs:label xml:lang="en">in XSD g-YearMonth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -462,6 +486,14 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Apparatus -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Apparatus"/>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Result"/>
+    </rdf:Description>
     
 
 
