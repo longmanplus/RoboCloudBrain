@@ -132,6 +132,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#graduationAward">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Graduation"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
         <rdfs:label xml:lang="en">graduation award</rdfs:label>
     </owl:ObjectProperty>
     
