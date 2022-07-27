@@ -827,7 +827,7 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
         <rdfs:label xml:lang="en">Educational attainment</rdfs:label>
         <rdfs:label xml:lang="cn">学历</rdfs:label>
@@ -1090,8 +1090,8 @@
      -->
 
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
