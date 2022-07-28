@@ -406,10 +406,10 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#hasQuality">
         <rdfs:domain>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
+                <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Apparatus"/>
                     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Technology"/>
-                </owl:intersectionOf>
+                </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -429,6 +429,15 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
         <rdfs:label xml:lang="en">key word</rdfs:label>
         <rdfs:label xml:lang="cn">关键词</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#usageDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#usageDetails">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+        <rdfs:label xml:lang="en">usage details</rdfs:label>
     </owl:DatatypeProperty>
     
 
