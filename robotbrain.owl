@@ -319,14 +319,6 @@
     
 
 
-    <!-- http://www.w3.org/ns/org#basedAt -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/org#basedAt">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
-    </rdf:Description>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/img -->
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
@@ -580,15 +572,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Business -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Business">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Usage"/>
-        <rdfs:label xml:lang="en">Business</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Cleanliness -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Cleanliness">
@@ -646,14 +629,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#State"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Household -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Household">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#Usage"/>
     </owl:Class>
     
 
