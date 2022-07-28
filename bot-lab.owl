@@ -29,17 +29,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#hasElementUsage -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#hasElementUsage">
-        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
-        <rdfs:label xml:lang="en">has element usage</rdfs:label>
-        <rdfs:label xml:lang="cn">有构件用途</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#hasZoneType -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#hasZoneType">
