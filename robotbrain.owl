@@ -357,21 +357,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/img -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/img">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://schema.org/Person"/>
-                    <rdf:Description rdf:about="https://w3id.org/bot#Element"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </rdf:Description>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/made -->
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">
