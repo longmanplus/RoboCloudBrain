@@ -490,6 +490,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Article -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Article">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Availability -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Availability">
@@ -522,6 +530,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#State"/>
         <rdfs:label xml:lang="en">Battery level</rdfs:label>
         <rdfs:label xml:lang="cn">电量</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Book -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Book">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication"/>
     </owl:Class>
     
 
@@ -587,6 +603,12 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#InformationAsset -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#InformationAsset"/>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Interaction -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Interaction">
@@ -616,6 +638,14 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#State"/>
         <rdfs:label xml:lang="en">Orderliness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Patent -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Patent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication"/>
     </owl:Class>
     
 
@@ -678,6 +708,14 @@
         <rdfs:comment>状态，表达物体、建筑的状态</rdfs:comment>
         <rdfs:label xml:lang="en">State</rdfs:label>
         <rdfs:label xml:lang="cn">状态</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#TechReport -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#TechReport">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#AcademicPublication"/>
     </owl:Class>
     
 
@@ -863,7 +901,9 @@
 
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#InformationAsset"/>
+    </owl:Class>
     
 
 
