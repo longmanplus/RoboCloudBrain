@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain#"
-     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"
+<rdf:RDF xmlns="http://purl.org/zhejianglab/irobot-center/ontologies/bob#"
+     xml:base="http://purl.org/zhejianglab/irobot-center/ontologies/bob"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:ns1="http://www.w3.org/2006/vcard/ns#"
