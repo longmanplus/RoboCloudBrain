@@ -732,9 +732,9 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInsitute -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInstitute -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInsitute">
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchInstitute">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#NonprofitEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
         <rdfs:label xml:lang="en">Research institute</rdfs:label>
