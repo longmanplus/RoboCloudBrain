@@ -68,14 +68,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Anthropology -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Anthropology">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics">
@@ -83,15 +75,6 @@
         <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PureMathematics"/>
         <rdfs:label xml:lang="en">Applied mathematics</rdfs:label>
         <rdfs:label xml:lang="cn">应用数学</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedPhysics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedPhysics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Applied physics</rdfs:label>
     </owl:Class>
     
 
@@ -109,14 +92,6 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ApproximationTheory">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Archaeology -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Archaeology">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
     </owl:Class>
     
 
@@ -151,24 +126,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AssignmentProblem -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AssignmentProblem">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Assignment problem</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AutomataTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AutomataTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TheoryOfComputation"/>
-        <rdfs:label xml:lang="en">Automata theory</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AutomatedReasoning -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AutomatedReasoning">
@@ -183,24 +140,8 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Biology">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="en">Biology</rdfs:label>
         <rdfs:label xml:lang="cn">生物学</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Business -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Business">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ChaosTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ChaosTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-        <rdfs:label xml:lang="en">Chaos theory</rdfs:label>
     </owl:Class>
     
 
@@ -210,6 +151,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ChemicalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
         <rdfs:label xml:lang="en">Chemical engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">化学工程</rdfs:label>
     </owl:Class>
     
 
@@ -218,6 +160,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Chemistry">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="en">Chemistry</rdfs:label>
         <rdfs:label xml:lang="cn">化学</rdfs:label>
     </owl:Class>
     
@@ -228,6 +171,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
         <rdfs:label xml:lang="en">Civil engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">社会工程学</rdfs:label>
     </owl:Class>
     
 
@@ -237,6 +181,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CloudComputing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerCommunications"/>
         <rdfs:label xml:lang="en">Cloud computing</rdfs:label>
+        <rdfs:label xml:lang="cn">云计算</rdfs:label>
     </owl:Class>
     
 
@@ -246,6 +191,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CoastalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering"/>
         <rdfs:label xml:lang="en">Coastal engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">海洋工程学</rdfs:label>
     </owl:Class>
     
 
@@ -278,33 +224,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Compilers -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Compilers">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguages"/>
-        <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingParadigms"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComplexSystems -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComplexSystems">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-        <rdfs:label xml:lang="en">Complex systems</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputabilityTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputabilityTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TheoryOfComputation"/>
-        <rdfs:label xml:lang="en">Computability theory</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationTheory -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationTheory">
@@ -333,15 +252,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalComplexityTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalComplexityTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TheoryOfComputation"/>
-        <rdfs:label xml:lang="en">Computational complexity theory</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalEconomics -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalEconomics">
@@ -353,75 +263,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalFinance -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalFinance">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computational finance</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalGeometry -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalGeometry">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algorithms"/>
         <rdfs:label xml:lang="en">Computational geometry</rdfs:label>
         <rdfs:label xml:lang="cn">计算几何学</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalMathematics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalMathematics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computational mathematics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalNeuroscience -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalNeuroscience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computational neuroscience</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalNumberTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalNumberTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computational number theory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalPhysics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalPhysics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computational physics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalSociology -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalSociology">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computational sociology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerAidedEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerAidedEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Computer aided engineering</rdfs:label>
     </owl:Class>
     
 
@@ -452,15 +299,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Computer communications</rdfs:label>
         <rdfs:label xml:lang="cn">计算机通信</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Computer engineering</rdfs:label>
     </owl:Class>
     
 
@@ -517,83 +355,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ConceptualSystems -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ConceptualSystems">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-        <rdfs:label xml:lang="en">Conceptual systems</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ConcurrencyTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ConcurrencyTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TheoryOfComputation"/>
-        <rdfs:label xml:lang="en">Concurrency theory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ContinuumMechanics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ContinuumMechanics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Continuum mechanics</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ControlSystemsEngineering -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ControlSystemsEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
         <rdfs:label xml:lang="en">Control systems engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ControlTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ControlTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-        <rdfs:label xml:lang="en">Control theory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Cryptography -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Cryptography">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerSecurity"/>
-        <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FaultTolerantComputing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Cybernetics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Cybernetics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataManagement -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataManagement">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Data management</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataMining -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataMining">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Data mining</rdfs:label>
+        <rdfs:label xml:lang="cn">控制系统</rdfs:label>
     </owl:Class>
     
 
@@ -604,32 +371,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Data structures</rdfs:label>
         <rdfs:label xml:lang="cn">数据结构</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Databases -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Databases">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DecisionAnalysis -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DecisionAnalysis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Decision analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DigitalHumanities -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DigitalHumanities">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Digital humanities</rdfs:label>
     </owl:Class>
     
 
@@ -658,15 +399,8 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Divinity">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DynamicProgramming -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DynamicProgramming">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Dynamic programming</rdfs:label>
+        <rdfs:label xml:lang="en">Divinity</rdfs:label>
+        <rdfs:label xml:lang="cn">神学</rdfs:label>
     </owl:Class>
     
 
@@ -683,6 +417,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EarthScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="en">EarthScience</rdfs:label>
         <rdfs:label xml:lang="cn">地理科学</rdfs:label>
     </owl:Class>
     
@@ -693,6 +428,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EarthquakeEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering"/>
         <rdfs:label xml:lang="en">Earthquake engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">地震工程学</rdfs:label>
     </owl:Class>
     
 
@@ -702,14 +438,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EcologicalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering"/>
         <rdfs:label xml:lang="en">Ecological engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Economics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Economics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
+        <rdfs:label xml:lang="cn">生态工程学</rdfs:label>
     </owl:Class>
     
 
@@ -718,6 +447,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Education">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
+        <rdfs:label xml:lang="en">Education</rdfs:label>
         <rdfs:label xml:lang="cn">教育学</rdfs:label>
     </owl:Class>
     
@@ -728,6 +458,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EducationalTechnology">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
         <rdfs:label xml:lang="en">Educational technology</rdfs:label>
+        <rdfs:label xml:lang="cn">教育学</rdfs:label>
     </owl:Class>
     
 
@@ -737,15 +468,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
         <rdfs:label xml:lang="en">Electrical engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectronicEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectronicEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Electronic engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">电力工程</rdfs:label>
     </owl:Class>
     
 
@@ -755,15 +478,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Engineering and technology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringPhysics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringPhysics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Engineering physics</rdfs:label>
+        <rdfs:label xml:lang="cn">工程技术</rdfs:label>
     </owl:Class>
     
 
@@ -773,15 +488,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EnvironmentalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering"/>
         <rdfs:label xml:lang="en">Environmental engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EnvironmentalStudiesAndForestry -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EnvironmentalStudiesAndForestry">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-        <rdfs:label xml:lang="en">Environmental studies and forestry</rdfs:label>
+        <rdfs:label xml:lang="cn">环境工程学</rdfs:label>
     </owl:Class>
     
 
@@ -792,42 +499,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArtificialIntelligence"/>
         <rdfs:label xml:lang="en">Expert systems</rdfs:label>
         <rdfs:label xml:lang="cn">专家系统</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FamilyAndConsumerScience -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FamilyAndConsumerScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-        <rdfs:label xml:lang="en">Family and consumer science</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FaultTolerantComputing -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FaultTolerantComputing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerSecurity"/>
-        <rdfs:label xml:lang="en">Fault tolerant computing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FluidMechanics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FluidMechanics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Fluid mechanics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalMethods -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalMethods">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience"/>
-        <rdfs:label xml:lang="en">Formal methods</rdfs:label>
     </owl:Class>
     
 
@@ -849,14 +520,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Geography -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Geography">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GeometryAndTopology -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GeometryAndTopology">
@@ -871,6 +534,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GeotechnicalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering"/>
         <rdfs:label xml:lang="en">Geotechnical engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">地质工程学</rdfs:label>
     </owl:Class>
     
 
@@ -888,15 +552,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GridComputing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DistributedComputing"/>
         <rdfs:label xml:lang="en">Grid computing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HeatTransfer -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HeatTransfer">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Heat transfer</rdfs:label>
+        <rdfs:label xml:lang="cn">网格计算</rdfs:label>
     </owl:Class>
     
 
@@ -906,32 +562,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HighPerformanceComputing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ParallelComputing"/>
         <rdfs:label xml:lang="en">High performance computing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#History -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#History">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HistoryOfComputerHardware -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HistoryOfComputerHardware">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">History of computer hardware</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HistoryOfComputerScience -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HistoryOfComputerScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">History of computer science</rdfs:label>
+        <rdfs:label xml:lang="cn">高性能计算</rdfs:label>
     </owl:Class>
     
 
@@ -946,120 +577,10 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPerformanceTechnology -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPerformanceTechnology">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EducationalTechnology"/>
-        <rdfs:label xml:lang="en">Human performance technology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPhysicalPerformanceAndRecreation -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPhysicalPerformanceAndRecreation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-        <rdfs:label xml:lang="en">Human physical performance and recreation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanisticInformatics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanisticInformatics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Humanistic informatics</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities">
         <rdfs:label xml:lang="cn">人类学</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ImageProcessing -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ImageProcessing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerGraphics"/>
-        <owl:disjointWith rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ScientificVisualization"/>
-        <rdfs:label xml:lang="en">Image processing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#IndustrialEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#IndustrialEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Industrial engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationArchitecture -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationArchitecture">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Information architecture</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationManagement -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationManagement">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Information management</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationRetrieval -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationRetrieval">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-        <rdfs:label xml:lang="en">Information retrieval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerCommunications"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Information theory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InstructionalDesign -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InstructionalDesign">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EducationalTechnology"/>
-        <rdfs:label xml:lang="en">Instructional design</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InventoryTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InventoryTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Inventory theory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Journalism -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Journalism">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
     </owl:Class>
     
 
@@ -1070,49 +591,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EducationalTechnology"/>
         <rdfs:label xml:lang="en">Knowledge management</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LanguagesAndLiterature -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LanguagesAndLiterature">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Law -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Law">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LibraryAndMuseumStudies -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LibraryAndMuseumStudies">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-        <rdfs:label xml:lang="en">Library and museum studies</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LinearProgramming -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LinearProgramming">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Linear programming</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LogicProgramming -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LogicProgramming">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience"/>
-        <rdfs:label xml:lang="en">Logic programming</rdfs:label>
+        <rdfs:label xml:lang="cn">知识管理</rdfs:label>
     </owl:Class>
     
 
@@ -1127,56 +606,11 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ManufacturingEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ManufacturingEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Manufacturing engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MarineEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MarineEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Marine engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MassTransfer -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MassTransfer">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Mass transfer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MaterialsScienceAndEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MaterialsScienceAndEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
-        <rdfs:label xml:lang="en">Materials science and engineering</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalLogicAndFoundationsOfMathematics -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalLogicAndFoundationsOfMathematics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PureMathematics"/>
         <rdfs:label xml:lang="en">Mathematical logic and foundations of mathematics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalOptimization -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalOptimization">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Mathematical optimization</rdfs:label>
     </owl:Class>
     
 
@@ -1203,15 +637,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
         <rdfs:label xml:lang="en">Mechanical engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mechatronics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mechatronics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
+        <rdfs:label xml:lang="cn">电气工程</rdfs:label>
     </owl:Class>
     
 
@@ -1221,40 +647,7 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MedicineAndHealth">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Medicine and health</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MilitarySciences -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MilitarySciences">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-        <rdfs:label xml:lang="en">Military sciences</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MultiValuedLogic -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MultiValuedLogic">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience"/>
-        <rdfs:label xml:lang="en">Multi valued logic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Multimedia -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Multimedia">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Nanoengineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Nanoengineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
+        <rdfs:label xml:lang="cn">医药健康</rdfs:label>
     </owl:Class>
     
 
@@ -1277,15 +670,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NetworkScience -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NetworkScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-        <rdfs:label xml:lang="en">Network science</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NumberTheory -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NumberTheory">
@@ -1301,15 +685,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Numerical analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OceanEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OceanEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Ocean engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">数据分析</rdfs:label>
     </owl:Class>
     
 
@@ -1330,24 +706,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedMathematics"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
         <rdfs:label xml:lang="en">Operations research</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OpticalEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OpticalEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-        <rdfs:label xml:lang="en">Optical engineering</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OptimalMaintenance -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OptimalMaintenance">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Optimal maintenance</rdfs:label>
+        <rdfs:label xml:lang="cn">运筹学</rdfs:label>
     </owl:Class>
     
 
@@ -1372,44 +731,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PerformingArts -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PerformingArts">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Philosophy -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Philosophy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Physics -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Physics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="en">Physics</rdfs:label>
         <rdfs:label xml:lang="cn">物理</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PoliticalScience -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PoliticalScience">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PowerEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PowerEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Power engineering</rdfs:label>
     </owl:Class>
     
 
@@ -1423,38 +750,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguageSemantics -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguageSemantics">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience"/>
-        <rdfs:label xml:lang="en">Programming language semantics</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguages -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguages">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
         <rdfs:label xml:lang="en">Programming languages</rdfs:label>
         <rdfs:label xml:lang="cn">程序设计语言</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingParadigms -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingParadigms">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguages"/>
-        <rdfs:label xml:lang="en">Programming paradigms</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Psychology -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Psychology">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
     </owl:Class>
     
 
@@ -1490,15 +791,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#RealOptionsAnalysis -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#RealOptionsAnalysis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Real options analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Robotics -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Robotics">
@@ -1511,36 +803,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Scheduling -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Scheduling">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ScientificComputing -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ScientificComputing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerApplication"/>
         <rdfs:label xml:lang="en">Scientific computing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ScientificVisualization -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ScientificVisualization">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerGraphics"/>
-        <rdfs:label xml:lang="en">Scientific visualization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Semiconductors -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Semiconductors">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
+        <rdfs:label xml:lang="cn">科学计算</rdfs:label>
     </owl:Class>
     
 
@@ -1548,24 +816,8 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience">
+        <rdfs:label xml:lang="en">SocialScience</rdfs:label>
         <rdfs:label xml:lang="cn">社会科学</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialWork -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialWork">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
-        <rdfs:label xml:lang="en">Social work</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Sociology -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Sociology">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
     </owl:Class>
     
 
@@ -1584,6 +836,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SpaceScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
+        <rdfs:label xml:lang="en">SpaceScience</rdfs:label>
         <rdfs:label xml:lang="cn">空间科学</rdfs:label>
     </owl:Class>
     
@@ -1597,38 +850,12 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#StochasticProcesses -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#StochasticProcesses">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Stochastic processes</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsAnalysis -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsAnalysis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        <rdfs:label xml:lang="en">Systems analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
         <rdfs:label xml:lang="en">Systems science</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TelecommunicationsEngineering -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TelecommunicationsEngineering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-        <rdfs:label xml:lang="en">Telecommunications engineering</rdfs:label>
+        <rdfs:label xml:lang="cn">系统科学</rdfs:label>
     </owl:Class>
     
 
@@ -1647,6 +874,8 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Thermodynamics">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
+        <rdfs:label xml:lang="en">Thermodynamics</rdfs:label>
+        <rdfs:label xml:lang="cn">热力学</rdfs:label>
     </owl:Class>
     
 
@@ -1657,50 +886,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
         <rdfs:label xml:lang="en">Transportation</rdfs:label>
         <rdfs:label xml:lang="cn">交通运输</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TypeTheory -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TypeTheory">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerLogicScience"/>
-        <rdfs:label xml:lang="en">Type theory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#UbiquitousComputing -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#UbiquitousComputing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerCommunications"/>
-        <rdfs:label xml:lang="en">Ubiquitous computing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#VisualArts -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#VisualArts">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#WirelessComputing -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#WirelessComputing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerCommunications"/>
-        <rdfs:label xml:lang="en">Wireless computing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/discipline#WorldWideWeb -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#WorldWideWeb">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerCommunications"/>
-        <rdfs:label xml:lang="en">World wide web</rdfs:label>
     </owl:Class>
     
 
@@ -1716,63 +901,12 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Agriculture"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ArchitectureAndDesign"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Business"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Divinity"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Education"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EngineeringAndTechnology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EnvironmentalStudiesAndForestry"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FamilyAndConsumerScience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPhysicalPerformanceAndRecreation"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Journalism"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LibraryAndMuseumStudies"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MedicineAndHealth"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MilitarySciences"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialWork"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Transportation"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Algebra"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Analysis"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GeometryAndTopology"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalLogicAndFoundationsOfMathematics"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NumberTheory"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProbabilityTheory"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AlgebraicComputation"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CommunityInformatics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalBiology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalChemistry"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalEconomics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalFinance"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalMathematics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalNeuroscience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalNumberTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalPhysics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalSociology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerAidedEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataManagement"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DataMining"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Databases"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DigitalHumanities"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HistoryOfComputerHardware"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HistoryOfComputerScience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanisticInformatics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationArchitecture"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationManagement"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationRetrieval"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#KnowledgeManagement"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Multimedia"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NumericalAnalysis"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ScientificComputing"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1822,56 +956,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Anthropology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Archaeology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Economics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Geography"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PoliticalScience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Psychology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Sociology"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedPhysics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputerScience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ControlSystemsEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mechatronics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PowerEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#QuantumComputing"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Robotics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Semiconductors"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TelecommunicationsEngineering"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AppliedScience"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalScience"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Humanities"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NaturalScience"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SocialScience"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ApproximationTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Combinatorics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Cryptography"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DynamicalSystems"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GameTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#GraphTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalPhysics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NumericalAnalysis"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Statistics"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1890,70 +979,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AssignmentProblem"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DecisionAnalysis"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DynamicProgramming"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InventoryTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LinearProgramming"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MathematicalOptimization"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OptimalMaintenance"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#RealOptionsAnalysis"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Scheduling"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#StochasticProcesses"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsAnalysis"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#AutomataTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputabilityTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComputationalComplexityTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ConcurrencyTheory"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Biology"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Chemistry"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EarthScience"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Physics"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SpaceScience"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ChaosTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ComplexSystems"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ConceptualSystems"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ControlTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Cybernetics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#NetworkScience"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OperationsResearch"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ChemicalEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CivilEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#EducationalTechnology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ElectricalEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MaterialsScienceAndEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MechanicalEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#SystemsScience"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#CloudComputing"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#UbiquitousComputing"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#WirelessComputing"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#WorldWideWeb"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1973,65 +1003,6 @@
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#DistributedAlgorithms"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ParallelAlgorithms"/>
             <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#RandomizedAlgorithms"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ContinuumMechanics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FluidMechanics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HeatTransfer"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#IndustrialEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ManufacturingEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MarineEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MassTransfer"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mechatronics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Nanoengineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OceanEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#OpticalEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Robotics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Thermodynamics"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#FormalMethods"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LogicProgramming"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#MultiValuedLogic"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#ProgrammingLanguageSemantics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TypeTheory"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#History"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#LanguagesAndLiterature"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Law"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PerformingArts"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Philosophy"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#VisualArts"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#HumanPerformanceTechnology"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InstructionalDesign"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#KnowledgeManagement"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#InformationTheory"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Mechatronics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#PowerEngineering"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#QuantumComputing"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Robotics"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#Semiconductors"/>
-            <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/discipline#TelecommunicationsEngineering"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
