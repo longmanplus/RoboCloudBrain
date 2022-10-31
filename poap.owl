@@ -10,9 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap">
-        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
     
 
 
@@ -29,7 +27,10 @@
 
     <!-- http://xmlns.com/foaf/0.1/logo -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -48,11 +49,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment xml:lang="cn">由(某机构等)授予</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">be awarded by</rdfs:label>
-        <rdfs:label xml:lang="cn">由授予</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -82,11 +78,6 @@
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy"/>
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment xml:lang="cn">由(某机构等)资助</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">be funded by</rdfs:label>
-        <rdfs:label xml:lang="cn">由资助</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -246,54 +237,55 @@
 
     <!-- http://xmlns.com/foaf/0.1/currentProject -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/currentProject">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/currentProject">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:label xml:lang="cn">当前项目</rdfs:label>
         <owl:deprecated xml:lang="cn">true</owl:deprecated>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/depiction -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depiction">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdfs:label xml:lang="en">depiction</rdfs:label>
         <rdfs:label xml:lang="cn">拥有描述</rdfs:label>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/depicts -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depicts">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depicts">
         <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:label xml:lang="cn">描述</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/focus -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/focus">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/focus">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Discipline"/>
         <rdfs:label xml:lang="cn">专注于</rdfs:label>
         <owl:deprecated xml:lang="cn">true</owl:deprecated>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/fundedBy -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/fundedBy">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/fundedBy">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:label xml:lang="cn">被资助</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -302,44 +294,39 @@
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">knows</rdfs:label>
         <rdfs:label xml:lang="cn">认识</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/logo -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/logo">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </rdf:Description>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/made -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/made">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">made</rdfs:label>
         <rdfs:label xml:lang="cn">制造</rdfs:label>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/maker -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/maker">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">maker</rdfs:label>
         <rdfs:label xml:lang="cn">制造者</rdfs:label>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/pastProject -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/pastProject">
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/pastProject">
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:label xml:lang="cn">参与过的项目</rdfs:label>
         <owl:deprecated xml:lang="cn">true</owl:deprecated>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -379,9 +366,28 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#benefit">
+        <rdfs:label xml:lang="en">benefit</rdfs:label>
+        <rdfs:label xml:lang="cn">价值</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -466,7 +472,10 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressPart -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressPart"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#emailAddressPart">
+        <rdfs:label xml:lang="en">emailAddressPart</rdfs:label>
+        <rdfs:label xml:lang="cn">电子邮箱</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -646,6 +655,7 @@
     <!-- http://xmlns.com/foaf/0.1/accountName -->
 
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/accountName">
+        <rdfs:label xml:lang="en">accountName</rdfs:label>
         <rdfs:label xml:lang="cn">账号名字</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -653,7 +663,7 @@
 
     <!-- http://xmlns.com/foaf/0.1/age -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age">
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
@@ -671,24 +681,24 @@
         </rdfs:range>
         <rdfs:label xml:lang="cn">年龄</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/birthday -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/birthday">
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/birthday">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="cn">生日</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/familyName -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/familyName">
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/familyName">
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -708,13 +718,13 @@
         </rdfs:range>
         <rdfs:label xml:lang="cn">姓</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/title -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/title">
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/title">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -736,8 +746,9 @@
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:label xml:lang="en">title</rdfs:label>
         <rdfs:label xml:lang="cn">称谓</rdfs:label>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     
 
 
@@ -754,7 +765,10 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
+        <rdfs:label xml:lang="en">Robot</rdfs:label>
+        <rdfs:label xml:lang="cn">机器人</rdfs:label>
+    </owl:Class>
     
 
 
@@ -795,6 +809,8 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">Award</rdfs:label>
+        <rdfs:label xml:lang="cn">奖励</rdfs:label>
     </owl:Class>
     
 
@@ -833,6 +849,7 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#EmailAddress">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <rdfs:label xml:lang="en">EmailAddress</rdfs:label>
         <rdfs:label xml:lang="cn">邮箱地址</rdfs:label>
     </owl:Class>
     
@@ -912,6 +929,7 @@
     <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
 
     <owl:Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="cn">人</rdfs:label>
     </owl:Class>
     
@@ -919,13 +937,17 @@
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
 
-    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:label xml:lang="en">SpatialThing</rdfs:label>
+        <rdfs:label xml:lang="cn">空间物体</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
         <rdfs:label xml:lang="cn">概念</rdfs:label>
     </owl:Class>
     
@@ -933,17 +955,19 @@
 
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:label xml:lang="en">Document</rdfs:label>
         <rdfs:label xml:lang="cn">文件</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Image -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Image">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:label xml:lang="en">Image</rdfs:label>
         <rdfs:label xml:lang="cn">图片</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -958,31 +982,35 @@
 
     <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+        <rdfs:label xml:lang="en">OnlineAccount</rdfs:label>
         <rdfs:label xml:lang="cn">线上账号</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="cn">机构</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="cn">人</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Project -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project">
+        <rdfs:label xml:lang="en">Project</rdfs:label>
         <rdfs:label xml:lang="cn">项目</rdfs:label>
     </owl:Class>
     
@@ -996,7 +1024,10 @@
 
     <!-- https://w3id.org/bot#Element -->
 
-    <owl:Class rdf:about="https://w3id.org/bot#Element"/>
+    <owl:Class rdf:about="https://w3id.org/bot#Element">
+        <rdfs:label xml:lang="en">Element</rdfs:label>
+        <rdfs:label xml:lang="cn">元件</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1089,6 +1120,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy">
+        <rdfs:comment xml:lang="cn">由(某机构等)授予</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="cn">由授予</rdfs:label>
+        <rdfs:label xml:lang="en">be awarded by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
+        <rdfs:label xml:lang="cn">由资助</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
+        <rdfs:label xml:lang="en">be funded by</rdfs:label>
+        <rdfs:comment xml:lang="cn">由(某机构等)资助</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
         <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
@@ -1176,9 +1219,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName">
         <rdfs:label xml:lang="cn">姓</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/logo">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/mbox">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>

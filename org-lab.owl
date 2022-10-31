@@ -98,6 +98,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">is after</rdfs:label>
+        <rdfs:label xml:lang="cn">随后</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -110,6 +111,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">is before</rdfs:label>
+        <rdfs:label xml:lang="cn">之前</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -159,6 +161,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">interval after</rdfs:label>
+        <rdfs:label xml:lang="cn">之后</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -171,6 +174,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time"/>
         <rdfs:label xml:lang="en">interval before</rdfs:label>
+        <rdfs:label xml:lang="cn">间隔前</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -425,8 +429,8 @@ Example: Siemens Austria AG, Volkswagen Ltd., Peter Miller&apos;s Cell phone Sho
 
 Compatibility with schema.org: This class is equivalent to the union of http://schema.org/Person and http://schema.org/Organization.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
-        <rdfs:isDefinedBy xml:lang="cn">业务性实体</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Business entity</rdfs:label>
+        <rdfs:label xml:lang="cn">业务性实体</rdfs:label>
     </rdf:Description>
     
 
@@ -446,6 +450,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#AssetManagement">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResourceManagement"/>
         <rdfs:label xml:lang="en">Asset management</rdfs:label>
+        <rdfs:label xml:lang="cn">资产管理</rdfs:label>
     </owl:Class>
     
 
@@ -510,8 +515,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Delivery">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab"/>
-        <rdfs:isDefinedBy xml:lang="en">Delivery</rdfs:isDefinedBy>
-        <rdfs:isDefinedBy xml:lang="cn">交付</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Delivery</rdfs:label>
+        <rdfs:label xml:lang="cn">交付</rdfs:label>
     </owl:Class>
     
 
@@ -554,6 +559,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#HumanResourceManagement">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResourceManagement"/>
         <rdfs:label xml:lang="en">HR management</rdfs:label>
+        <rdfs:label xml:lang="cn">人事管理</rdfs:label>
     </owl:Class>
     
 
@@ -562,6 +568,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Investment">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Operation"/>
+        <rdfs:label xml:lang="en">Investment</rdfs:label>
+        <rdfs:label xml:lang="cn">投资</rdfs:label>
     </owl:Class>
     
 
@@ -593,6 +601,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Management">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#SustainActivity"/>
         <rdfs:label xml:lang="en">Management</rdfs:label>
+        <rdfs:label xml:lang="cn">管理</rdfs:label>
     </owl:Class>
     
 
@@ -635,6 +644,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Operation">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#SustainActivity"/>
         <rdfs:label xml:lang="en">Operation</rdfs:label>
+        <rdfs:label xml:lang="cn">操作</rdfs:label>
     </owl:Class>
     
 
@@ -644,6 +654,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#PerformanceAppraisal">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#HumanResourceManagement"/>
         <rdfs:label xml:lang="en">Performance appraisal</rdfs:label>
+        <rdfs:label xml:lang="cn">绩效管理</rdfs:label>
     </owl:Class>
     
 
@@ -652,6 +663,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Planning">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Operation"/>
+        <rdfs:label xml:lang="en">Planning</rdfs:label>
+        <rdfs:label xml:lang="cn">规划</rdfs:label>
     </owl:Class>
     
 
@@ -660,6 +673,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Procurement">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Operation"/>
+        <rdfs:label xml:lang="en">Procurement</rdfs:label>
+        <rdfs:label xml:lang="cn">采购</rdfs:label>
     </owl:Class>
     
 
@@ -669,6 +684,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Production">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Operation"/>
         <rdfs:label xml:lang="en">Production</rdfs:label>
+        <rdfs:label xml:lang="cn">生产</rdfs:label>
     </owl:Class>
     
 
@@ -678,6 +694,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Projectmanagement">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Management"/>
         <rdfs:label xml:lang="en">Project management</rdfs:label>
+        <rdfs:label xml:lang="cn">项目管理</rdfs:label>
     </owl:Class>
     
 
@@ -697,6 +714,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Recruitment">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#HumanResourceManagement"/>
+        <rdfs:label xml:lang="en">Recruitment</rdfs:label>
+        <rdfs:label xml:lang="cn">招聘</rdfs:label>
     </owl:Class>
     
 
@@ -728,6 +747,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResearchAndDevelopment">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Operation"/>
         <rdfs:label xml:lang="en">R&amp;D</rdfs:label>
+        <rdfs:label xml:lang="cn">其他</rdfs:label>
     </owl:Class>
     
 
@@ -748,6 +768,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#ResourceManagement">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Management"/>
         <rdfs:label xml:lang="en">Resource management</rdfs:label>
+        <rdfs:label xml:lang="cn">资源管理</rdfs:label>
     </owl:Class>
     
 
@@ -757,6 +778,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#RewardManagement">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#HumanResourceManagement"/>
         <rdfs:label xml:lang="en">Reward management</rdfs:label>
+        <rdfs:label xml:lang="cn">薪资管理</rdfs:label>
     </owl:Class>
     
 
@@ -777,14 +799,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#SustainActivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Sustain activity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Training -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Training">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#HumanResourceManagement"/>
+        <rdfs:label xml:lang="cn">持续性事件</rdfs:label>
     </owl:Class>
     
 
@@ -805,6 +820,7 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="cn">概念</rdfs:label>
     </rdf:Description>
     
 
@@ -880,6 +896,14 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:label xml:lang="en">Address</rdfs:label>
         <rdfs:label xml:lang="cn">地址</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#ChangeEvent -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/org#ChangeEvent">
+        <rdfs:label xml:lang="cn">偶发事件</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -1082,6 +1106,8 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
         <rdfs:label xml:lang="cn">单元隶属于</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:label xml:lang="en">used</rdfs:label>
+        <rdfs:label xml:lang="cn">用于</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">

@@ -68,6 +68,8 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Direction</rdfs:label>
+        <rdfs:label xml:lang="cn">方位</rdfs:label>
     </owl:Class>
     
 
@@ -101,6 +103,15 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab"/>
         <rdfs:label xml:lang="en">Zone type</rdfs:label>
         <rdfs:label xml:lang="cn">区域类别</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element">
+        <rdfs:label xml:lang="en">Element</rdfs:label>
+        <rdfs:label xml:lang="cn">元件</rdfs:label>
     </owl:Class>
     
 
