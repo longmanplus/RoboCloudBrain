@@ -344,6 +344,17 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#showcase -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#showcase">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Booth"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Exhibit"/>
+        <rdfs:label xml:lang="en">showcase</rdfs:label>
+        <rdfs:label xml:lang="cn">展示</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasResult -->
 
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#hasResult">
@@ -560,6 +571,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Booth -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Booth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
+        <rdfs:label xml:lang="en">Booth</rdfs:label>
+        <rdfs:label xml:lang="cn">展位</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Cleanliness -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Cleanliness">
@@ -590,6 +611,16 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Enrollment">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Exhibit -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Exhibit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bot-lab#ExtendedElement"/>
+        <rdfs:label xml:lang="en">Exhibit</rdfs:label>
+        <rdfs:label xml:lang="cn">展品</rdfs:label>
     </owl:Class>
     
 
