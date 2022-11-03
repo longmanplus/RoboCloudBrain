@@ -192,6 +192,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasVectorComponent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasVectorComponent">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Vector"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent"/>
+        <rdfs:label xml:lang="en">has vector component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#inTheCenterOf -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#inTheCenterOf">
@@ -809,46 +819,9 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#vectorComponent -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#vectorComponent">
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Vector"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">vector component</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#xAxisComponent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#xAxisComponent">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#vectorComponent"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
-        <rdfs:label xml:lang="en">x axis component</rdfs:label>
-        <rdfs:label xml:lang="cn">x轴分量</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#yAxisComponent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#yAxisComponent">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#vectorComponent"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
-        <rdfs:label xml:lang="en">y axis component</rdfs:label>
-        <rdfs:label xml:lang="cn">y轴分量</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#zAxisComponent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#zAxisComponent">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#vectorComponent"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
-        <rdfs:label xml:lang="en">z aixs component</rdfs:label>
-        <rdfs:label xml:lang="cn">z轴分量</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1996,6 +1969,15 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Vector">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept"/>
         <rdfs:label xml:lang="en">Vector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept"/>
+        <rdfs:label xml:lang="en">Vector component</rdfs:label>
     </owl:Class>
     
 
