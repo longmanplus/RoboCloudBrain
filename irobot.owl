@@ -220,7 +220,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AtomicAction"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
                     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotSoftware"/>
                 </owl:unionOf>
             </owl:Class>
@@ -552,7 +552,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#actionParameter">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AtomicAction"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
         <rdfs:label xml:lang="en">action parameter</rdfs:label>
         <rdfs:label xml:lang="cn">动作参数</rdfs:label>
     </owl:DatatypeProperty>
@@ -864,16 +864,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
-        <rdfs:label xml:lang="en">Action</rdfs:label>
-        <rdfs:label xml:lang="cn">动作</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ActionSkill -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ActionSkill">
@@ -909,16 +899,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ExternalSensor"/>
         <rdfs:label xml:lang="en">Article collision</rdfs:label>
         <rdfs:label xml:lang="cn">碰撞条</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AtomicAction -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AtomicAction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
-        <rdfs:label xml:lang="en">Atomic action</rdfs:label>
-        <rdfs:label xml:lang="cn">原子动作</rdfs:label>
     </owl:Class>
     
 
@@ -1723,6 +1703,16 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction">
         <rdfs:label xml:lang="en">Robot action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
+        <rdfs:label xml:lang="en">Robot atomic action</rdfs:label>
+        <rdfs:label xml:lang="cn">原子动作</rdfs:label>
     </owl:Class>
     
 
