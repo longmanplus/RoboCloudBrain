@@ -103,6 +103,19 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#formalExpression -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#formalExpression">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#informalExpression"/>
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Word"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Word"/>
+        <rdfs:label xml:lang="en">formal expression</rdfs:label>
+        <rdfs:label xml:lang="cn">正式表达</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#graduatedOrganization -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#graduatedOrganization">
@@ -241,6 +254,17 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#informalExpression -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#informalExpression">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Word"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Word"/>
+        <rdfs:label xml:lang="en">informal expression</rdfs:label>
+        <rdfs:label xml:lang="cn">非正式表达</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#involved -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#involved">
@@ -360,6 +384,23 @@
     
 
 
+    <!-- http://www.w3.org/2006/time#after -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#after">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#before"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#before -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#before">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/2006/time#hasTime -->
 
     <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTime">
@@ -379,6 +420,7 @@
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/maker"/>
     </owl:ObjectProperty>
     
 
@@ -1005,6 +1047,18 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action"/>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AtomicAction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AtomicAction"/>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#GraspAction -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#GraspAction">
@@ -1092,6 +1146,14 @@
         <rdfs:label xml:lang="en">LookAtRight</rdfs:label>
         <rdfs:label xml:lang="cn">看右边</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept -->
+
+    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
     
 
 
@@ -1517,8 +1579,8 @@
         <rdfs:label xml:lang="en">Planning</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Procurement">
-        <rdfs:label xml:lang="cn">采购</rdfs:label>
         <rdfs:label xml:lang="en">Procurement</rdfs:label>
+        <rdfs:label xml:lang="cn">采购</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Production">
         <rdfs:label xml:lang="cn">生产</rdfs:label>
