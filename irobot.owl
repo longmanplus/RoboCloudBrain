@@ -847,11 +847,31 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Abduction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Abduction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Abduction</rdfs:label>
+        <rdfs:label xml:lang="cn">外展</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ActionSkill -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ActionSkill">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotSkill"/>
         <rdfs:label xml:lang="en">Action skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Adduction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Adduction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Adduction</rdfs:label>
+        <rdfs:label xml:lang="cn">内收</rdfs:label>
     </owl:Class>
     
 
@@ -1018,6 +1038,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Depression -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Depression">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Depression</rdfs:label>
+        <rdfs:label xml:lang="cn">降低</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#DexterousHand -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#DexterousHand">
@@ -1059,12 +1089,32 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Elevation -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Elevation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Elevation</rdfs:label>
+        <rdfs:label xml:lang="cn">升高</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ExplainThing -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ExplainThing">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Interacting"/>
         <rdfs:label xml:lang="en">Explain thing</rdfs:label>
         <rdfs:label xml:lang="cn">介绍讲解</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Extension -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Extension">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Extension</rdfs:label>
+        <rdfs:label xml:lang="cn">伸展</rdfs:label>
     </owl:Class>
     
 
@@ -1106,6 +1156,16 @@
         <rdfs:comment>Flat spin propulsive planktonic robot</rdfs:comment>
         <rdfs:label xml:lang="en">Flat spin propulsive planktonic robot</rdfs:label>
         <rdfs:label xml:lang="cn">平旋推进浮游机器人</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Flexion -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Flexion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Flexion</rdfs:label>
+        <rdfs:label xml:lang="cn">屈曲</rdfs:label>
     </owl:Class>
     
 
@@ -1775,6 +1835,16 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Roll">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MovementSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Rotation -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Rotation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">Rotation</rdfs:label>
+        <rdfs:label xml:lang="cn">旋转</rdfs:label>
     </owl:Class>
     
 
