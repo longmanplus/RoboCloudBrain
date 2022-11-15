@@ -851,8 +851,10 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Abduction">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Movement of a part of the body away from the median plane</rdfs:comment>
         <rdfs:label xml:lang="en">Abduction</rdfs:label>
         <rdfs:label xml:lang="cn">外展</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -870,8 +872,10 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Adduction">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Movement of a part of the body towards the median plane</rdfs:comment>
         <rdfs:label xml:lang="en">Adduction</rdfs:label>
         <rdfs:label xml:lang="cn">内收</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -976,6 +980,18 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Circumduction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Circumduction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Circular movement that combines flexion, extension, abduction and adduction such that the distal end of the part the body moves in a circle</rdfs:comment>
+        <rdfs:label xml:lang="en">Circumduction</rdfs:label>
+        <rdfs:label xml:lang="cn">圆锥运动</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Closing -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Closing">
@@ -1044,6 +1060,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
         <rdfs:label xml:lang="en">Depression</rdfs:label>
         <rdfs:label xml:lang="cn">降低</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -1095,6 +1112,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
         <rdfs:label xml:lang="en">Elevation</rdfs:label>
         <rdfs:label xml:lang="cn">升高</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -1113,8 +1131,10 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Extension">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Straightening or increasing the angle between the bones or parts of the body</rdfs:comment>
         <rdfs:label xml:lang="en">Extension</rdfs:label>
         <rdfs:label xml:lang="cn">伸展</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -1164,8 +1184,10 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Flexion">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Bending or decreasing the angle between the bones or parts of the body</rdfs:comment>
         <rdfs:label xml:lang="en">Flexion</rdfs:label>
         <rdfs:label xml:lang="cn">屈曲</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -1684,6 +1706,18 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Pronation -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Pronation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Movement of the forearm and hand such that the palm of the hand faces posteriorly and its dorsum faces anteriorly</rdfs:comment>
+        <rdfs:label xml:lang="en">Pronation</rdfs:label>
+        <rdfs:label xml:lang="cn">旋前</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PropellerActuator -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PropellerActuator">
@@ -1843,8 +1877,10 @@
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Rotation">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Turning or revolving a part of the body around its longitudinal axis</rdfs:comment>
         <rdfs:label xml:lang="en">Rotation</rdfs:label>
         <rdfs:label xml:lang="cn">旋转</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
@@ -1895,6 +1931,18 @@
         <rdfs:comment>robot can dvie into water</rdfs:comment>
         <rdfs:label xml:lang="en">Stealth Robot</rdfs:label>
         <rdfs:label xml:lang="cn">潜游式机器人</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Supination -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Supination">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:comment xml:lang="en">Movement of the forearm and hand such the dorsum of the hand faces posteriorly and the palm faces anteriorly i.e. moving them to the anatomical position</rdfs:comment>
+        <rdfs:label xml:lang="en">Supination</rdfs:label>
+        <rdfs:label xml:lang="cn">旋后</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://cnx.org/contents/Gko70fNo%401/Anatomical-Terms"/>
     </owl:Class>
     
 
