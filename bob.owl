@@ -744,59 +744,11 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#ExtensionAtKnee -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#ExtensionAtKnee">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Extension"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#ExtensionAtNeck -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#ExtensionAtNeck">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Extension"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#ExtensionAtSholder -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#ExtensionAtSholder">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Extension"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Finish -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Finish">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
         <rdfs:label xml:lang="en">Finish</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#FlexionAtKnee -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#FlexionAtKnee">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Flexion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#FlexionAtNeck -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#FlexionAtNeck">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Flexion"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#FlexionAtShoulder -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#FlexionAtShoulder">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Flexion"/>
     </owl:Class>
     
 
