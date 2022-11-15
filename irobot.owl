@@ -39,6 +39,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#actingThrough -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#actingThrough">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+        <rdfs:label xml:lang="en">acting through</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#apartFrom -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#apartFrom">
@@ -91,6 +101,23 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
         <rdfs:label xml:lang="en">at the top of</rdfs:label>
         <rdfs:label xml:lang="cn">顶部</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#consistOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#consistOf">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotHardware"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotSoftware"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">consist of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -880,6 +907,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotComponent"/>
+        <rdfs:label xml:lang="en">Anatomical component</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Answering -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Answering">
@@ -1106,6 +1142,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Elbow -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Elbow">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Elevation -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Elevation">
@@ -1291,6 +1335,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Head -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Head">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#HeadSkill -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#HeadSkill">
@@ -1401,6 +1453,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Knee -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Knee">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#LaserRadar -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#LaserRadar">
@@ -1463,6 +1523,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Limb -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Limb">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Location -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Location">
@@ -1489,6 +1557,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ExternalSensor"/>
         <rdfs:label xml:lang="en">Loudspeaker</rdfs:label>
         <rdfs:label xml:lang="cn">扬声器</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#LowerLimb -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#LowerLimb">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Limb"/>
+        <rdfs:label xml:lang="en">Lower limb</rdfs:label>
     </owl:Class>
     
 
@@ -1583,6 +1660,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ApplicationSoftware"/>
         <rdfs:label xml:lang="en">Navigation algorithm</rdfs:label>
         <rdfs:label xml:lang="cn">导航系统</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Neck -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Neck">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
     </owl:Class>
     
 
@@ -1895,6 +1980,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Shoulder -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Shoulder">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Speedometer -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Speedometer">
@@ -2093,6 +2186,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#UpperLimb -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#UpperLimb">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Limb"/>
+        <rdfs:label xml:lang="en">Upper limb</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Vector -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Vector">
@@ -2107,6 +2209,15 @@
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent">
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept"/>
         <rdfs:label xml:lang="en">Vector component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VertebralColumn -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VertebralColumn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#AnatomicalComponent"/>
+        <rdfs:label xml:lang="en">Vertebral column</rdfs:label>
     </owl:Class>
     
 
