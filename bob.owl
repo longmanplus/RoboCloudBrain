@@ -735,10 +735,20 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#GraspAction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#GraspAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
+        <rdfs:label xml:lang="en">Grasp action</rdfs:label>
+        <rdfs:label xml:lang="cn">抓取动作</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#GraspAndPointTo -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#GraspAndPointTo">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
         <rdfs:label xml:lang="en">Grasp and point to</rdfs:label>
         <rdfs:label xml:lang="cn">抓取指向</rdfs:label>
     </owl:Class>
@@ -759,6 +769,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#State"/>
         <rdfs:label xml:lang="en">Healthness</rdfs:label>
         <rdfs:label xml:lang="cn">健康</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#HelloAction -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#HelloAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
+        <rdfs:label xml:lang="en">Hello action</rdfs:label>
+        <rdfs:label xml:lang="cn">打招呼</rdfs:label>
     </owl:Class>
     
 
@@ -788,6 +808,76 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#SeriesPublication"/>
         <rdfs:label xml:lang="en">Journal</rdfs:label>
         <rdfs:label xml:lang="cn">期刊</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmOrient -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmOrient">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LeftArmOrient</rdfs:label>
+        <rdfs:label xml:lang="cn">左手臂定位</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPoint -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPoint">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LeftArmPoint</rdfs:label>
+        <rdfs:label xml:lang="cn">左手臂指向</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPut -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPut">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LeftArmPut</rdfs:label>
+        <rdfs:label xml:lang="cn">左手臂放下</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmWave -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmWave">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LeftArmWave</rdfs:label>
+        <rdfs:label xml:lang="cn">挥左手臂</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftHandGrasp -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftHandGrasp">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LeftHandGrasp</rdfs:label>
+        <rdfs:label xml:lang="cn">左手抓</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtLeft -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtLeft">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LookAtLeft</rdfs:label>
+        <rdfs:label xml:lang="cn">看左边</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtRight -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtRight">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">LookAtRight</rdfs:label>
+        <rdfs:label xml:lang="cn">看右边</rdfs:label>
     </owl:Class>
     
 
@@ -856,6 +946,56 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmLocation -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmLocation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">RightArmLocation</rdfs:label>
+        <rdfs:label xml:lang="cn">右手臂定位</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPoint -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPoint">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">RightArmPoint</rdfs:label>
+        <rdfs:label xml:lang="cn">右手臂指向</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPut -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPut">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">RightArmPut</rdfs:label>
+        <rdfs:label xml:lang="cn">放右手臂</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmWave -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmWave">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">RightArmWave</rdfs:label>
+        <rdfs:label xml:lang="cn">挥右手臂</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightHandGrasp -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightHandGrasp">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
+        <rdfs:label xml:lang="en">RightHandGrasp</rdfs:label>
+        <rdfs:label xml:lang="cn">右手抓</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Satiety -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Satiety">
@@ -880,6 +1020,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Collection"/>
         <rdfs:label xml:lang="en">SeriesPublication</rdfs:label>
         <rdfs:label xml:lang="cn">系列刊物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#ShakeHead -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#ShakeHead">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAction"/>
+        <rdfs:label xml:lang="en">Shake head</rdfs:label>
+        <rdfs:label xml:lang="cn">摇头</rdfs:label>
     </owl:Class>
     
 
@@ -1047,102 +1197,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action"/>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#GraspAction -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#GraspAction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action"/>
-        <rdfs:label xml:lang="en">Grasp action</rdfs:label>
-        <rdfs:label xml:lang="cn">抓取动作</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#HelloAction -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#HelloAction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action"/>
-        <rdfs:label xml:lang="en">Hello action</rdfs:label>
-        <rdfs:label xml:lang="cn">打招呼</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmOrient -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmOrient">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LeftArmOrient</rdfs:label>
-        <rdfs:label xml:lang="cn">左手臂定位</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPoint -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPoint">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LeftArmPoint</rdfs:label>
-        <rdfs:label xml:lang="cn">左手臂指向</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPut -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmPut">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LeftArmPut</rdfs:label>
-        <rdfs:label xml:lang="cn">左手臂放下</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmWave -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftArmWave">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LeftArmWave</rdfs:label>
-        <rdfs:label xml:lang="cn">挥左手臂</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftHandGrasp -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LeftHandGrasp">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LeftHandGrasp</rdfs:label>
-        <rdfs:label xml:lang="cn">左手抓</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtLeft -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtLeft">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LookAtLeft</rdfs:label>
-        <rdfs:label xml:lang="cn">看左边</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtRight -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#LookAtRight">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">LookAtRight</rdfs:label>
-        <rdfs:label xml:lang="cn">看右边</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept -->
 
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept">
@@ -1151,71 +1205,11 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmLocation -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmLocation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">RightArmLocation</rdfs:label>
-        <rdfs:label xml:lang="cn">右手臂定位</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPoint -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPoint">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">RightArmPoint</rdfs:label>
-        <rdfs:label xml:lang="cn">右手臂指向</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPut -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmPut">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">RightArmPut</rdfs:label>
-        <rdfs:label xml:lang="cn">放右手臂</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmWave -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightArmWave">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">RightArmWave</rdfs:label>
-        <rdfs:label xml:lang="cn">挥右手臂</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightHandGrasp -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#RightHandGrasp">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotAtomicAction"/>
-        <rdfs:label xml:lang="en">RightHandGrasp</rdfs:label>
-        <rdfs:label xml:lang="cn">右手抓</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot -->
 
     <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#ShakeHead -->
-
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#ShakeHead">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Action"/>
-        <rdfs:label xml:lang="en">Shake head</rdfs:label>
-        <rdfs:label xml:lang="cn">摇头</rdfs:label>
-    </owl:Class>
     
 
 
