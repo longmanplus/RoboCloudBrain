@@ -91,6 +91,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#beAssignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#beAssignedTo">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Task"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label xml:lang="en">be assigned to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#enrolledOrganization -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#enrolledOrganization">
@@ -99,16 +109,6 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob"/>
         <rdfs:isDefinedBy xml:lang="cn">入职的机构</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">enrolled organization</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#executeTask -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#executeTask">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Task"/>
-        <rdfs:label xml:lang="en">execute task</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -550,6 +550,16 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrain"/>
         <rdfs:label xml:lang="en">key word</rdfs:label>
         <rdfs:label xml:lang="cn">关键词</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#purpose -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#purpose">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">purpose</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1255,6 +1265,7 @@
     <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:label xml:lang="en">Instantaneous Event</rdfs:label>
         <rdfs:label xml:lang="cn">瞬时事件</rdfs:label>
