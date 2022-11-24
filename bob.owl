@@ -980,7 +980,9 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#Task -->
 
-    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Task"/>
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#Task">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    </owl:Class>
     
 
 
