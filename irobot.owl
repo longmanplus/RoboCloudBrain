@@ -2493,15 +2493,6 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#SquirmyRobot1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#SquirmyRobot1">
-        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#SquirmyRobot"/>
-        <hasSpeed rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#71毫米每秒"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#米每秒 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#米每秒">
@@ -2510,9 +2501,18 @@
     
 
 
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#71毫米每秒 -->
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#SquirmyRobot1 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#71毫米每秒">
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#SquirmyRobot1">
+        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#SquirmyRobot"/>
+        <hasSpeed rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#71毫米每秒"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#71毫米每秒 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#71毫米每秒">
         <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Speed"/>
     </owl:NamedIndividual>
     
