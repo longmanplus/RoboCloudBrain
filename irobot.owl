@@ -162,6 +162,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasColor">
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Color"/>
+        <rdfs:label xml:lang="en">has color</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasComponent -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#hasComponent">
@@ -1082,6 +1091,14 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Color -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Color">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PhysicalQuality"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#CommonSoftware -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#CommonSoftware">
@@ -1180,6 +1197,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#InteractionInterface"/>
         <rdfs:label xml:lang="en">Display screen</rdfs:label>
         <rdfs:label xml:lang="cn">显示屏幕</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#DivingRobot -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#DivingRobot">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Robot"/>
+        <rdfs:label xml:lang="en">Diving robot</rdfs:label>
+        <rdfs:label xml:lang="cn">潜游式机器人</rdfs:label>
     </owl:Class>
     
 
@@ -1844,6 +1871,15 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PhysicalQuality -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PhysicalQuality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PhysicalConcept"/>
+        <rdfs:label xml:lang="en">Physical quality</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PhysicalQuantity -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#PhysicalQuantity">
@@ -2479,42 +2515,6 @@
         <rdfs:label xml:lang="en">5DOFArm</rdfs:label>
         <rdfs:label xml:lang="cn">5自由度手臂</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#米每秒 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#米每秒">
-        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Unit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#SquirmyRobot1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#SquirmyRobot1">
-        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#SquirmyRobot"/>
-        <hasSpeed rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#71毫米每秒"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#71毫米每秒 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/robotbrainKG#71毫米每秒">
-        <rdf:type rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Speed"/>
-    </owl:NamedIndividual>
     
 
 
