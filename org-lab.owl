@@ -815,6 +815,16 @@ Compatibility with schema.org: This class is equivalent to the union of http://s
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Validation -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#Validation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+        <rdfs:label xml:lang="en">Validation</rdfs:label>
+        <rdfs:label xml:lang="cn">验证</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
