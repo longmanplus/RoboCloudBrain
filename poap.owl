@@ -48,6 +48,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy">
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Award"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -77,6 +78,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy"/>
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap#Funding"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -375,17 +377,7 @@
 
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy">
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beAwardedBy"/>
     
 
 
@@ -1133,15 +1125,9 @@
         <rdfs:label xml:lang="cn">由授予</rdfs:label>
         <rdfs:label xml:lang="en">be awarded by</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/poap#beFundedBy">
-        <rdfs:label xml:lang="cn">由资助</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/poap"/>
-        <rdfs:label xml:lang="en">be funded by</rdfs:label>
-        <rdfs:comment xml:lang="cn">由(某机构等)资助</rdfs:comment>
-    </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/CreativeWork">
-        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
         <rdfs:label xml:lang="cn">创造性工作</rdfs:label>
+        <rdfs:comment xml:lang="en">Creative work</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/ImageObject">
         <owl:deprecated xml:lang="en">true</owl:deprecated>
