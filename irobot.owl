@@ -144,7 +144,6 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#depend -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#depend">
-        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#require"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en">depend</rdfs:label>
     </owl:ObjectProperty>
