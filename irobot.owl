@@ -289,7 +289,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#inherentlyDependOn">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#dependOn"/>
-        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#inherentlyRequire"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -462,7 +461,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#noninherentlyDependOn">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#dependOn"/>
-        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#noninherentlyRequire"/>
         <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotTask"/>
         <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotSkill"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot"/>
