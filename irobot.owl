@@ -457,6 +457,16 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#needsComponent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#needsComponent">
+        <rdfs:domain rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotSkill"/>
+        <rdfs:range rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#RobotComponent"/>
+        <rdfs:label xml:lang="en">needs component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#noninherentlyDependOn -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#noninherentlyDependOn">
