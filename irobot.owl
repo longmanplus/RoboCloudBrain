@@ -918,6 +918,12 @@
     
 
 
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#KeyValuePair -->
+
+    <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#KeyValuePair"/>
+    
+
+
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Abduction -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#Abduction">
@@ -2421,7 +2427,14 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent -->
 
     <owl:Class rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#VectorComponent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#KeyValuePair"/>
+                    <rdf:Description rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/irobot#MathConcept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Vector component</rdfs:label>
     </owl:Class>
     
