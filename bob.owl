@@ -258,6 +258,7 @@
     <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#hasRole -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#hasRole">
+        <owl:inverseOf rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob#retainedBy"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/org#Role"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/zhejianglab/irobot-center/ontologies/bob"/>
@@ -422,6 +423,16 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/zhejianglab/irobot-center/ontologies/bob#retainedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/zhejianglab/irobot-center/ontologies/bob#retainedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:label xml:lang="en">retained by</rdfs:label>
     </owl:ObjectProperty>
     
 
